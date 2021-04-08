@@ -2,22 +2,38 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    screens: {
-      "2xl": { max: "1535px" },
-      // => @media (max-width: 1535px) { ... }
-
-      xl: { max: "1279px" },
-      // => @media (max-width: 1279px) { ... }
-
-      lg: { max: "1023px" },
-      // => @media (max-width: 1023px) { ... }
-
-      md: { max: "767px" },
-      // => @media (max-width: 767px) { ... }
-
-      sm: { max: "639px" },
-      // => @media (max-width: 639px) { ... }
+    fontFamily: {
+      "work-reg": "WorkSansReg",
+      "work-md": "WorkSansMedium",
+      "miriam-mono": "MiriamMono",
     },
+    textColor: {
+      white: "#fff",
+      "autumn-green": "#797E5E",
+      "lt-autumn-green": "#A1A77F",
+      "concrete-green": "#90947a",
+      "ocean-denim-blue": "#457B92",
+      "deep-sea": "#254B5B",
+      "navy-blue": "#142932",
+      "bordeaux-brick": "#BF6363",
+      "royal-bordeaux": "#873A3A",
+      "autum-orange": "#E09143",
+      "vitamin-c": "#EF8720",
+      "shadow-skin": "#E8D5AD",
+    },
+    backgroundColor: theme => ({
+      "autumn-green": "#797E5E",
+      "lt-autumn-green": "#A1A77F",
+      "concrete-green": "#90947a",
+      "ocean-denim-blue": "#457B92",
+      "deep-sea": "#254B5B",
+      "navy-blue": "#142932",
+      "bordeaux-brick": "#BF6363",
+      "royal-bordeaux": "#873A3A",
+      "autum-orange": "#E09143",
+      "vitamin-c": "#EF8720",
+      "shadow-skin": "#E8D5AD",
+    }),
     extend: {},
   },
   variants: {

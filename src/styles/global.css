@@ -16,3 +16,18 @@
 }
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "WorkSansReg";
+  src: url("../fonts/WorkSans-Regular.woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "WorkSansMedium";
+  src: url("../fonts/WorkSans-Medium.woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MiriamMono";
+  src: url("../fonts/MiriamMonoCLM-Book.woff2");
+  font-display: swap;
+}
