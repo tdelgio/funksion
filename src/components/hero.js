@@ -7,11 +7,10 @@ const Hero = () => {
       <div className="w-full mx-4 lg:mx-0 h-3/4 md:h-3/4 max-w-lg flex ">
         <div className="w-1/2 h-full flex flex-col items-center justify-center px-2 ">
           <StaticImage
-            height={1030}
-            width={251}
+            height={768}
             alt="logo funksion"
             objectFit="contain"
-            placeholder="blurred"
+            placeholder="tracedSVG"
             src="../images/logoo.png"
           />
         </div>
