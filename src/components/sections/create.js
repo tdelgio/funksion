@@ -6,26 +6,58 @@ const Create = () => {
       <div className="w-full flex flex-col max-w-4xl md:flex-row items-center justify-center font-miriam-mono font-bold">
         <div className="w-3/4 flex items-center justify-center my-4 md:transform md:scale-150">
           <div className="flex flex-col ">
-            <svg
-              width="11"
-              height="199"
-              viewBox="0 0 11 199"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.288507 136.749L0.0791016 198.029L9.67833 198.004L9.88773 136.725L0.288507 136.749Z"
-                fill="#24617F"
-              />
-              <path
-                d="M0.368341 68.845L0.158936 130.125L9.75816 130.1L9.96757 68.8203L0.368341 68.845Z"
-                fill="#CD4536"
-              />
-              <path
-                d="M0.447443 0.941008L0.238037 62.2206L9.83725 62.1958L10.0467 0.916281L0.447443 0.941008Z"
-                fill="#E0903A"
-              />
-            </svg>
+            <div className="md:hidden">
+              <svg
+                width="11"
+                height="198"
+                viewBox="0 0 11 198"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.288507 135.737L0.0791016 197.016L9.67833 196.992L9.88773 135.712L0.288507 135.737Z"
+                  fill="#24617F"
+                />
+                <path
+                  d="M0.368341 67.8327L0.158936 129.112L9.75816 129.088L9.96757 67.808L0.368341 67.8327Z"
+                  fill="#873A3A"
+                />
+                <path
+                  d="M0.447443 0.0247174L0.238037 61.3043L9.83725 61.2795L10.0467 -9.76368e-06L0.447443 0.0247174Z"
+                  fill="#E0903A"
+                />
+              </svg>
+            </div>
+            <div className="hidden md:block">
+              <svg
+                width="18"
+                height="333"
+                viewBox="0 0 18 333"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.387743 203.749L0.0791626 265.029L16.5788 264.992L16.8874 203.712L0.387743 203.749Z"
+                  fill="#24617F"
+                />
+                <path
+                  d="M0.467944 135.845L0.159363 197.125L16.659 197.088L16.9676 135.808L0.467944 135.845Z"
+                  fill="#873A3A"
+                />
+                <path
+                  d="M0.546923 67.9409L0.238342 129.221L16.738 129.184L17.0466 67.9039L0.546923 67.9409Z"
+                  fill="#E0903A"
+                />
+                <path
+                  d="M0.308763 271.653L0.000183105 332.933L16.4998 332.896L16.8084 271.616L0.308763 271.653Z"
+                  fill="#14223C"
+                />
+                <path
+                  d="M0.625964 0.0369721L0.317383 61.3167L16.817 61.2798L17.1256 5.50012e-05L0.625964 0.0369721Z"
+                  fill="#E8D5AA"
+                />
+              </svg>
+            </div>
           </div>
           <p className="font bold text-4xl pl-2 ">
             /We
@@ -37,7 +69,7 @@ const Create = () => {
             content. <br />
           </p>
         </div>
-        <div className="w-3/4 flex flex-col items-center md:transform md:scale-150 pt-6 lg:pt-4">
+        <div className="w-3/4 flex flex-col items-center md:transform md:scale-150 pt-6 lg:pt-8">
           <p className="transform -translate-x-8 translate-y-3  ">
             brand & web site
             <br /> design
