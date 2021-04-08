@@ -15,9 +15,12 @@ const Hero = () => {
           />
         </div>
         <div className="w-1/2 flex flex-col items-center justify-between space-y-4 md:space-y-6 mr-4 md:mr-6 lg:mr-8 border-green-400 font-miriam-mono text-white font-bold ">
-          <div className="flex items-end h-full w-full bg-autumn-green rounded-3xl">
-            <h1 className="ml-2 text-2xl md:text-4xl">/create</h1>
-          </div>
+          <a
+            href="#create"
+            className="flex items-end h-full w-full bg-autumn-green rounded-3xl"
+          >
+            <p className="ml-2 text-2xl md:text-4xl">/create</p>
+          </a>
           <div className="flex items-end h-full w-full bg-ocean-denim-blue rounded-3xl">
             <p className="ml-2 text-2xl md:text-4xl">/design</p>
           </div>
