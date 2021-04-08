@@ -37,7 +37,7 @@ const Create = () => {
             content. <br />
           </p>
         </div>
-        <div className="w-3/4 flex flex-col items-center md:transform md:scale-150">
+        <div className="w-3/4 flex flex-col items-center md:transform md:scale-150 pt-6 lg:pt-4">
           <p className="transform -translate-x-8 translate-y-3  ">
             brand & web site
             <br /> design
