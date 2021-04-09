@@ -5,7 +5,7 @@ const Design = () => {
   return (
     <div
       id="design"
-      className="w-full flex items-center font-miriam-mono font-bold"
+      className="w-full lg:h-screen flex items-center font-miriam-mono font-bold"
     >
       <div className="xl:hidden">
         <StaticImage
