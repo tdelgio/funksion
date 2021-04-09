@@ -21,9 +21,12 @@ const Hero = () => {
           >
             <p className="ml-2 text-2xl md:text-4xl">/create</p>
           </a>
-          <div className="flex items-end h-full w-full bg-ocean-denim-blue rounded-3xl">
+          <a
+            href="#design"
+            className="flex items-end h-full w-full bg-ocean-denim-blue rounded-3xl"
+          >
             <p className="ml-2 text-2xl md:text-4xl">/design</p>
-          </div>
+          </a>
           <div className="flex items-end h-full w-full bg-bordeaux-brick rounded-3xl">
             <p className="ml-2 text-2xl md:text-4xl">/code</p>
           </div>
