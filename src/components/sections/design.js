@@ -3,16 +3,31 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Design = () => {
   return (
-    <div id="design" className="w-full flex font-miriam-mono font-bold">
-      <StaticImage
-        height={320}
-        alt="logo funksion"
-        objectFit="contain"
-        placeholder="tracedSVG"
-        src="../../images/logoo.png"
-        style={{ marginLeft: "-20px" }}
-      />
-      <div className="w-3/4 flex flex-col items-center justify-center space-y-12 transform -translate-x-4 my-4">
+    <div
+      id="design"
+      className="w-full flex items-center font-miriam-mono font-bold"
+    >
+      <div className="xl:hidden">
+        <StaticImage
+          height={320}
+          alt="logo funksion"
+          objectFit="contain"
+          placeholder="tracedSVG"
+          src="../../images/logoo.png"
+          style={{ marginLeft: "-20px", opacity: "0.8" }}
+        />
+      </div>
+      <div className="hidden xl:block">
+        <StaticImage
+          height={528}
+          alt="logo funksion"
+          objectFit="contain"
+          placeholder="tracedSVG"
+          src="../../images/logoo.png"
+          style={{ marginLeft: "-20px", opacity: "0.8" }}
+        />
+      </div>
+      <div className="w-3/4 md:w-full flex flex-col md:flex-row md:justify-around items-center justify-center space-y-12 transform -translate-x-4 my-4">
         <div className="flex items-center">
           <div className="md:hidden">
             <svg
@@ -36,17 +51,16 @@ const Design = () => {
               />
             </svg>
           </div>
-          <p className="font bold text-4xl pl-2 ">
-            /We
+          <p className="font-bold text-4xl md:text-5xl xl:text-6xl pl-2">
+            /our
             <br />
-            create
+            latest
             <br />
-            visual
+            projects.
             <br />
-            content. <br />
           </p>
         </div>
-        <div className="space-y-12">
+        <div className="flex flex-col md:flex-row space-y-12 md:space-x-10 xl:space-x-24 md:space-y-0">
           <div className="flex flex-col items-center">
             <div className="h-32 w-32 border-4 border-black rounded-full">
               <div className="transform translate-x-4 translate-y-3">
@@ -58,7 +72,7 @@ const Design = () => {
                 />
               </div>
             </div>
-            <p className="font-work-reg pt-2">construction</p>
+            <p className="font-work-reg pt-2">construction.</p>
             <a className="flex items-center h-10 bg-autumn-green rounded-md px-2">
               check it out
             </a>
@@ -74,7 +88,7 @@ const Design = () => {
                 />
               </div>
             </div>
-            <p className="font-work-reg pt-2">construction</p>
+            <p className="font-work-reg pt-2">surf.</p>
             <a className="flex items-center h-10 bg-ocean-denim-blue rounded-md px-2">
               check it out
             </a>
@@ -90,7 +104,7 @@ const Design = () => {
                 />
               </div>
             </div>
-            <p className="font-work-reg pt-2">construction</p>
+            <p className="font-work-reg pt-2">bread.</p>
             <a className="flex items-center h-10 bg-bordeaux-brick rounded-md px-2">
               check it out
             </a>

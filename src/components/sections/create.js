@@ -60,7 +60,7 @@ const Create = () => {
             </div>
           </div>
           <p className="font bold text-4xl pl-2 ">
-            /We
+            /we
             <br />
             create
             <br />
