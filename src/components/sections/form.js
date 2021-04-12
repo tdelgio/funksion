@@ -68,10 +68,10 @@ const Form = () => {
               <br />
               &contact us.
             </p>
-            <p className="text-2xl py-4 font-work-reg leading-6 ">
+            <p className="text-2xl py-4 font-work-md leading-6 ">
               We help you with your ideas
             </p>
-            <u className="text-xl lg:text-2xl font-work-reg leading-6  tracking-wider py-3">
+            <u className="text-xl lg:text-2xl font-work-md leading-6  tracking-wider py-3">
               ASK FOR YOUR BADGET
             </u>
           </div>
