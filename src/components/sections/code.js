@@ -5,11 +5,11 @@ const Code = () => {
   return (
     <div
       id="code"
-      className="w-full md:h-screen flex flex-col xl:flex-row items-center md:justify-center"
+      className="w-full h-full overflow-hidden md:h-screen flex flex-col xl:flex-row items-center justify-center md:justify-center"
     >
-      <div className="w-3/4 lg:w-full flex flex-col lg:flex-row items-center justify-around  my-4 ">
+      <div className="w-3/4 lg:w-full flex flex-col lg:flex-row items-center justify-around my-8 ">
         <div className="flex items-center justify-center font-miriam-mono font-bold ">
-          <div className="">
+          <div className="lg:hidden">
             <svg
               width="11"
               height="198"
@@ -31,7 +31,7 @@ const Code = () => {
               />
             </svg>
           </div>
-          <p className="font-bold text-4xl md:text-4xl lg:text-5xl xl:text-6xl pl-2">
+          <p className="font-bold text-4xl md:text-4xl lg:text-5xl 2xl:text-7xl pl-2">
             /we make
             <br />
             a digital
@@ -40,8 +40,8 @@ const Code = () => {
             <br />
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row items-center lg:items-start text-lg tracking-wider leading-6 font-work-reg pt-8 lg:pt-0 lg:space-x-20  ">
-          <div className="flex flex-col items-center text-center py-8">
+        <div className="flex flex-col 2xl:w-2/3 lg:flex-row items-center justify-center lg:items-start text-lg tracking-wider leading-6 font-work-reg pt-8 lg:pt-0 lg:space-x-20  2xl:transform 2xl:scale-150 2xl:-translate-x-5">
+          <div className="flex flex-col items-center text-center py-8 hover:bg-red-700">
             <p className="font-miriam-mono font-bold text-4xl lg:text-5xl py-1">
               100%
             </p>

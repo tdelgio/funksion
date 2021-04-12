@@ -5,9 +5,9 @@ const Design = () => {
   return (
     <div
       id="design"
-      className="w-full lg:h-screen flex items-center font-miriam-mono font-bold"
+      className="overflow-hidden w-full lg:h-screen flex items-center font-miriam-mono font-bold"
     >
-      <div className="transform translate-y-24 xl:hidden">
+      <div className="transform translate-y-24 md:translate-y-0 xl:hidden">
         <StaticImage
           height={320}
           alt="logo funksion"
@@ -27,9 +27,9 @@ const Design = () => {
           style={{ marginLeft: "-20px", opacity: "0.8" }}
         />
       </div>
-      <div className="w-full -ml-12">
-        <div className="flex flex-col items-center justify-center md:flex-row md:justify-around my-4 md:space-x-6 xl:space-x-24">
-          <div className="flex items-center ">
+      <div className="w-full -ml-14 md:ml-0">
+        <div className="w-auto py-4 flex flex-col items-center justify-center md:flex-row md:justify-around">
+          <div className="flex items-center 2xl:transform 2xl:scale-150 ">
             <div className="md:hidden">
               <svg
                 width="11"
@@ -52,7 +52,7 @@ const Design = () => {
                 />
               </svg>
             </div>
-            <p className="font-bold text-4xl md:text-4xl lg:text-5xl md:pl-10 xl:text-6xl pl-2 xl:transform xl:translate-x-24">
+            <p className="font-bold text-4xl md:text-4xl lg:text-5xl xl:pr-24  xl:text-6xl pl-2">
               /our
               <br />
               latest
@@ -61,8 +61,8 @@ const Design = () => {
               <br />
             </p>
           </div>
-          <div className="flex flex-col md:flex-row py-8 xl:transform xl:-translate-x-24 xl:-translate-y-4">
-            <div className="flex flex-col items-center py-8 md:py-0 md:px-4">
+          <div className="flex flex-col md:flex-row pt-10 md:pt-0 md:my-4 space-y-10 md:space-y-0 md:space-x-10 lg:space-x-20 2xl:transform 2xl:-translate-x-20 2xl:scale-150 ">
+            <div className="flex flex-col items-center">
               <div className="h-32 w-32 border-4 border-black rounded-full">
                 <div className="transform translate-x-4 translate-y-3">
                   <StaticImage
@@ -74,39 +74,51 @@ const Design = () => {
                 </div>
               </div>
               <p className="font-work-reg leading-7 pt-2">construction.</p>
-              <a className="font-work-reg tracking-wide leading-5 flex items-center h-8 bg-autumn-green rounded-md px-3 text-center">
+              <a
+                href="http://klarc.gatsbyjs.io"
+                target="blank_"
+                className="font-work-reg tracking-wide leading-5 flex items-center h-8 bg-autumn-green rounded-md px-3 text-center"
+              >
                 check it out
               </a>
             </div>
-            <div className="flex flex-col items-center py-8 md:py-0 md:px-4">
+            <div className="flex flex-col items-center">
               <div className="h-32 w-32 border-4 border-black rounded-full">
-                <div className="transform translate-x-3 translate-y-4">
+                <div className="transform z-10 translate-x-3 translate-y-4">
                   <StaticImage
                     height={90}
-                    alt="contruction icon"
+                    alt="surfboard icon"
                     placeholder="tracedSVG"
                     src="../../images/surf-board.png"
                   />
                 </div>
               </div>
               <p className="font-work-reg leading-7 pt-2">surf.</p>
-              <a className="font-work-reg tracking-wide leading-5  flex items-center h-8 bg-ocean-denim-blue rounded-md px-3 text-center">
+              <a
+                href="http://escuelasurf.gtsb.io"
+                target="blank_"
+                className="font-work-reg tracking-wide leading-5  flex items-center h-8 bg-ocean-denim-blue rounded-md px-3 text-center"
+              >
                 do you like it?
               </a>
             </div>
-            <div className="flex flex-col items-center py-8 md:py-0 md:px-4">
+            <div className="flex flex-col items-center">
               <div className="h-32 w-32 border-4 border-black rounded-full">
                 <div className="transform translate-x-4 translate-y-3">
                   <StaticImage
                     height={90}
-                    alt="contruction icon"
+                    alt="bread icon"
                     placeholder="tracedSVG"
                     src="../../images/bread.png"
                   />
                 </div>
               </div>
               <p className="font-work-reg leading-7 pt-2">bread.</p>
-              <a className="font-work-reg tracking-wide leading-5 flex items-center h-8 bg-bordeaux-brick rounded-md px-3 text-center">
+              <a
+                href="http://barcaza.netlify.app"
+                target="blank_"
+                className="font-work-reg tracking-wide leading-5 flex items-center h-8 bg-bordeaux-brick rounded-md px-3 text-center"
+              >
                 nice & yummy
               </a>
             </div>

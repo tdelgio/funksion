@@ -24,10 +24,8 @@ const Layout = ({ children }) => {
     <>
       <div className="my-0 p-0">
         <main>{children}</main>
-        <footer className="mt-4">
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <footer className="mt-4 font-miriam-mono text-center lg:text-xl">
+          © {new Date().getFullYear()}, Built with {"\u2728"}
         </footer>
       </div>
     </>
