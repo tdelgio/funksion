@@ -6,6 +6,7 @@ import Hero from "../components/hero"
 import Create from "../components/sections/create"
 import Design from "../components/sections/design"
 import Code from "../components/sections/code"
+import Form from "../components/sections/form"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Create />
     <Design />
     <Code />
+    <Form />
   </Layout>
 )
 

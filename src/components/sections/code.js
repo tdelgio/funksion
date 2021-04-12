@@ -40,26 +40,26 @@ const Code = () => {
             <br />
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row items-center lg:items-start text-xl tracking-widest leading-6 font-work-reg pt-8 lg:pt-0 lg:space-x-20  ">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start text-lg tracking-wider leading-6 font-work-reg pt-8 lg:pt-0 lg:space-x-20  ">
           <div className="flex flex-col items-center text-center py-8">
             <p className="font-miriam-mono font-bold text-4xl lg:text-5xl py-1">
               100%
             </p>
-            <p>performance</p>
+            <p className="font-work-md">performance</p>
             <p className="text-autum-orange">fully optimized</p>
           </div>
           <div className="flex flex-col items-center text-center py-8">
             <p className="font-miriam-mono font-bold text-4xl lg:text-5xl py-1">
               100%
             </p>
-            <p>accessibility</p>
+            <p className="font-work-md">accessibility</p>
             <p className="text-autum-orange">for everyone</p>
           </div>
           <div className="flex flex-col items-center text-center py-8">
             <p className="font-miriam-mono font-bold text-4xl lg:text-5xl py-1">
               100%
             </p>
-            <p>responsive design</p>
+            <p className="font-work-md">responsive design</p>
             <p className="text-autum-orange text-center">
               for a good experience in <br />
               any device

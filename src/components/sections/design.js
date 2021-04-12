@@ -7,7 +7,7 @@ const Design = () => {
       id="design"
       className="w-full lg:h-screen flex items-center font-miriam-mono font-bold"
     >
-      <div className="xl:hidden">
+      <div className="transform translate-y-24 xl:hidden">
         <StaticImage
           height={320}
           alt="logo funksion"
@@ -17,7 +17,7 @@ const Design = () => {
           style={{ marginLeft: "-20px", opacity: "0.8" }}
         />
       </div>
-      <div className="hidden xl:block">
+      <div className="hidden xl:block ">
         <StaticImage
           height={528}
           alt="logo funksion"
@@ -73,8 +73,8 @@ const Design = () => {
                   />
                 </div>
               </div>
-              <p className="font-work-reg pt-2">construction.</p>
-              <a className="flex items-center h-10 bg-autumn-green rounded-md px-2 text-center">
+              <p className="font-work-reg leading-7 pt-2">construction.</p>
+              <a className="font-work-reg tracking-wide leading-5 flex items-center h-8 bg-autumn-green rounded-md px-3 text-center">
                 check it out
               </a>
             </div>
@@ -89,8 +89,8 @@ const Design = () => {
                   />
                 </div>
               </div>
-              <p className="font-work-reg pt-2">surf.</p>
-              <a className="flex items-center h-10 bg-ocean-denim-blue rounded-md px-2 text-center">
+              <p className="font-work-reg leading-7 pt-2">surf.</p>
+              <a className="font-work-reg tracking-wide leading-5  flex items-center h-8 bg-ocean-denim-blue rounded-md px-3 text-center">
                 do you like it?
               </a>
             </div>
@@ -105,8 +105,8 @@ const Design = () => {
                   />
                 </div>
               </div>
-              <p className="font-work-reg pt-2">bread.</p>
-              <a className="flex items-center h-10 bg-bordeaux-brick rounded-md px-2 text-center">
+              <p className="font-work-reg leading-7 pt-2">bread.</p>
+              <a className="font-work-reg tracking-wide leading-5 flex items-center h-8 bg-bordeaux-brick rounded-md px-3 text-center">
                 nice & yummy
               </a>
             </div>
