@@ -11,7 +11,7 @@ const Form = () => {
             Don't be shy & <br /> contact us
           </p>
           <u className="text-lg font-work-md leading-6  tracking-wider text-center py-3">
-            ASK FOR YOUR BADGET
+            ASK FOR YOUR BUDGET
           </u>
           <a
             href="mailto:hello@funksion.design"
@@ -72,7 +72,7 @@ const Form = () => {
               We help you with your ideas
             </p>
             <u className="text-xl lg:text-2xl font-work-md leading-6  tracking-wider py-3">
-              ASK FOR YOUR BADGET
+              ASK FOR YOUR BUDGET
             </u>
           </div>
         </div>
