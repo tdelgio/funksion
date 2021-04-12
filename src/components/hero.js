@@ -27,9 +27,12 @@ const Hero = () => {
           >
             <p className="ml-2 text-2xl md:text-4xl">/design</p>
           </a>
-          <div className="flex items-end h-full w-full bg-bordeaux-brick rounded-3xl">
+          <a
+            href="#code"
+            className="flex items-end h-full w-full bg-bordeaux-brick rounded-3xl"
+          >
             <p className="ml-2 text-2xl md:text-4xl">/code</p>
-          </div>
+          </a>
         </div>
       </div>
     </div>
