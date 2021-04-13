@@ -19,7 +19,7 @@ module.exports = {
       "bordeaux-brick": "#BF6363",
       "royal-bordeaux": "#873A3A",
       "autum-orange": "#E09143",
-      "vitamin-c": "#BA630D",
+      "vitamin-c": "#B05E0C",
       "shadow-skin": "#E8D5AD",
     },
     backgroundColor: theme => ({

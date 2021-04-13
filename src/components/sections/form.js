@@ -113,7 +113,7 @@ const Form = () => {
 
           <Link to="/thanks">
             <button
-              className="text-white font-work-reg tracking-wide leading-5 flex items-center h-8 bg-autumn-green rounded-md px-4 text-center lg:transform lg:scale-125"
+              className="text-white font-work-reg tracking-wide leading-5 flex items-center h-8 bg-concrete-green rounded-md px-4 text-center lg:transform lg:scale-125"
               type="submit"
             >
               Send
