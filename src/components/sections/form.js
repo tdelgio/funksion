@@ -65,8 +65,7 @@ const Form = () => {
           <div className="flex flex-col pl-4">
             <p className="font-roboto-bold text-5xl pl-2 ">
               /don't be shy
-              <br />
-              &contact us.
+              <br />& contact us.
             </p>
             <p className="text-2xl py-4 font-work-md leading-6 ">
               We help you with your ideas
