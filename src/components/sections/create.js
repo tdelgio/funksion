@@ -59,7 +59,7 @@ const Create = () => {
               </svg>
             </div>
           </div>
-          <p className="font bold text-4xl pl-2 ">
+          <p className="font-averia-bold text-4xl pl-2 ">
             /we
             <br />
             create

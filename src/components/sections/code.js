@@ -31,7 +31,7 @@ const Code = () => {
               />
             </svg>
           </div>
-          <p className="font-bold text-4xl md:text-4xl lg:text-5xl 2xl:text-7xl pl-2">
+          <p className="font-averia-bold text-4xl md:text-4xl lg:text-5xl 2xl:text-7xl pl-2">
             /we make
             <br />
             a digital
