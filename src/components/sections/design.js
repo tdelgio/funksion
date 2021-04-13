@@ -77,7 +77,7 @@ const Design = () => {
               <a
                 href="http://klarc.gatsbyjs.io"
                 target="blank_"
-                className="font-work-reg tracking-wide leading-5 flex items-center h-8 bg-autumn-green rounded-md px-3 text-center"
+                className="font-work-reg tracking-wide leading-5 flex items-center h-8 bg-concrete-green rounded-md px-3 text-center"
               >
                 check it out
               </a>
@@ -97,7 +97,7 @@ const Design = () => {
               <a
                 href="http://escuelasurf.gtsb.io"
                 target="blank_"
-                className="font-work-reg tracking-wide leading-5  flex items-center h-8 bg-ocean-denim-blue rounded-md px-3 text-center"
+                className="font-work-reg tracking-wide leading-5  flex items-center h-8 bg-navy-blue rounded-md px-3 text-center"
               >
                 do you like it?
               </a>
@@ -117,7 +117,7 @@ const Design = () => {
               <a
                 href="http://barcaza.netlify.app"
                 target="blank_"
-                className="font-work-reg tracking-wide leading-5 flex items-center h-8 bg-bordeaux-brick rounded-md px-3 text-center"
+                className="font-work-reg tracking-wide leading-5 flex items-center h-8 bg-royal-bordeaux rounded-md px-3 text-center"
               >
                 nice & yummy
               </a>
