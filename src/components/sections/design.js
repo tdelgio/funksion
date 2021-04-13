@@ -52,7 +52,7 @@ const Design = () => {
                 />
               </svg>
             </div>
-            <p className="text-4xl md:text-4xl lg:text-5xl xl:pr-24  xl:text-6xl pl-2 font-averia-bold">
+            <p className="text-4xl md:text-4xl lg:text-5xl xl:pr-24  xl:text-6xl pl-2 font-bold">
               /our
               <br />
               latest
