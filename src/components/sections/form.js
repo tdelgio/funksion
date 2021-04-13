@@ -15,7 +15,7 @@ const Form = () => {
           </u>
           <a
             href="mailto:hello@funksion.design"
-            className="flex font-work-reg leading-6  tracking-wider items-center h-8 bg-autumn-green rounded-md px-3 mt-4 text-center"
+            className="flex font-work-reg leading-6  tracking-wider items-center h-8 bg-concrete-green rounded-md px-3 mt-4 text-center"
           >
             get in touch
           </a>
