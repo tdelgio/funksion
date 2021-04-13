@@ -32,7 +32,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Averia";
-  src: url("../fonts/SourceCodePro-Bold.woff2");
+  font-family: "Roboto";
+  src: url("../fonts/RobotoMono-Regular.woff2");
   font-display: swap;
 }

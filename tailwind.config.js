@@ -6,7 +6,7 @@ module.exports = {
       "work-reg": "WorkSansReg",
       "work-md": "WorkSansMedium",
       "miriam-mono": "MiriamMono",
-      "averia-bold": "Averia",
+      "roboto-bold": "Roboto",
     },
     textColor: {
       white: "#fff",

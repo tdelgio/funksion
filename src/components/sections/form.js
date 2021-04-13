@@ -63,7 +63,7 @@ const Form = () => {
             />
           </svg>
           <div className="flex flex-col pl-4">
-            <p className="font-bold font-miriam-mono text-5xl pl-2 ">
+            <p className="font-roboto-bold text-5xl pl-2 ">
               /don't be shy
               <br />
               &contact us.
