@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-const Design = () => {
+const Design = props => {
   return (
     <div
       id="design"
@@ -53,11 +53,11 @@ const Design = () => {
               </svg>
             </div>
             <p className="font-roboto-bold text-4xl md:text-4xl lg:text-5xl xl:pr-24  xl:text-6xl pl-2">
-              /our
+              {props.data.title1}
               <br />
-              latest
+              {props.data.title2}
               <br />
-              projects.
+              {props.data.title3}
               <br />
             </p>
           </div>
@@ -73,13 +73,15 @@ const Design = () => {
                   />
                 </div>
               </div>
-              <p className="font-work-reg leading-7 pt-2">construction.</p>
+              <p className="font-work-reg leading-7 pt-2">
+                {props.data.project1}
+              </p>
               <a
                 href="http://klarc.gatsbyjs.io"
                 target="blank_"
-                className="font-work-reg tracking-wide leading-5 flex items-center h-8 bg-concrete-green rounded-md px-3 text-center"
+                className="text-white font-work-reg tracking-wide leading-5 flex items-center h-8 bg-concrete-green rounded-md px-3 text-center"
               >
-                check it out
+                {props.data.button1}
               </a>
             </div>
             <div className="flex flex-col items-center">
@@ -93,13 +95,15 @@ const Design = () => {
                   />
                 </div>
               </div>
-              <p className="font-work-reg leading-7 pt-2">surf.</p>
+              <p className="font-work-reg leading-7 pt-2">
+                {props.data.project2}
+              </p>
               <a
                 href="http://escuelasurf.gtsb.io"
                 target="blank_"
-                className="font-work-reg tracking-wide leading-5  flex items-center h-8 bg-navy-blue rounded-md px-3 text-center"
+                className="text-white font-work-reg tracking-wide leading-5  flex items-center h-8 bg-navy-blue rounded-md px-3 text-center"
               >
-                do you like it?
+                {props.data.button2}
               </a>
             </div>
             <div className="flex flex-col items-center">
@@ -113,13 +117,15 @@ const Design = () => {
                   />
                 </div>
               </div>
-              <p className="font-work-reg leading-7 pt-2">bread.</p>
+              <p className="font-work-reg leading-7 pt-2">
+                {props.data.project3}
+              </p>
               <a
                 href="http://barcaza.netlify.app"
                 target="blank_"
-                className="font-work-reg tracking-wide leading-5 flex items-center h-8 bg-royal-bordeaux rounded-md px-3 text-center"
+                className="text-white font-work-reg tracking-wide leading-5 flex items-center h-8 bg-royal-bordeaux rounded-md px-3 text-center"
               >
-                nice & yummy
+                {props.data.button3}
               </a>
             </div>
           </div>

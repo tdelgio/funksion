@@ -8,16 +8,16 @@ import Design from "../components/sections/design"
 import Code from "../components/sections/code"
 import Form from "../components/sections/form"
 
-import { data } from "../data"
+import { dataES } from "../dataES"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Funksion" />
-    <Hero data={data.hero} />
-    <Create data={data.create} />
-    <Design data={data.design} />
-    <Code data={data.code} />
-    <Form data={data.form} />
+    <Hero data={dataES.hero} />
+    <Create data={dataES.create} />
+    <Design data={dataES.design} />
+    <Code data={dataES.code} />
+    <Form data={dataES.form} />
   </Layout>
 )
 

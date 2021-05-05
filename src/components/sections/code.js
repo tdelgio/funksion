@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-const Code = () => {
+const Code = props => {
   return (
     <div
       id="code"
@@ -32,11 +32,11 @@ const Code = () => {
             </svg>
           </div>
           <p className="font-roboto-bold text-4xl md:text-4xl lg:text-5xl 2xl:text-7xl pl-2">
-            /we make
+            {props.data.title1}
             <br />
-            a digital
+            {props.data.title2}
             <br />
-            experience.
+            {props.data.title3}
             <br />
           </p>
         </div>
@@ -45,24 +45,28 @@ const Code = () => {
             <p className="font-miriam-mono font-bold text-4xl lg:text-5xl py-1">
               100%
             </p>
-            <p className="font-work-md">performance</p>
-            <p className="text-vitamin-c">fully optimized</p>
+            <p className="font-work-md">{props.data.lighthouse1.textBlack}</p>
+            <p className="text-vitamin-c">
+              {props.data.lighthouse1.textYellow}
+            </p>
           </div>
           <div className="flex flex-col items-center text-center py-8">
             <p className="font-miriam-mono font-bold text-4xl lg:text-5xl py-1">
               100%
             </p>
-            <p className="font-work-md">accessibility</p>
-            <p className="text-vitamin-c">for everyone</p>
+            <p className="font-work-md">{props.data.lighthouse2.textBlack}</p>
+            <p className="text-vitamin-c">
+              {props.data.lighthouse2.textYellow}
+            </p>
           </div>
           <div className="flex flex-col items-center text-center py-8">
             <p className="font-miriam-mono font-bold text-4xl lg:text-5xl py-1">
               100%
             </p>
-            <p className="font-work-md">responsive design</p>
+            <p className="font-work-md">{props.data.lighthouse3.textBlack}</p>
             <p className="text-vitamin-c text-center">
-              for a good experience in <br />
-              any device
+              {props.data.lighthouse3.textYellow1} <br />
+              {props.data.lighthouse3.textYellow2}
             </p>
           </div>
         </div>

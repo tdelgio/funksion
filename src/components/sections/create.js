@@ -1,6 +1,6 @@
 import React from "react"
 
-const Create = () => {
+const Create = props => {
   return (
     <div id="create" className="w-screen h-screen flex justify-center">
       <div className="w-full flex flex-col max-w-4xl md:flex-row items-center justify-center font-miriam-mono font-bold">
@@ -60,19 +60,20 @@ const Create = () => {
             </div>
           </div>
           <p className="font-roboto-bold text-4xl pl-2 ">
-            /we
+            {props.data.title1}
             <br />
-            create
+            {props.data.title2}
             <br />
-            visual
+            {props.data.title3}
             <br />
-            content. <br />
+            {props.data.title4}
+            <br />
           </p>
         </div>
         <div className="w-3/4 flex flex-col items-center md:transform md:scale-150 pt-6 lg:pt-8">
           <p className="transform -translate-x-8 translate-y-3  ">
-            brand & web site
-            <br /> design
+            {props.data.text1}
+            <br /> {props.data.text2}
           </p>
           <svg
             width="200"
@@ -122,8 +123,12 @@ const Create = () => {
               stroke-width="2"
             />
           </svg>
-          <p className="transform translate-x-20 -translate-y-4 ">code</p>
-          <p className="font-bold text-5xl transform -translate-y-40 ">100%</p>
+          <p className="transform translate-x-20 -translate-y-4 ">
+            {props.data.text3}
+          </p>
+          <p className="font-bold text-5xl transform -translate-y-40 ">
+            {props.data.text4}
+          </p>
         </div>
       </div>
     </div>

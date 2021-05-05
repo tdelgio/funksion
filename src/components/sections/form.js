@@ -2,22 +2,22 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
-const Form = () => {
+const Form = props => {
   return (
     <div className="w-full overflow-hidden flex items-center justify-between">
       <div className="lg:hidden flex flex-grow flex-col justify-center items-center">
         <div className="transform translate-x-2 flex flex-col items-center py-4">
           <p className="text-center text-lg font-work-md leading-6  tracking-wider">
-            Don't be shy & <br /> contact us
+            {props.data.text1} <br /> {props.data.text2}
           </p>
           <u className="text-lg font-work-md leading-6  tracking-wider text-center py-3">
-            ASK FOR YOUR BUDGET
+            {props.data.underline}
           </u>
           <a
             href="mailto:hello@funksion.design"
             className="flex font-work-reg leading-6  tracking-wider items-center h-8 bg-concrete-green rounded-md px-3 mt-4 text-center"
           >
-            get in touch
+            {props.data.button}
           </a>
         </div>{" "}
       </div>
@@ -64,22 +64,27 @@ const Form = () => {
           </svg>
           <div className="flex flex-col pl-4">
             <p className="font-roboto-bold text-5xl pl-2 ">
-              /don't be shy
-              <br />& {` `}contact us.
+              /{props.data.text1}
+              <br /> {` `}
+              {props.data.text2}
             </p>
             <p className="text-2xl py-4 font-work-md leading-6 ">
-              We help you with your ideas
+              {props.data.subtitle}
             </p>
             <u className="text-xl lg:text-2xl font-work-md leading-6  tracking-wider py-3">
-              ASK FOR YOUR BUDGET
+              {props.data.underline}
             </u>
           </div>
         </div>
         <form
           className="w-1/3 flex flex-col items-center justify-center pt-20"
           method="post"
-          action="mailto:hello@funksion.design"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+          name="contact"
         >
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
           <label className="w-3/4">
             <input
               className="w-full border-2 font-miriam-mono text-xl rounded-md my-2 p-2"
@@ -109,13 +114,12 @@ const Form = () => {
               rows="7"
             />
           </label>
-
           <Link to="/thanks">
             <button
               className="text-white font-work-reg tracking-wide leading-5 flex items-center h-8 bg-concrete-green rounded-md px-4 text-center lg:transform lg:scale-125"
               type="submit"
             >
-              Send
+              {props.data.button2}
             </button>
           </Link>
         </form>
