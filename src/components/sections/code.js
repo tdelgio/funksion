@@ -31,14 +31,14 @@ const Code = props => {
               />
             </svg>
           </div>
-          <p className="work-bold text-4xl md:text-4xl lg:text-5xl 2xl:text-7xl pl-2">
+          <h1 className="text-4xl md:text-4xl lg:text-5xl 2xl:text-7xl pl-2">
             {props.data.title1}
             <br />
             {props.data.title2}
             <br />
             {props.data.title3}
             <br />
-          </p>
+          </h1>
         </div>
         <div className="flex flex-col 2xl:w-2/3 lg:flex-row items-center justify-center lg:items-start text-lg tracking-wider leading-6 font-work-reg pt-8 lg:pt-0 lg:space-x-20  2xl:transform 2xl:scale-150 2xl:-translate-x-5">
           <div className="flex flex-col items-center text-center py-8 hover:bg-red-700">
