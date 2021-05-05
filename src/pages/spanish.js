@@ -6,19 +6,19 @@ import Hero from "../components/hero"
 import Create from "../components/sections/create"
 import Design from "../components/sections/design"
 import Code from "../components/sections/code"
-import Form from "../components/sections/form"
+import Contact from "../components/sections/contact"
 
 import { dataES } from "../dataES"
 
-const IndexPage = () => (
+const SpanishPage = () => (
   <Layout>
     <SEO title="Funksion" />
     <Hero data={dataES.hero} />
     <Create data={dataES.create} />
     <Design data={dataES.design} />
     <Code data={dataES.code} />
-    <Form data={dataES.form} />
+    <Contact data={dataES.contact} />
   </Layout>
 )
 
-export default IndexPage
+export default SpanishPage

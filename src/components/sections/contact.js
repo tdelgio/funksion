@@ -2,7 +2,7 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
-const Form = props => {
+const Contact = props => {
   return (
     <div className="w-full overflow-hidden flex items-center justify-between">
       <div className="lg:hidden flex flex-grow flex-col justify-center items-center">
@@ -13,12 +13,12 @@ const Form = props => {
           <u className="text-lg font-work-md leading-6  tracking-wider text-center py-3">
             {props.data.underline}
           </u>
-          <a
-            href="mailto:hello@funksion.design"
-            className="flex font-work-reg leading-6  tracking-wider items-center h-8 bg-concrete-green rounded-md px-3 mt-4 text-center"
+          <Link
+            to="/contact"
+            className=" text-white flex font-work-reg leading-6  tracking-wider items-center h-8 bg-concrete-green rounded-md px-3 mt-4 text-center"
           >
             {props.data.button}
-          </a>
+          </Link>
         </div>{" "}
       </div>
       <div className="block lg:hidden transform translate-x-4">
@@ -76,7 +76,6 @@ const Form = props => {
             </u>
           </div>
         </div>
-
         <form
           className="w-1/3 flex flex-col items-center justify-center pt-20"
           method="post"
@@ -129,4 +128,4 @@ const Form = props => {
   )
 }
 
-export default Form
+export default Contact

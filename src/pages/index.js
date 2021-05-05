@@ -6,7 +6,7 @@ import Hero from "../components/hero"
 import Create from "../components/sections/create"
 import Design from "../components/sections/design"
 import Code from "../components/sections/code"
-import Form from "../components/sections/form"
+import Contact from "../components/sections/contact"
 
 import { data } from "../data"
 
@@ -17,7 +17,7 @@ const IndexPage = () => (
     <Create data={data.create} />
     <Design data={data.design} />
     <Code data={data.code} />
-    <Form data={data.form} />
+    <Contact data={data.contact} />
   </Layout>
 )
 

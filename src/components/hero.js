@@ -8,7 +8,7 @@ const Hero = props => {
       <div className="w-screen h-screen flex items-center justify-center">
         <div className="absolute right-4 top-4 text-concrete-green font-work-reg tracking-wide leading-5 space-x-3">
           <Link to="/">EN</Link>
-          <Link to="/indexES">ES</Link>
+          <Link to="/spanish">ES</Link>
         </div>
         <div className="w-full mx-4 lg:mx-0 h-3/4 md:h-3/4 max-w-lg flex ">
           <div className="w-1/2 h-full flex flex-col items-center justify-center px-2 ">

@@ -47,7 +47,7 @@ export const data = {
       textYellow2: "any device",
     },
   },
-  form: {
+  contact: {
     text1: "Don't be shy",
     text2: "& contact us",
     underline: "ASK FOR YOU BUDGET",
@@ -55,5 +55,12 @@ export const data = {
     //desktop
     subtitle: "We help you with your ideas",
     button2: "send",
+  },
+  getInTouch: {
+    title: "/e-mail us",
+    subtitle1: "we would love to hear",
+    subtitle2: "from you",
+    button: "send",
+    goBack: "go back",
   },
 }
