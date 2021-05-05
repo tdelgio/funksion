@@ -4,7 +4,6 @@ module.exports = {
   theme: {
     fontFamily: {
       "work-reg": "WorkSansReg",
-      "work-md": "WorkSansMedium",
       "work-semi": "WorkSansSemi",
       "work-bold": "WorkSansBold",
     },

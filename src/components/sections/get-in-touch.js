@@ -7,7 +7,7 @@ const GetInTouch = props => (
       <div className=" flex flex-col items-center justify-center md:transform md:scale-150">
         <h1 className="font-work-bold text-4xl pl-2">
           {props.data.title}
-          <p className="font-work-medium text-xl pl-2 text-autum-orange">
+          <p className="font-work-reg text-xl pl-2 text-autum-orange">
             {" "}
             {props.data.subtitle1}
             <br />
@@ -15,7 +15,7 @@ const GetInTouch = props => (
           </p>
         </h1>
         <form
-          className="w-screen md:w-96 flex flex-col items-center justify-center pt-5 font-work-medium"
+          className="w-screen md:w-96 flex flex-col items-center justify-center pt-5 font-work-reg"
           method="post"
           netlify-honeypot="bot-field"
           data-netlify="true"
