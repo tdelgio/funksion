@@ -7,7 +7,7 @@ const GetInTouch = props => (
       <div className=" flex flex-col items-center justify-center md:transform md:scale-150">
         <h1 className="font-work-bold text-4xl pl-2">
           {props.data.title}
-          <p className="font-work-medium text-2xl pl-2 text-autum-orange">
+          <p className="font-work-medium text-xl pl-2 text-autum-orange">
             {" "}
             {props.data.subtitle1}
             <br />
@@ -26,7 +26,7 @@ const GetInTouch = props => (
           <input type="hidden" name="form-name" value="mobile" />
           <label className="w-3/4">
             <input
-              className="w-full border-2 text-xl rounded-md my-2 p-2"
+              className="w-full border-2 text-lg rounded-md my-2 p-2"
               placeholder="Name: "
               type="text"
               name="name"
@@ -36,7 +36,7 @@ const GetInTouch = props => (
           </label>
           <label className="w-3/4">
             <input
-              className="w-full border-2 text-xl rounded-md my-2 p-2"
+              className="w-full border-2 text-lg rounded-md my-2 p-2"
               placeholder="E-mail: "
               type="email"
               name="email"
@@ -46,7 +46,7 @@ const GetInTouch = props => (
           </label>
           <label className="w-3/4">
             <textarea
-              className="w-full border-2 text-xl rounded-md my-2 p-2"
+              className="w-full border-2 text-lg rounded-md my-2 p-2"
               placeholder="Message: "
               name="message"
               id="message"
