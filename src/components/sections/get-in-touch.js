@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const GetInTouch = props => (
   <>
-    <div className="w-full h-screen flex items-center justify-center">
+    <div className="w-full min-h-screen flex items-center justify-center">
       <div className=" flex flex-col items-center justify-center font-miriam-mono font-bold md:transform md:scale-150">
         <p className="font-bold text-4xl pl-2">
           {props.data.title}
