@@ -7,10 +7,10 @@ const Contact = props => {
     <div className="w-full overflow-hidden flex items-center justify-between">
       <div className="lg:hidden flex flex-grow flex-col justify-center items-center">
         <div className="transform translate-x-2 flex flex-col items-center py-4">
-          <p className="text-center text-lg font-work-md leading-6  tracking-wider">
+          <p className="text-center text-lg font-work-reg leading-6  tracking-wider">
             {props.data.text1} <br /> {props.data.text2}
           </p>
-          <u className="text-lg font-work-md leading-6  tracking-wider text-center py-3">
+          <u className="text-lg font-work-semi leading-6  tracking-wider text-center py-3">
             {props.data.underline}
           </u>
           <Link
@@ -71,7 +71,7 @@ const Contact = props => {
             <p className="text-2xl py-4 font-work-md leading-6 ">
               {props.data.subtitle}
             </p>
-            <u className="text-xl lg:text-2xl font-work-md leading-6  tracking-wider py-3">
+            <u className="text-xl lg:text-2xl font-work-reg leading-6  tracking-wider py-3">
               {props.data.underline}
             </u>
           </div>
