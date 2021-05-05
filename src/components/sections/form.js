@@ -76,12 +76,14 @@ const Form = props => {
             </u>
           </div>
         </div>
+
         <form
           className="w-1/3 flex flex-col items-center justify-center pt-20"
           method="post"
           netlify-honeypot="bot-field"
           data-netlify="true"
           name="contact"
+          action="/thanks"
         >
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
@@ -114,14 +116,13 @@ const Form = props => {
               rows="7"
             />
           </label>
-          <Link to="/thanks">
-            <button
-              className="text-white font-work-reg tracking-wide leading-5 flex items-center h-8 bg-concrete-green rounded-md px-4 text-center lg:transform lg:scale-125"
-              type="submit"
-            >
-              {props.data.button2}
-            </button>
-          </Link>
+
+          <button
+            className="text-white font-work-reg tracking-wide leading-5 flex items-center h-8 bg-concrete-green rounded-md px-4 text-center lg:transform lg:scale-125"
+            type="submit"
+          >
+            {props.data.button2}
+          </button>
         </form>
       </div>
     </div>
