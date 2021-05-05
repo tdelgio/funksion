@@ -2,7 +2,9 @@ export const data = {
   hero: {
     button1: "/create",
     button2: "/design",
-    button3: "/code",
+    button3: {
+      text1: "/code",
+    },
   },
   create: {
     title1: "/we",
@@ -11,7 +13,7 @@ export const data = {
     title4: "content.",
     text1: "brand & web site ",
     text2: "design",
-    text3: "code",
+    text3: "develop",
     text4: "100%",
   },
   design: {

@@ -5,7 +5,7 @@ const Design = props => {
   return (
     <div
       id="design"
-      className="overflow-hidden w-full lg:h-screen flex items-center font-miriam-mono font-bold"
+      className="overflow-hidden w-full lg:h-screen flex items-center"
     >
       <div className="transform translate-y-24 md:translate-y-0 xl:hidden">
         <StaticImage
@@ -52,7 +52,7 @@ const Design = props => {
                 />
               </svg>
             </div>
-            <p className="font-roboto-bold text-4xl md:text-4xl lg:text-5xl xl:pr-24  xl:text-6xl pl-2">
+            <p className="font-work-bold text-4xl md:text-4xl lg:text-5xl xl:pr-24  xl:text-6xl pl-2">
               {props.data.title1}
               <br />
               {props.data.title2}

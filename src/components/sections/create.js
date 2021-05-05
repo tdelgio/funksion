@@ -3,7 +3,7 @@ import React from "react"
 const Create = props => {
   return (
     <div id="create" className="w-screen h-screen flex justify-center">
-      <div className="w-full flex flex-col max-w-4xl md:flex-row items-center justify-center font-miriam-mono font-bold">
+      <div className="w-full flex flex-col max-w-4xl md:flex-row items-center justify-center font-work-bold">
         <div className="w-3/4 flex items-center justify-center my-4 md:transform md:scale-150">
           <div className="flex flex-col ">
             <div className="md:hidden">
@@ -59,7 +59,7 @@ const Create = props => {
               </svg>
             </div>
           </div>
-          <p className="font-roboto-bold text-4xl pl-2 ">
+          <h1>
             {props.data.title1}
             <br />
             {props.data.title2}
@@ -68,7 +68,7 @@ const Create = props => {
             <br />
             {props.data.title4}
             <br />
-          </p>
+          </h1>
         </div>
         <div className="w-3/4 flex flex-col items-center md:transform md:scale-150 pt-6 lg:pt-8">
           <p className="transform -translate-x-8 translate-y-3  ">
@@ -123,10 +123,10 @@ const Create = props => {
               stroke-width="2"
             />
           </svg>
-          <p className="transform translate-x-20 -translate-y-4 ">
+          <p className="transform translate-x-24 -translate-y-4 ">
             {props.data.text3}
           </p>
-          <p className="font-bold text-5xl transform -translate-y-40 ">
+          <p className="font-work-semi tracking-normal text-5xl transform -translate-y-40">
             {props.data.text4}
           </p>
         </div>

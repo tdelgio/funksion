@@ -8,7 +8,7 @@ const Code = props => {
       className="w-full h-full overflow-hidden md:h-screen flex flex-col xl:flex-row items-center justify-center md:justify-center"
     >
       <div className="w-3/4 lg:w-full flex flex-col lg:flex-row items-center justify-around my-8 ">
-        <div className="flex items-center justify-center font-miriam-mono font-bold ">
+        <div className="flex items-center justify-center font-work-bold ">
           <div className="lg:hidden">
             <svg
               width="11"
@@ -31,7 +31,7 @@ const Code = props => {
               />
             </svg>
           </div>
-          <p className="font-roboto-bold text-4xl md:text-4xl lg:text-5xl 2xl:text-7xl pl-2">
+          <p className="work-bold text-4xl md:text-4xl lg:text-5xl 2xl:text-7xl pl-2">
             {props.data.title1}
             <br />
             {props.data.title2}
@@ -42,27 +42,21 @@ const Code = props => {
         </div>
         <div className="flex flex-col 2xl:w-2/3 lg:flex-row items-center justify-center lg:items-start text-lg tracking-wider leading-6 font-work-reg pt-8 lg:pt-0 lg:space-x-20  2xl:transform 2xl:scale-150 2xl:-translate-x-5">
           <div className="flex flex-col items-center text-center py-8 hover:bg-red-700">
-            <p className="font-miriam-mono font-bold text-4xl lg:text-5xl py-1">
-              100%
-            </p>
+            <p className="font-work-semi text-4xl lg:text-5xl py-1">100%</p>
             <p className="font-work-md">{props.data.lighthouse1.textBlack}</p>
             <p className="text-vitamin-c">
               {props.data.lighthouse1.textYellow}
             </p>
           </div>
           <div className="flex flex-col items-center text-center py-8">
-            <p className="font-miriam-mono font-bold text-4xl lg:text-5xl py-1">
-              100%
-            </p>
+            <p className="font-work-semi text-4xl lg:text-5xl py-1">100%</p>
             <p className="font-work-md">{props.data.lighthouse2.textBlack}</p>
             <p className="text-vitamin-c">
               {props.data.lighthouse2.textYellow}
             </p>
           </div>
           <div className="flex flex-col items-center text-center py-8">
-            <p className="font-miriam-mono font-bold text-4xl lg:text-5xl py-1">
-              100%
-            </p>
+            <p className="font-work-semi text-4xl lg:text-5xl py-1">100%</p>
             <p className="font-work-md">{props.data.lighthouse3.textBlack}</p>
             <p className="text-vitamin-c text-center">
               {props.data.lighthouse3.textYellow1} <br />

@@ -5,8 +5,8 @@ module.exports = {
     fontFamily: {
       "work-reg": "WorkSansReg",
       "work-md": "WorkSansMedium",
-      "miriam-mono": "MiriamMono",
-      "roboto-bold": "Roboto",
+      "work-semi": "WorkSansSemi",
+      "work-bold": "WorkSansBold",
     },
     textColor: {
       white: "#fff",

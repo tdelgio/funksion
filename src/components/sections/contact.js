@@ -63,7 +63,7 @@ const Contact = props => {
             />
           </svg>
           <div className="flex flex-col pl-4">
-            <p className="font-roboto-bold text-5xl pl-2 ">
+            <p className="font-work-bold text-5xl pl-2 ">
               /{props.data.text1}
               <br /> {` `}
               {props.data.text2}
@@ -88,7 +88,7 @@ const Contact = props => {
           <input type="hidden" name="form-name" value="contact" />
           <label className="w-3/4">
             <input
-              className="w-full border-2 font-miriam-mono text-xl rounded-md my-2 p-2"
+              className="w-full border-2 font-work-reg text-xl rounded-md my-2 p-2"
               placeholder="Name: "
               type="text"
               name="name"
@@ -98,7 +98,7 @@ const Contact = props => {
           </label>
           <label className="w-3/4">
             <input
-              className="w-full border-2 font-miriam-mono text-xl rounded-md my-2 p-2"
+              className="w-full border-2 font-work-reg text-xl rounded-md my-2 p-2"
               placeholder="E-mail: "
               type="email"
               name="email"
@@ -108,7 +108,7 @@ const Contact = props => {
           </label>
           <label className="w-3/4">
             <textarea
-              className="w-full border-2 font-miriam-mono text-xl rounded-md my-2 p-2"
+              className="w-full border-2 font-work-reg text-xl rounded-md my-2 p-2"
               placeholder="Message: "
               name="message"
               id="message"

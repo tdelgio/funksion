@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
     <>
       <div className="my-0 p-0">
         <main>{children}</main>
-        <footer className="mt-4 font-miriam-mono text-center lg:text-xl">
+        <footer className="font-work-reg mt-4 text-center lg:text-md">
           © {new Date().getFullYear()}, Built with {"\u2728"}
         </footer>
       </div>

@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 const ThanksPage = () => (
   <Layout>
     <div className="w-full h-screen flex items-center justify-center">
-      <div className=" flex items-center justify-center font-miriam-mono font-bold md:transform md:scale-150">
+      <div className=" flex items-center justify-center font-work-bold md:transform md:scale-150">
         <div className="flex flex-col ">
           <svg
             width="18"

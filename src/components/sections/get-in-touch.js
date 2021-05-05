@@ -4,18 +4,18 @@ import { Link } from "gatsby"
 const GetInTouch = props => (
   <>
     <div className="w-full min-h-screen flex items-center justify-center">
-      <div className=" flex flex-col items-center justify-center font-miriam-mono font-bold md:transform md:scale-150">
-        <p className="font-bold text-4xl pl-2">
+      <div className=" flex flex-col items-center justify-center md:transform md:scale-150">
+        <h1 className="font-work-bold text-4xl pl-2">
           {props.data.title}
-          <p className="font-work-reg text-2xl pl-2 text-autum-orange">
+          <p className="font-work-medium text-2xl pl-2 text-autum-orange">
             {" "}
             {props.data.subtitle1}
             <br />
             {props.data.subtitle2}
           </p>
-        </p>
+        </h1>
         <form
-          className="w-screen md:w-96 flex flex-col items-center justify-center pt-5"
+          className="w-screen md:w-96 flex flex-col items-center justify-center pt-5 font-work-medium"
           method="post"
           netlify-honeypot="bot-field"
           data-netlify="true"
@@ -26,7 +26,7 @@ const GetInTouch = props => (
           <input type="hidden" name="form-name" value="mobile" />
           <label className="w-3/4">
             <input
-              className="w-full border-2 font-miriam-mono text-xl rounded-md my-2 p-2"
+              className="w-full border-2 text-xl rounded-md my-2 p-2"
               placeholder="Name: "
               type="text"
               name="name"
@@ -36,7 +36,7 @@ const GetInTouch = props => (
           </label>
           <label className="w-3/4">
             <input
-              className="w-full border-2 font-miriam-mono text-xl rounded-md my-2 p-2"
+              className="w-full border-2 text-xl rounded-md my-2 p-2"
               placeholder="E-mail: "
               type="email"
               name="email"
@@ -46,7 +46,7 @@ const GetInTouch = props => (
           </label>
           <label className="w-3/4">
             <textarea
-              className="w-full border-2 font-miriam-mono text-xl rounded-md my-2 p-2"
+              className="w-full border-2 text-xl rounded-md my-2 p-2"
               placeholder="Message: "
               name="message"
               id="message"
@@ -61,7 +61,7 @@ const GetInTouch = props => (
             {props.data.button}
           </button>
         </form>
-        <Link className="pt-4 underline text-autum-orange" to="/">
+        <Link className="pt-4 underline font-work-md text-autum-orange" to="/">
           {props.data.goBack}
         </Link>
       </div>

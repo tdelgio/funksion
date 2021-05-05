@@ -1,7 +1,7 @@
 @tailwind base;
 @layer base {
   h1 {
-    @apply text-2xl;
+    @apply font-work-bold text-4xl pl-2;
   }
   h2 {
     @apply text-xl;
@@ -11,6 +11,9 @@
   }
   a {
     text-decoration: none;
+  }
+  p {
+    @apply font-work-reg tracking-wider;
   }
 }
 @tailwind components;
@@ -26,12 +29,12 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "MiriamMono";
-  src: url("../fonts/MiriamMonoCLM-Book.woff2");
+  font-family: "WorkSansSemi";
+  src: url("../fonts/WorkSans-SemiBold.woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/RobotoMono-Regular.woff2");
+  font-family: "WorkSansBold";
+  src: url("../fonts/WorkSans-Bold.woff2");
   font-display: swap;
 }
