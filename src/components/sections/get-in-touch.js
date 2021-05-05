@@ -23,7 +23,7 @@ const GetInTouch = props => (
           action="/thanks"
         >
           <input type="hidden" name="bot-field" />
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="contact mobile" />
           <label className="w-3/4">
             <input
               className="w-full border-2 font-miriam-mono text-xl rounded-md my-2 p-2"
