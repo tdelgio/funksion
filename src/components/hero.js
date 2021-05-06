@@ -6,7 +6,7 @@ const Hero = props => {
   return (
     <>
       <div className="w-screen h-screen flex items-center justify-center">
-        <div className="absolute right-4 top-4 text-navy-blue font-work-reg tracking-wider leading-5 space-x-3">
+        <div className="absolute right-4 top-4 text-navy-blue dark:text-white font-work-reg tracking-wider leading-5 space-x-3">
           <Link to="/">EN</Link>
           <Link to="/spanish">ES</Link>
         </div>

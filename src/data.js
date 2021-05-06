@@ -11,9 +11,9 @@ export const data = {
     title2: "make",
     title3: "visual",
     title4: "content.",
-    text1: "brand & web site ",
+    text1: "brand & website ",
     text2: "design",
-    text3: "develop",
+    text3: "deployment",
     text4: "100%",
   },
   design: {
