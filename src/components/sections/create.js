@@ -102,52 +102,29 @@ const Create = props => {
                 y1="44.6219"
                 x2="97.5239"
                 y2="0.956879"
-                stroke="black"
+                stroke="#24617F"
                 stroke-width="5"
               />
-              <line
-                x1="97.5239"
-                y1="44.6219"
-                x2="97.5239"
-                y2="0.956879"
-                stroke="white"
-                stroke-width="2"
-              />
+
               <line
                 x1="114.297"
                 y1="226"
                 x2="114.297"
                 y2="183.455"
-                stroke="black"
+                stroke="#873A3A"
                 stroke-width="5"
               />
-              <line
-                x1="114.297"
-                y1="226"
-                x2="114.297"
-                y2="183.455"
-                stroke="white"
-                stroke-width="2"
-              />
+
               <path
                 d="M68.0789 2.12732L98.028 2.128"
-                stroke="black"
+                stroke="#24617F"
                 stroke-width="5"
               />
-              <path
-                d="M68.0789 2.12752L98.028 2.128"
-                stroke="white"
-                stroke-width="2"
-              />
+
               <path
                 d="M113.484 225.159L143.433 225.159"
-                stroke="black"
+                stroke="#873A3A"
                 stroke-width="5"
-              />
-              <path
-                d="M113.484 225.159L143.433 225.159"
-                stroke="white"
-                stroke-width="2"
               />
             </svg>
           </div>

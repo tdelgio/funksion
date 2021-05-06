@@ -8,7 +8,7 @@ export const data = {
   },
   create: {
     title1: "/we",
-    title2: "make",
+    title2: "create",
     title3: "visual",
     title4: "content.",
     text1: "brand & website ",
