@@ -2,7 +2,7 @@ import React from "react"
 
 const Create = props => {
   return (
-    <div id="create" className="w-screen h-screen flex justify-center">
+    <div id="create" className="w-screen min-h-screen flex justify-center">
       <div className="w-full flex flex-col max-w-4xl md:flex-row items-center justify-center font-work-bold">
         <div className="w-3/4 flex items-center justify-center my-4 md:transform md:scale-150">
           <div className="flex flex-col ">
