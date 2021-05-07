@@ -25,7 +25,7 @@ export const dataES = {
     project1: "construcción.",
     button1: "a ver",
 
-    project2: "surf.",
+    project2: "construcción.",
     button2: "te gusta?",
 
     project3: "panadería.",
