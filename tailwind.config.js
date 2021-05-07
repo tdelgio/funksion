@@ -26,7 +26,7 @@ module.exports = {
         "autumn-green": "#797E5E",
         "lt-autumn-green": "#A1A77F",
         "concrete-green": "#595D45",
-        "ocean-denim-blue": "#457B92",
+        "ocean-denim-blue": "#3E6E8E",
         "deep-sea": "#254B5B",
         "navy-blue": "#142932",
         "bordeaux-brick": "#BF6363",
@@ -36,6 +36,13 @@ module.exports = {
         "shadow-skin": "#E8D5AD",
         "shadow-skin": "#E8D5AD",
       }),
+      borderColor: {
+        "concrete-green": "#595D45",
+        "navy-blue": "#142932",
+        "royal-bordeaux": "#782F2F",
+        "ocean-denim-blue": "#3E6E8E",
+        "bordeaux-brick": "#BF6363",
+      },
     },
   },
   variants: {

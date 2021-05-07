@@ -24,7 +24,7 @@ export const data = {
     project1: "construction.",
     button1: "check it out",
 
-    project2: "surf.",
+    project2: "construction.",
     button2: "do you like it?",
 
     project3: "bread.",
