@@ -23,7 +23,7 @@ module.exports = {
         "shadow-skin": "#E8D5AD",
       },
       backgroundColor: theme => ({
-        "autumn-green": "#797E5E",
+        "autumn-green": "#727859",
         "lt-autumn-green": "#A1A77F",
         "concrete-green": "#595D45",
         "ocean-denim-blue": "#3E6E8E",

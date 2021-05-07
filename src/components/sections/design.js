@@ -211,7 +211,7 @@ const Design = props => {
               <a
                 href="http://klarc.gatsbyjs.io"
                 target="blank_"
-                className="text-white font-work-reg tracking-wide leading-5 flex items-center h-8 bg-concrete-green rounded-md px-3 text-center"
+                className="text-white font-work-reg tracking-wide leading-5 flex items-center h-8 bg-autumn-green rounded-md px-3 text-center hover:bg-concrete-green"
               >
                 {props.data.button1}
               </a>
@@ -264,7 +264,7 @@ const Design = props => {
               <a
                 href="http://benalcons.netlify.app"
                 target="blank_"
-                className="text-white font-work-reg tracking-wide leading-5  flex items-center h-8 bg-ocean-denim-blue rounded-md px-3 text-center"
+                className="text-white font-work-reg tracking-wide leading-5  flex items-center h-8 bg-ocean-denim-blue rounded-md px-3 text-center hover:bg-deep-sea"
               >
                 {props.data.button2}
               </a>
@@ -314,7 +314,7 @@ const Design = props => {
               <a
                 href="http://barcaza.netlify.app"
                 target="blank_"
-                className="text-white font-work-reg tracking-wide leading-5 flex items-center h-8 bg-bordeaux-brick rounded-md px-3 text-center"
+                className="text-white font-work-reg tracking-wide leading-5 flex items-center h-8 bg-bordeaux-brick rounded-md px-3 text-center hover:bg-royal-bordeaux"
               >
                 {props.data.button3}
               </a>
