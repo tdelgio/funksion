@@ -24,7 +24,7 @@ const Hero = props => {
           <div className="w-1/2 flex flex-col items-center justify-between space-y-4 md:space-y-6 mr-4 md:mr-6 lg:mr-8 border-green-400 font-work-reg tracking-wide text-white">
             <a
               href="#create"
-              className="flex items-end h-full w-full bg-autumn-green rounded-3xl"
+              className="flex items-end h-full w-full bg-autumn-green rounded-3xl hover:bg-concrete-green"
             >
               <p className="ml-2 mb-1 text-2xl md:text-3xl">
                 {props.data.button1}
@@ -32,7 +32,7 @@ const Hero = props => {
             </a>
             <a
               href="#design"
-              className="flex items-end h-full w-full bg-ocean-denim-blue rounded-3xl"
+              className="flex items-end h-full w-full bg-ocean-denim-blue rounded-3xl hover:bg-deep-sea"
             >
               <p className="ml-2 mb-1 text-2xl md:text-3xl">
                 {props.data.button2}
@@ -40,7 +40,7 @@ const Hero = props => {
             </a>
             <a
               href="#code"
-              className="flex items-end h-full w-full bg-bordeaux-brick rounded-3xl"
+              className="flex items-end h-full w-full bg-bordeaux-brick rounded-3xl hover:bg-royal-bordeaux"
             >
               <p className="ml-2 mb-1 text-2xl md:text-3xl">
                 {props.data.button3.text1}
