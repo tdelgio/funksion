@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Hero = props => {
   return (
@@ -22,24 +23,25 @@ const Hero = props => {
             />
           </div>
           <div className="w-1/2 flex flex-col items-center justify-between space-y-4 md:space-y-6 mr-4 md:mr-6 lg:mr-8 border-green-400 font-work-reg tracking-wide text-white">
-            <a
-              href="#create"
+            <button
+              onClick={() => scrollTo("#create")}
               className="flex items-end h-full w-full bg-autumn-green rounded-3xl hover:bg-concrete-green"
             >
               <p className="ml-2 mb-1 text-2xl md:text-3xl">
                 {props.data.button1}
               </p>
-            </a>
-            <a
-              href="#design"
+            </button>
+
+            <button
+              onClick={() => scrollTo("#design")}
               className="flex items-end h-full w-full bg-ocean-denim-blue rounded-3xl hover:bg-deep-sea"
             >
               <p className="ml-2 mb-1 text-2xl md:text-3xl">
                 {props.data.button2}
               </p>
-            </a>
-            <a
-              href="#code"
+            </button>
+            <button
+              onClick={() => scrollTo("#code")}
               className="flex items-end h-full w-full bg-bordeaux-brick rounded-3xl hover:bg-royal-bordeaux"
             >
               <p className="ml-2 mb-1 text-2xl md:text-3xl">
@@ -47,7 +49,7 @@ const Hero = props => {
                 <br />
                 {props.data.button3.text2}
               </p>
-            </a>
+            </button>
           </div>
         </div>
       </div>
