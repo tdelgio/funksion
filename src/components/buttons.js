@@ -293,7 +293,7 @@ export const ToggleOn = () => {
 export const ButtonCTAWhite = props => {
   return (
     <>
-      <button className="button w-72 h-10 border border-black bg-white z-10 text-black">
+      <button className="button w-72 h-8 border border-black bg-white z-10 text-black">
         {props.text}
       </button>
     </>
@@ -302,7 +302,7 @@ export const ButtonCTAWhite = props => {
 export const ButtonCTAOrange = props => {
   return (
     <>
-      <button className="button w-72 h-10  bg-brand text-white">
+      <button className="button w-72 h-8  bg-brand text-white">
         {props.text}
       </button>
     </>

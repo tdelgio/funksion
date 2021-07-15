@@ -21,7 +21,7 @@ const Hero = props => {
   return (
     <div className="h-screen">
       <ButtonDropdownIcon />
-      <div className="h-full flex flex-col items-center justify-center space-y-2 text-center">
+      <div className="h-full flex flex-col items-center justify-center text-center space-y-4">
         <LogoMobile />
         <h3>
           We design & <br />
@@ -31,9 +31,10 @@ const Hero = props => {
           We design and develop responsive,
           <br /> fast and user-friendly websites.
         </p>
-
-        <ButtonCTAWhite text="Get in touch" />
-        <ButtonCTAOrange text="Find out more" />
+        <div className="space-y-2">
+          <ButtonCTAWhite text="Get in touch" />
+          <ButtonCTAOrange text="Find out more" />
+        </div>
       </div>
       <div className="opacity-60">
         <HeroPattern />
