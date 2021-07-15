@@ -11,9 +11,9 @@ import PropTypes from "prop-types"
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="my-0 p-0 dark:bg-black dark:text-white">
+      <div className="my-0 p-0">
         <main>{children}</main>
-        <footer className="font-work-reg mt-4 text-center lg:text-md">
+        <footer className="text-center lg:text-md">
           © {new Date().getFullYear()}, Built with {"\u2728"}
         </footer>
       </div>

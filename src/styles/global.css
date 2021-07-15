@@ -1,19 +1,22 @@
 @tailwind base;
 @layer base {
+  body {
+    @apply font-work-reg text-base;
+  }
   h1 {
-    @apply font-work-bold text-4xl pl-2;
+    @apply font-work-bold text-6xl tracking-tight;
   }
   h2 {
-    @apply text-xl;
+    @apply font-work-bold text-5xl tracking-tight;
   }
   h3 {
-    @apply text-lg;
+    @apply font-work-bold text-2xl tracking-tight;
+  }
+  h4 {
+    @apply font-work-reg text-2xl;
   }
   a {
     text-decoration: none;
-  }
-  p {
-    @apply font-work-reg tracking-wider;
   }
 }
 @tailwind components;
@@ -32,4 +35,18 @@
   font-family: "WorkSansBold";
   src: url("../fonts/WorkSans-Bold.woff2");
   font-display: swap;
+}
+@layer utilities {
+  .strong {
+    @apply font-work-semi text-base;
+  }
+  .small {
+    @apply font-work-reg text-sm;
+  }
+  .button {
+    @apply font-work-semi text-center text-sm tracking-wider shadow-md rounded-md;
+  }
+  .small-button {
+    @apply font-work-semi text-xs tracking-tight;
+  }
 }
