@@ -1,49 +1,44 @@
 import React from "react"
 
-import Logo from "./logo"
+import LogoMobile from "./logo"
+import { HeroPattern } from "./patterns"
 import {
+  ButtonCTAWhite,
+  ButtonCTAOrange,
   ButtonCompact,
   ButtonMedium,
   ButtonLarge,
   ButtonOutline,
   ButtonDisabled,
   ButtonDropdown,
+  ButtonDropdownIcon,
   ButtonIcon,
   ButtonIconOnly,
   ToggleOn,
 } from "./buttons"
-import {} from "./icons"
 
 const Hero = props => {
   return (
-    <>
-      <div className="space-y-4">
-        <Logo />
-        <h1>Title 1</h1>
-        <h2>Headline 2</h2>
-        <h3>Headline 3</h3>
-        <h4>Big Copy</h4>
-        <p>Body Copy</p>
-        <p className="strong">Strong text</p>
-        <p className="small">Small text</p>
-      </div>
+    <div className="h-screen">
+      <ButtonDropdownIcon />
+      <div className="h-full flex flex-col items-center justify-center space-y-2 text-center">
+        <LogoMobile />
+        <h3>
+          We design & <br />
+          develop websites.
+        </h3>
+        <p>
+          We design and develop responsive,
+          <br /> fast and user-friendly websites.
+        </p>
 
-      <div className="flex space-x-4 my-4">
-        <ButtonCompact text="Button text" />
-        <ButtonMedium text="Button text" />
-        <ButtonLarge text="Button text" />
-        <ButtonIcon text="Button text" />
+        <ButtonCTAWhite text="Get in touch" />
+        <ButtonCTAOrange text="Find out more" />
       </div>
-      <div className="flex space-x-4 my-4">
-        <ButtonDisabled text="Button text" />
-        <ButtonOutline text="Button text" />
-        <ButtonDropdown text="Option" />
+      <div className="opacity-60">
+        <HeroPattern />
       </div>
-      <div className="flex space-x-4 my-4">
-        <ButtonIconOnly text="Button text" />
-        <ToggleOn />
-      </div>
-    </>
+    </div>
   )
 }
 

@@ -82,6 +82,40 @@ export const ButtonDropdown = props => {
   )
 }
 
+export const ButtonDropdownIcon = props => {
+  const [display, setDisplay] = useState("hidden")
+  return (
+    <div className="relative top-3 flex flex-col pl-3">
+      <button
+        type={props.type}
+        className="button flex justify-around items-center w-10 h-8 bg-white text-black border border-black"
+        onClick={() =>
+          display === "hidden" ? setDisplay("block") : setDisplay("hidden")
+        }
+      >
+        <svg
+          width="25"
+          height="24"
+          viewBox="0 0 25 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19.6293 9L12.1293 16.5L4.62927 9"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <div className={display} onClick={() => setDisplay("hidden")}>
+        <Dropdown />
+      </div>
+    </div>
+  )
+}
+
 export const ButtonIcon = props => {
   return (
     <button
@@ -252,6 +286,25 @@ export const ToggleOn = () => {
       <div className="flex items-center w-11 h-6 bg-gray-200 rounded-full p-0.5">
         <div className="flex items-center transform translate-x-5 justify-center w-5 h-5 bg-white rounded-full" />
       </div>
+    </>
+  )
+}
+
+export const ButtonCTAWhite = props => {
+  return (
+    <>
+      <button className="button w-72 h-10 border border-black bg-white z-10 text-black">
+        {props.text}
+      </button>
+    </>
+  )
+}
+export const ButtonCTAOrange = props => {
+  return (
+    <>
+      <button className="button w-72 h-10  bg-brand text-white">
+        {props.text}
+      </button>
     </>
   )
 }
