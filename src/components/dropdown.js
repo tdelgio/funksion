@@ -2,7 +2,7 @@ import React from "react"
 
 const Dropdown = () => {
   return (
-    <div className="h-screen backdrop-filter backdrop-blur-sm w-screen pt-1 z-10">
+    <div className="absolute h-screen w-screen backdrop-filter backdrop-blur-sm pt-1 z-10">
       <svg
         width="233"
         height="244"
