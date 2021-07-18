@@ -3,12 +3,12 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import DesignSystem from "../components/draft"
+import Draft from "../components/draft"
 
 const DesignPage = () => (
   <Layout>
     <SEO title="Design System" />
-    <DesignSystem />
+    <Draft />
   </Layout>
 )
 

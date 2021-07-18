@@ -21,9 +21,14 @@ export const ButtonMedium = props => {
 
 export const ButtonLarge = props => {
   return (
-    <button type={props.type} className="button w-32 h-10 bg-brand text-white">
-      {props.text}
-    </button>
+    <Link to={props.to}>
+      <button
+        type={props.type}
+        className="button w-32 h-10 bg-brand text-white"
+      >
+        {props.text}
+      </button>
+    </Link>
   )
 }
 

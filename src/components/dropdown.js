@@ -20,7 +20,7 @@ export const Dropdown = () => {
         <LinkStyled to="/" text="Hello" />
         <LinkStyled to="/comingsoon" text="Our Team" />
         <LinkStyled to="/comingsoon" text="How do we work" />
-        <LinkStyled to="/comingsoon" text="Design System" />
+        <LinkStyled to="/design" text="Design System" />
         <LinkStyled to="/comingsoon" text="Development" />
         <LinkStyled to="/comingsoon" text="Contact us" />
       </div>
@@ -30,9 +30,11 @@ export const Dropdown = () => {
 
 export const DropdownWork = () => {
   return (
-    <div className="absolute top-16 link w-60 flex flex-col space-y-2 text-black text-center border border-black bg-white rounded-lg p-2 shadow-md">
-      <LinkStyled to="/comingsoon" text="Design System" />
-      <LinkStyled to="/" text="Development" />
+    <div className="absolute h-40 w-screen pt-1 z-10">
+      <div className="top-16 link w-60 flex flex-col space-y-2 text-black text-center border border-black bg-white rounded-lg p-2 shadow-md">
+        <LinkStyled to="/design" text="Design System" />
+        <LinkStyled to="/" text="Development" />
+      </div>
     </div>
   )
 }
