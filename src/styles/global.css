@@ -1,7 +1,7 @@
 @tailwind base;
 @layer base {
   body {
-    @apply font-work-reg text-base;
+    @apply font-work-reg text-base leading-6;
   }
   h1 {
     @apply font-work-bold text-6xl tracking-tight;
@@ -10,7 +10,7 @@
     @apply font-work-bold text-5xl tracking-tight;
   }
   h3 {
-    @apply font-work-bold text-2xl tracking-tight;
+    @apply font-work-bold text-2xl tracking-tight leading-6;
   }
   h4 {
     @apply font-work-reg text-2xl;

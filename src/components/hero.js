@@ -1,6 +1,6 @@
 import React from "react"
 
-import LogoMobile from "./logo"
+import { Logo, LogoMobile } from "./logo"
 import { HeroPattern } from "./patterns"
 import {
   ButtonCTAWhite,
@@ -19,27 +19,57 @@ import {
 
 const Hero = props => {
   return (
-    <div className="h-screen">
-      <ButtonDropdownIcon />
-      <div className="h-full flex flex-col items-center justify-center text-center space-y-4">
-        <LogoMobile />
-        <h3>
-          We design & <br />
-          develop websites.
-        </h3>
-        <p>
-          We design and develop responsive,
-          <br /> fast and user-friendly websites.
-        </p>
-        <div className="space-y-2">
-          <ButtonCTAWhite text="Get in touch" />
-          <ButtonCTAOrange text="Find out more" />
+    <>
+      <div className="relative h-screen w-full">
+        <ButtonDropdownIcon className="md:hidden" />
+        <div className="transform sm:scale-125 md:scale-150 lg:scale-100 h-full flex flex-col items-center justify-center space-y-4">
+          <div className="w-full max-w-6xl">
+            <div className="w-full lg:flex lg:items-center lg:justify-around text-center lg:text-justify transform xl:scale-125  ">
+              <div className="mb-6">
+                <LogoMobile />
+                <Logo />
+              </div>
+              <div className="w-full lg:w-auto">
+                {/* Title Mobile */}
+                <div className="py-2">
+                  <h3 className="lg:hidden transform md:scale-125">
+                    We design & <br />
+                    develop websites.
+                  </h3>
+                  {/* Title Desktop */}
+                  <h1 className="hidden lg:block">
+                    We design & <br />
+                    develop websites.
+                  </h1>
+                </div>
+                <div className="py-2">
+                  {/*Description Mobile */}
+                  <p className="lg:hidden">
+                    We design and develop responsive,
+                    <br />
+                    fast and user-friendly websites.
+                  </p>
+                  {/* Description Desktop */}
+                  <p className="hidden font-work-reg text-xl lg:block">
+                    We design and develop responsive, fast and
+                    <br />
+                    user-friendly websites.
+                  </p>
+                </div>
+                <div className="mt-4 lg:hidden space-y-3 flex flex-col items-center justify-center">
+                  <ButtonCTAWhite text="Get in touch" />
+                  <ButtonCTAOrange text="Find out more" />
+                </div>
+                <div className="mt-4 hidden lg:flex space-x-4">
+                  <ButtonOutline text="Get in touch" />
+                  <ButtonMedium text="Find out more" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="opacity-60">
-        <HeroPattern />
-      </div>
-    </div>
+    </>
   )
 }
 

@@ -85,7 +85,7 @@ export const ButtonDropdown = props => {
 export const ButtonDropdownIcon = props => {
   const [display, setDisplay] = useState("hidden")
   return (
-    <div className="absolute top-3 flex flex-col pl-3">
+    <div className="absolute top-3 flex flex-col pl-3 ">
       <button
         type={props.type}
         className="button flex justify-around items-center w-10 h-8 bg-white text-black border border-black"
@@ -293,7 +293,7 @@ export const ToggleOn = () => {
 export const ButtonCTAWhite = props => {
   return (
     <>
-      <button className="button w-72 h-8 border border-black bg-white z-10 text-black">
+      <button className="button w-72 h-9 border border-black bg-white text-black">
         {props.text}
       </button>
     </>
@@ -302,7 +302,7 @@ export const ButtonCTAWhite = props => {
 export const ButtonCTAOrange = props => {
   return (
     <>
-      <button className="button w-72 h-8  bg-brand text-white">
+      <button className="button w-72 h-9  bg-brand text-white">
         {props.text}
       </button>
     </>

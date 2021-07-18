@@ -8,6 +8,9 @@ module.exports = {
       "work-bold": "WorkSansBold",
     },
     extend: {
+      screens: {
+        sm: "370px",
+      },
       colors: {
         //brand-colors
         brand: "#E09143",
