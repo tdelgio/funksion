@@ -24,7 +24,7 @@ export const ButtonLarge = props => {
     <Link to={props.to}>
       <button
         type={props.type}
-        className="button w-32 h-10 bg-brand text-white"
+        className="button w-32 h-10 bg-brand text-white z-50"
       >
         {props.text}
       </button>
@@ -92,9 +92,9 @@ export const ButtonDropdown = props => {
 export const ButtonDropdownNav = props => {
   const [display, setDisplay] = useState("hidden")
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-52">
       <button
-        className="link flex justify-around items-center bg-white text-black"
+        className="link flex justify-around items-center bg-white text-black "
         onClick={() =>
           display === "hidden" ? setDisplay("block") : setDisplay("hidden")
         }
