@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { Logo, LogoMobile } from "./logo"
-import { HeroPattern } from "./patterns"
+import { HeroPattern, MobilePattern } from "./patterns"
 import {
   ButtonCTAWhite,
   ButtonCTAOrange,
@@ -21,9 +21,12 @@ import {
 const Hero = props => {
   return (
     <>
-      <div className="relative h-screen w-full">
+      <div className="lg:hidden absolute right-0 bottom-0">
+        <MobilePattern />
+      </div>
+      <div className="h-screen w-full">
         <div className="transform sm:scale-125 md:scale-150 lg:scale-100 h-full flex flex-col items-center justify-center space-y-4">
-          <div className="w-full max-w-6xl">
+          <div className="md:w-full md:max-w-6xl ">
             <div className="w-full lg:flex lg:items-center lg:justify-around text-center lg:text-justify transform xl:scale-125  ">
               <div className="mb-6">
                 <LogoMobile />
@@ -75,6 +78,9 @@ const Hero = props => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="hidden md:block absolute right-0 bottom-0">
+          <HeroPattern />
         </div>
       </div>
     </>
