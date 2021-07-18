@@ -11,11 +11,11 @@ import {
   ButtonDropdownIcon,
   ButtonIcon,
   ButtonIconOnly,
+  ButtonDropdownNav,
   ToggleOn,
 } from "./buttons"
-import {} from "./icons"
 
-const Draft = props => {
+const DesignSystem = () => {
   return (
     <>
       <div className="space-y-4">
@@ -28,25 +28,8 @@ const Draft = props => {
         <p className="strong">Strong text</p>
         <p className="small">Small text</p>
       </div>
-
-      <div className="flex space-x-4 my-4">
-        <ButtonCompact text="Button text" />
-        <ButtonMedium text="Button text" />
-        <ButtonLarge text="Button text" />
-        <ButtonIcon text="Button text" />
-      </div>
-      <div className="flex space-x-4 my-4">
-        <ButtonDisabled text="Button text" />
-        <ButtonOutline text="Button text" />
-        <ButtonDropdown text="Option" />
-        <ButtonDropdownIcon />
-      </div>
-      <div className="flex space-x-4 my-4">
-        <ButtonIconOnly />
-        <ToggleOn />
-      </div>
     </>
   )
 }
 
-export default Draft
+export default DesignSystem

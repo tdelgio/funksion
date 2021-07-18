@@ -1,5 +1,7 @@
 import React, { useState } from "react"
-import Dropdown from "./dropdown"
+import { Link } from "gatsby"
+
+import { Dropdown, DropdownWork } from "./dropdown"
 
 export const ButtonCompact = props => {
   return (
@@ -77,6 +79,41 @@ export const ButtonDropdown = props => {
       </button>
       <div className={display}>
         <Dropdown />
+      </div>
+    </div>
+  )
+}
+
+export const ButtonDropdownNav = props => {
+  const [display, setDisplay] = useState("hidden")
+  return (
+    <div className="flex flex-col">
+      <button
+        className="link flex justify-around items-center bg-white text-black"
+        onClick={() =>
+          display === "hidden" ? setDisplay("block") : setDisplay("hidden")
+        }
+      >
+        {props.text}
+        <svg
+          className="ml-1"
+          width="25"
+          height="24"
+          viewBox="0 0 25 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19.6293 9L12.1293 16.5L4.62927 9"
+            stroke="#E09143"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <div className={display}>
+        <DropdownWork />
       </div>
     </div>
   )

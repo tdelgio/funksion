@@ -6,9 +6,9 @@ import SEO from "../components/seo"
 
 import { ButtonLarge } from "../components/buttons"
 
-const NotFoundPage = () => (
+const ComingSoonPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <SEO title="CoomingSoon" />
     <div className="h-screen flex flex-col items-center justify-center space-y-4 text-center">
       <h1>Under Construction...</h1>
       <h4>
@@ -23,4 +23,4 @@ const NotFoundPage = () => (
   </Layout>
 )
 
-export default NotFoundPage
+export default ComingSoonPage

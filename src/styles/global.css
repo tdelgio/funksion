@@ -52,4 +52,7 @@
   .link {
     @apply font-work-semi text-base tracking-wider;
   }
+  .active {
+    @apply bg-brand text-white border hover:border-brand;
+  }
 }
