@@ -8,10 +8,13 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
+import Navbar from "./navbar"
+
 const Layout = ({ children }) => {
   return (
     <>
       <div className="my-0 p-0">
+        <Navbar />
         <main>{children}</main>
         <footer className="text-center lg:text-md">
           © {new Date().getFullYear()}, Built with {"\u2728"}

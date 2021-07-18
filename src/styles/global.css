@@ -1,7 +1,7 @@
 @tailwind base;
 @layer base {
   body {
-    @apply font-work-reg text-base leading-6;
+    @apply font-work-reg text-base leading-6 dark:text-white dark:bg-information;
   }
   h1 {
     @apply font-work-bold text-6xl tracking-tight;
@@ -48,5 +48,8 @@
   }
   .small-button {
     @apply font-work-semi text-xs tracking-tight;
+  }
+  .link {
+    @apply font-work-semi text-base tracking-wider;
   }
 }

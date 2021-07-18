@@ -85,10 +85,10 @@ export const ButtonDropdown = props => {
 export const ButtonDropdownIcon = props => {
   const [display, setDisplay] = useState("hidden")
   return (
-    <div className="absolute top-3 flex flex-col pl-3 ">
+    <div className="absolute top-3 flex flex-col pl-3 lg:hidden">
       <button
         type={props.type}
-        className="button flex justify-around items-center w-10 h-8 bg-white text-black border border-black"
+        className="button flex justify-around items-center w-10 h-8 bg-white text-black border border-black z-50"
         onClick={() =>
           display === "hidden" ? setDisplay("block") : setDisplay("hidden")
         }

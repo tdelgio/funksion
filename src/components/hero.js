@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import { Logo, LogoMobile } from "./logo"
 import { HeroPattern } from "./patterns"
@@ -21,7 +22,6 @@ const Hero = props => {
   return (
     <>
       <div className="relative h-screen w-full">
-        <ButtonDropdownIcon className="md:hidden" />
         <div className="transform sm:scale-125 md:scale-150 lg:scale-100 h-full flex flex-col items-center justify-center space-y-4">
           <div className="w-full max-w-6xl">
             <div className="w-full lg:flex lg:items-center lg:justify-around text-center lg:text-justify transform xl:scale-125  ">
@@ -57,12 +57,20 @@ const Hero = props => {
                   </p>
                 </div>
                 <div className="mt-4 lg:hidden space-y-3 flex flex-col items-center justify-center">
-                  <ButtonCTAWhite text="Get in touch" />
-                  <ButtonCTAOrange text="Find out more" />
+                  <Link to="/comingsoon">
+                    <ButtonCTAWhite text="Get in touch" />
+                  </Link>
+                  <Link to="/comingsoon">
+                    <ButtonCTAOrange text="Find out more" />
+                  </Link>
                 </div>
                 <div className="mt-4 hidden lg:flex space-x-4">
-                  <ButtonOutline text="Get in touch" />
-                  <ButtonMedium text="Find out more" />
+                  <Link to="/comingsoon">
+                    <ButtonOutline text="Get in touch" />
+                  </Link>
+                  <Link to="/comingsoon">
+                    <ButtonMedium text="Find out more" />
+                  </Link>
                 </div>
               </div>
             </div>
