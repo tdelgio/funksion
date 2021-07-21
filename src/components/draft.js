@@ -50,7 +50,6 @@ const Draft = () => {
       <div>
         <CardTD />
       </div>
-
       <ButtonLarge to="/" text="Home" />
     </div>
   )
