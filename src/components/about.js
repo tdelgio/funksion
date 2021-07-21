@@ -19,7 +19,7 @@ const About = () => {
             vissualy appealing result.
           </h4>
         </div>
-        <div className="mx-auto w-full lg:flex">
+        <div className="mx-auto w-full lg:flex lg:items-center">
           <CardTD />
           <CardLD />
         </div>

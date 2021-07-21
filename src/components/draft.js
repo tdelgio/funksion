@@ -1,7 +1,7 @@
 import React from "react"
 
 import { Logo, LogoMobile } from "./logo"
-import Card from "./cards"
+import { CardTD } from "./cards"
 import {
   ButtonCompact,
   ButtonMedium,
@@ -47,9 +47,10 @@ const Draft = () => {
         <ButtonIconOnly />
         <ToggleOn />
       </div>
-      <div className="py-2">
-        <Card />
+      <div>
+        <CardTD />
       </div>
+
       <ButtonLarge to="/" text="Home" />
     </div>
   )
