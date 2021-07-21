@@ -13,7 +13,10 @@ export const ButtonCompact = props => {
 
 export const ButtonMedium = props => {
   return (
-    <button type={props.type} className="button w-32 h-8 bg-brand text-white">
+    <button
+      type={props.type}
+      className="button w-auto h-8 bg-brand text-white px-8 z-10"
+    >
       {props.text}
     </button>
   )
@@ -24,7 +27,7 @@ export const ButtonLarge = props => {
     <Link to={props.to}>
       <button
         type={props.type}
-        className="button w-32 h-10 bg-brand text-white z-50"
+        className="button h-10 bg-brand text-white z-50"
       >
         {props.text}
       </button>
@@ -298,7 +301,7 @@ export const ToggleOn = () => {
 export const ButtonCTAWhite = props => {
   return (
     <>
-      <button className="button w-72 h-9 border border-black bg-white text-black z-20">
+      <button className="button w-72 h-9 border border-black bg-white text-black ">
         {props.text}
       </button>
     </>

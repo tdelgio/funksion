@@ -10,7 +10,7 @@ const Hero = props => {
     <div className="flex items-center justify-center min-h-screen w-full">
       {/* Mobile */}
       <div className="xl:hidden">
-        <div className="text-center space-y-3 border sm:transform sm:scale-125 md:scale-150">
+        <div className="text-center space-y-3 sm:transform sm:scale-125 md:scale-150">
           <LogoMobile />
           <h3 className="">
             We design & <br />

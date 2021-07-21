@@ -4,16 +4,12 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { MobilePattern } from "../components/patterns"
-
 import { ButtonOutline } from "../components/buttons"
 
 const ComingSoonPage = () => (
   <Layout>
     <SEO title="CoomingSoon" />
-    <span className="lg:hidden absolute top-0 right-0">
-      <MobilePattern />
-    </span>
+    <span className="lg:hidden absolute top-0 right-0"></span>
     <div className="h-screen flex flex-col items-center justify-center space-y-4 text-center">
       <h1 className="hidden lg:block">
         This site is under <br /> construction.

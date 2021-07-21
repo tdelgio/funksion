@@ -15,7 +15,7 @@ const IndexPage = () => (
     <SEO title="Funksion" />
     <Hero />
     <Hello />
-    <Ready />
+
     {/* <Create />
     <Design/>
     <Code/>
