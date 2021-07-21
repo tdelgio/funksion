@@ -1,6 +1,7 @@
 import React from "react"
 
 import { Logo, LogoMobile } from "./logo"
+import Card from "./cards"
 import {
   ButtonCompact,
   ButtonMedium,
@@ -29,7 +30,6 @@ const Draft = () => {
         <p className="strong">Strong text</p>
         <p className="small">Small text</p>
       </div>
-
       <div className="flex flex-col md:flex-row space-y-2 md:space-x-4 md:space-y-0 my-2 ">
         <ButtonCompact text="Button text" />
         <ButtonMedium text="Button text" />
@@ -46,6 +46,9 @@ const Draft = () => {
       <div className="flex space-x-4 my-4">
         <ButtonIconOnly />
         <ToggleOn />
+      </div>
+      <div className="py-2">
+        <Card />
       </div>
       <ButtonLarge to="/" text="Home" />
     </div>

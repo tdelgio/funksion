@@ -1,10 +1,10 @@
 @tailwind base;
 @layer base {
   body {
-    @apply font-work-reg text-base leading-6 dark:text-white dark:bg-information;
+    @apply font-work-reg text-base leading-6 dark:text-white dark:bg-information overflow-x-hidden;
   }
   h1 {
-    @apply font-work-bold text-6xl tracking-tight;
+    @apply font-work-bold text-6xl tracking-tight xl:leading-none;
   }
   h2 {
     @apply font-work-bold text-5xl tracking-tight;

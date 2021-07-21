@@ -2,7 +2,7 @@ import React from "react"
 
 export const LogoMobile = () => {
   return (
-    <div className="block transform lg:hidden">
+    <div className="block transform xl:hidden">
       <svg
         className="mx-auto"
         width="232"
@@ -89,7 +89,7 @@ export const LogoMobile = () => {
 
 export const Logo = () => {
   return (
-    <div className="hidden lg:block">
+    <div className="hidden xl:block">
       <svg
         className="mx-auto lg:m-0"
         width="400"

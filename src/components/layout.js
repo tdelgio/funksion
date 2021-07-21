@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
       <div className="my-0 p-0">
         <Navbar />
         <main>{children}</main>
-        <footer className="text-center lg:text-md">
+        <footer className="block text-center lg:text-md">
           © {new Date().getFullYear()}, Built with {"\u2728"}
         </footer>
       </div>

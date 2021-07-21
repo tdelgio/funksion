@@ -38,6 +38,15 @@ module.exports = {
       letterSpacing: {
         tightest: "-0.125em",
       },
+      boxShadow: {
+        card: "1px 1px 2px rgba(0, 0, 0, 0.4)",
+      },
+      borderWidth: {
+        card: "0.5px",
+      },
+      backgroundImage: {
+        "hero-bg": "url('/src/images/hero-pattern.svg')",
+      },
     },
   },
   variants: {
