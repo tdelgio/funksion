@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Hello from "../components/hello"
-import Ready from "../components/ready"
+import About from "../components/about"
 // import Create from "../components/sections/create"
 // import Design from "../components/sections/design"
 // import Code from "../components/sections/code"
@@ -15,7 +15,7 @@ const IndexPage = () => (
     <SEO title="Funksion" />
     <Hero />
     <Hello />
-
+    <About />
     {/* <Create />
     <Design/>
     <Code/>

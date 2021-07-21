@@ -35,8 +35,8 @@ const Hero = () => {
       </div>
       {/* Desktop */}
       <div className="hidden xl:block xl:flex xl:items-center justify-around w-full mx-auto max-w-7xl ">
-        <div className="space-y-4 p-4 transform 2xl:scale-125">
-          <p className="bg-clip-text text-transparent bg-gradient-to-r from-brand to-black">
+        <div className="space-y-4 p-4 ">
+          <p className="bg-clip-text text-transparent bg-gradient-to-r from-brand via-black to-black">
             Everything you need.
           </p>
           <h1>
@@ -53,7 +53,7 @@ const Hero = () => {
             <ButtonMedium text="I want my website" />
           </div>
         </div>
-        <HelloPattern />
+        <HelloPattern className="pl-8" />
       </div>
     </>
   )

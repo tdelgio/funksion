@@ -27,7 +27,7 @@ export const ButtonLarge = props => {
     <Link to={props.to}>
       <button
         type={props.type}
-        className="button h-10 bg-brand text-white z-50"
+        className="button h-10 bg-brand text-white px-8 z-50"
       >
         {props.text}
       </button>
@@ -163,7 +163,7 @@ export const ButtonDropdownIcon = props => {
 
 export const ButtonIcon = props => {
   return (
-    <button className="button flex justify-center items-center w-full max-w-xs mx-3 h-8 bg-brand text-white border">
+    <button className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8 bg-brand text-white border">
       {props.text}
       <svg
         className="ml-3"
