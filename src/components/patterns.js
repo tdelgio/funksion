@@ -207,31 +207,9 @@ export const HeroPattern = () => {
 }
 
 export const HelloPattern = () => {
-  return (
-    <div className="relative max-w-screen min-h-screen">
-      <StaticImage
-        src="../images/mobile.png"
-        width={300}
-        height={533}
-        alt="background pattern"
-        placeholder="tracedSVG"
-        className="absolute right-0 bottom-0 opacity-50"
-      />
-    </div>
-  )
+  return <div className="relative max-w-screen min-h-screen"></div>
 }
 
 export const ReadyPattern = () => {
-  return (
-    <div className="relative h-screen my-4">
-      <StaticImage
-        src="../images/ready.png"
-        width={1280}
-        height={291}
-        alt="background pattern"
-        placeholder="tracedSVG"
-        className="absolute right-0 bottom-0"
-      />
-    </div>
-  )
+  return <div className="relative h-screen my-4"></div>
 }
