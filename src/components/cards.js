@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { ButtonIcon } from "./buttons"
+import { ButtonIcon, ButtonLink } from "./buttons"
 
 export const CardTD = props => {
   return (
@@ -21,7 +21,7 @@ export const CardTD = props => {
           build some cool things!
         </p>
         <div className="w-full px-6 lg:px-10">
-          <ButtonIcon text="Check out my portfolio" />
+          <ButtonLink text="Check out my portfolio" />
         </div>
       </div>
     </>
@@ -47,7 +47,7 @@ export const CardLD = props => {
           leave. Nature is my main muse.
         </p>
         <div className="w-full px-6 lg:px-10">
-          <ButtonIcon text="Say Hi" />
+          <ButtonLink text="Say Hi" />
         </div>
       </div>
     </>
