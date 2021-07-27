@@ -2,9 +2,10 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../components/hero"
-import Hello from "../components/hello"
-import About from "../components/about"
+import Hero from "../components/sections/hero"
+import Hello from "../components/sections/hello"
+import About from "../components/sections/about"
+import Work from "../components/sections/work"
 // import Create from "../components/sections/create"
 // import Design from "../components/sections/design"
 // import Code from "../components/sections/code"
@@ -16,10 +17,7 @@ const IndexPage = () => (
     <Hero />
     <Hello />
     <About />
-    {/* <Create />
-    <Design/>
-    <Code/>
-    <Contact  /> */}
+    <Work />
   </Layout>
 )
 

@@ -1,6 +1,6 @@
 import React from "react"
 
-import { CardTD, CardLD } from "./cards"
+import { CardTD, CardLD } from "../cards"
 
 const About = () => {
   return (

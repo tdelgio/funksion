@@ -1,6 +1,6 @@
 import * as React from "react"
-import { ButtonMedium, ButtonLink } from "./buttons"
-import { HelloPattern } from "./patterns"
+import { ButtonMedium, ButtonLink } from "../buttons"
+import { HelloPattern } from "../patterns"
 
 const Hero = () => {
   return (
@@ -25,8 +25,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="z-10">
-              {/* <ButtonMedium text="I want my website" /> */}
-              <ButtonLink />
+              <ButtonMedium text="I want my website" />
             </div>
           </div>
           <div className="relative bottom-72 left-48 opacity-30 -mb-72">

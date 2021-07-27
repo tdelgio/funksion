@@ -21,7 +21,7 @@ export const CardTD = props => {
           build some cool things!
         </p>
         <div className="w-full px-6 lg:px-10">
-          <ButtonLink text="Check out my portfolio" />
+          <ButtonIcon text="Check out my portfolio" />
         </div>
       </div>
     </>
@@ -47,7 +47,7 @@ export const CardLD = props => {
           leave. Nature is my main muse.
         </p>
         <div className="w-full px-6 lg:px-10">
-          <ButtonLink text="Say Hi" />
+          <ButtonIcon text="Say Hi" />
         </div>
       </div>
     </>

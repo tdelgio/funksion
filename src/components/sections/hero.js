@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Logo, LogoMobile } from "./logo"
-import { HeroPattern } from "./patterns"
-import { ButtonCTAOrange, ButtonCTAWhite, ButtonLink } from "./buttons"
+import { Logo, LogoMobile } from "../logo"
+import { HeroPattern } from "../patterns"
+import { ButtonCTAOrange, ButtonCTAWhite, ButtonLink } from "../buttons"
 
 const Hero = props => {
   return (
@@ -21,8 +21,8 @@ const Hero = props => {
             fast and user-friendly websites.
           </p>
           <div className="flex flex-col items-center space-y-2">
-            <ButtonLink text="Get in touch" />
-            <ButtonLink text="Find out more" />
+            <ButtonCTAOrange text="Get in touch" />
+            <ButtonCTAWhite text="Find out more" />
           </div>
         </div>
         {/* <div className="absolute right-0 bottom-0 top-1/3">
