@@ -52,6 +52,9 @@ module.exports = {
         primary: "#797E5E",
         secondary: "#254B5B",
       },
+      backgroundImage: {
+        "ready-pattern": "url('/src/images/ready-background.png')",
+      },
     },
   },
   variants: {

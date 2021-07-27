@@ -48,13 +48,13 @@ const ItemThree = () => {
 
 const Work = () => {
   return (
-    <div className="text-center flex flex-col items-center my-10 border ">
+    <div className="text-center flex flex-col items-center justify-center my-10 lg:min-h-screen 2xl:transform 2xl:scale-125">
       <h2>
         How we <br className="lg:hidden" /> work.
       </h2>
-      <hr className="hidden xl:block w-1/2 border-b-2 border-t-0 border-dotted py-4 border-gray-500 z-0 transform translate-y-24" />
+      <hr className="hidden xl:block w-1/2 border-b-2 border-t-0 border-dotted py-4 border-gray-500 z-0 transform translate-y-24 xl:scale-110 2xl:scale-100" />
 
-      <div className="container-lg my-8 xl:flex lg:py-6 lg:flex-rowb order z-10 border">
+      <div className="container-lg my-8 xl:flex lg:py-6 lg:flex-rowb order z-10">
         <ItemOne />
         <ItemTwo />
         <ItemThree />

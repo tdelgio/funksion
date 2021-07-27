@@ -1,7 +1,7 @@
 import React from "react"
 
-import { Logo, LogoMobile } from "./logo"
-import { CardTD } from "./cards"
+import { Logo, LogoMobile } from "../logo"
+import { CardTD } from "../cards"
 import {
   ButtonCompact,
   ButtonMedium,
@@ -14,7 +14,7 @@ import {
   ButtonIconOnly,
   ButtonDropdownNav,
   ToggleOn,
-} from "./buttons"
+} from "../buttons"
 
 const Draft = () => {
   return (
@@ -31,14 +31,14 @@ const Draft = () => {
         <p className="small">Small text</p>
       </div>
       <div className="flex flex-col md:flex-row space-y-2 md:space-x-4 md:space-y-0 my-2 ">
-        <ButtonCompact text="Button text" />
-        <ButtonMedium text="Button text" />
-        <ButtonLarge text="Button text" />
-        <ButtonIcon text="Button text" />
+        <ButtonCompact text="Button Compact" />
+        <ButtonMedium text="Button Medium" />
+        <ButtonLarge text="Button Large" />
+        <ButtonIcon text="Button Icon" />
       </div>
       <div className="flex flex-col md:flex-row space-y-2  md:space-x-4 md:space-y-0 md:my-2">
-        <ButtonDisabled text="Button text" />
-        <ButtonOutline text="Button text" />
+        <ButtonDisabled text="Button Disabled" />
+        <ButtonOutline text="Button Outline" />
         <ButtonDropdown text="Option" />
 
         <ButtonDropdownNav text="How do we work" />
