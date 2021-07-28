@@ -6,23 +6,28 @@ import { ButtonOutline } from "../buttons"
 const Ready = () => (
   <div className="bg-ready-pattern w-screen">
     {/* Mobile */}
-    <StaticImage
-      width={375}
-      height={204}
-      src="../../images/ready-mobile.png"
-      alt="background pattern"
-      placeholder="tracedSVG"
-      className="lg:hidden w-full mt-44"
-    />
+    <div className="lg:hidden ">
+      <StaticImage
+        width={375}
+        height={204}
+        src="../../images/ready-mobile.png"
+        alt="background pattern"
+        placeholder="tracedSVG"
+        className="w-full mt-44"
+      />
+    </div>
+
     {/* Desktop */}
-    <StaticImage
-      width={1280}
-      height={291}
-      src="../../images/ready-background.png"
-      alt="background pattern"
-      placeholder="tracedSVG"
-      className="hidden lg:block w-full mt-28"
-    />
+    <div className="hidden lg:block">
+      <StaticImage
+        width={1280}
+        height={291}
+        src="../../images/ready-background.png"
+        alt="background pattern"
+        placeholder="tracedSVG"
+        className=" w-full mt-28"
+      />
+    </div>
 
     <div className="w-full text-center mx-auto transform -translate-y-36 sm:-translate-y-44">
       <h2 className="mb-4 sm:mb-8 text-center">
