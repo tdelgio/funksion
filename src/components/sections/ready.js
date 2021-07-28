@@ -20,8 +20,8 @@ const Ready = () => (
       placeholder="tracedSVG"
       className="lg:hidden w-full"
     />
-    <div className="w-full bg-ready-pattern text-center transform -translate-y-44">
-      <h2 className="mb-4">
+    <div className="w-full bg-ready-pattern text-center transform scale-75 lg:scale-100 -translate-y-44">
+      <h2 className="mb-8">
         Ready for your next <br className="lg:hidden" />
         website?
       </h2>

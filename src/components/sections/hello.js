@@ -39,11 +39,11 @@ const Hero = () => {
           <p className="bg-clip-text text-transparent bg-gradient-to-r from-brand via-black to-black">
             Everything you need.
           </p>
-          <h1>
+          <h2>
             We make a digital
             <br />
             experience.
-          </h1>
+          </h2>
           <h4 className="max-w-3xl">
             Internet is the new window, and we can help you develop an effective
             website so that your business can leave a positive and lasting
