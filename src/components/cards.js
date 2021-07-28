@@ -20,7 +20,7 @@ export const CardTD = props => {
           skills. The sea and the mountains are my favourites playgrounds. Let's
           build some cool things!
         </p>
-        <div className="w-full px-6 lg:px-10">
+        <div className="w-full px-1 sm:px-6 lg:px-10">
           <ButtonIcon text="Check out my portfolio" />
         </div>
       </div>

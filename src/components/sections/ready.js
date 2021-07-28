@@ -4,25 +4,30 @@ import { StaticImage } from "gatsby-plugin-image"
 import { ButtonOutline } from "../buttons"
 
 const Ready = () => (
-  <div className="bg-ready-pattern w-screen h-full">
+  <div className="bg-ready-pattern w-screen">
+    {/* Mobile */}
+    <StaticImage
+      width={375}
+      height={204}
+      src="../../images/ready-mobile.png"
+      alt="background pattern"
+      placeholder="tracedSVG"
+      className="lg:hidden w-full mt-44"
+    />
+    {/* Desktop */}
     <StaticImage
       width={1280}
       height={291}
       src="../../images/ready-background.png"
       alt="background pattern"
       placeholder="tracedSVG"
-      className="hidden lg:block w-full"
+      className="hidden lg:block w-full mt-28"
     />
 
-    <StaticImage
-      src="../../images/ready-mobile.png"
-      alt="background pattern"
-      placeholder="tracedSVG"
-      className="lg:hidden w-full"
-    />
-    <div className="w-full bg-ready-pattern text-center transform scale-75 lg:scale-100 -translate-y-44">
-      <h2 className="mb-8">
-        Ready for your next <br className="lg:hidden" />
+    <div className="w-full text-center mx-auto transform -translate-y-36 sm:-translate-y-44">
+      <h2 className="mb-4 sm:mb-8 text-center">
+        <span className="sm:whitespace-nowrap py-2">Ready for your next </span>
+        <br className="lg:hidden" />
         website?
       </h2>
       <ButtonOutline text="Let's do it" />

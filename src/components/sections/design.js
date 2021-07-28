@@ -4,11 +4,11 @@ import { StaticImage } from "gatsby-plugin-image"
 import { ButtonMedium, ButtonLink } from "../buttons"
 import { DesignMobileTop, DesignMobileBottom } from "../patterns"
 
-const Hero = () => {
+const Design = () => {
   return (
     <>
       {/* Mobile */}
-      <div className=" w-screen flex-col items-center mx-auto justify-end md:max-w-md xl:transform xl:scale-125">
+      <div className="py-10 w-screen flex-col items-center mx-auto justify-end md:max-w-md xl:transform xl:scale-125">
         <div className="w-full mx-auto overflow-x-hidden xl:hidden">
           <div className="space-y-4 p-4 xl:hidden ">
             <div className="relative">
@@ -17,7 +17,7 @@ const Hero = () => {
                 Design <br />
                 System.
               </h2>
-              <p className="max-w-md">
+              <p className="pt-4 max-w-md">
                 Defining the purpose and style of color, shape, type, icons
                 space and motion is essential to creating a brand aligned and
                 consistent user experience.
@@ -31,7 +31,7 @@ const Hero = () => {
         </div>
       </div>
       {/* Desktop */}
-      <div className="hidden xl:flex xl:items-center justify-around w-full mx-auto max-w-7xl ">
+      <div className="hidden xl:h-screen xl:flex xl:items-center justify-around w-full mx-auto max-w-7xl ">
         <div className="space-y-4 p-4  mr-auto">
           <h2>Design System.</h2>
           <h4 className="max-w-3xl 2xl:max-w-4xl">
@@ -52,4 +52,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Design

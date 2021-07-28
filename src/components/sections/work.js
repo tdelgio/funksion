@@ -5,7 +5,7 @@ const ItemOne = () => {
   return (
     <div className="mx-auto max-w-sm space-y-4">
       <IconOne />
-      <h3>Reasearch</h3>
+      <h3>Research</h3>
       <p className="p-3">
         Analysis of competitor’s websites and general industry web design
         trends. We create a report for you, covering best practices and our
@@ -48,7 +48,7 @@ const ItemThree = () => {
 
 const Work = () => {
   return (
-    <div className="text-center flex flex-col items-center justify-center my-10 lg:min-h-screen 2xl:transform 2xl:scale-125">
+    <div className="text-center flex flex-col items-center justify-center lg:min-h-screen 2xl:transform 2xl:scale-125">
       <h2>
         How we <br className="lg:hidden" /> work.
       </h2>
