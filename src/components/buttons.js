@@ -132,6 +132,7 @@ export const ButtonDropdownIcon = props => {
   return (
     <div className="absolute top-3 flex flex-col pl-3 lg:hidden">
       <button
+        aria-label="dropdown"
         type={props.type}
         className="button flex justify-around items-center w-10 h-8 bg-white text-black border border-black z-50"
         onClick={() =>
