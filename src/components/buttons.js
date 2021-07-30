@@ -15,7 +15,7 @@ export const ButtonMedium = props => {
   return (
     <button
       type={props.type}
-      className="button w-auto h-8 bg-brand text-white px-8 z-10"
+      className="z-20 button w-full sm:w-auto text-whitespace-nowrap h-8 bg-brand text-white px-4 sm:px-8 "
     >
       {props.text}
     </button>
@@ -301,7 +301,7 @@ export const ToggleOn = () => {
 export const ButtonCTAWhite = props => {
   return (
     <>
-      <button className="rounded-lg button w-72 h-9 border border-black bg-white text-black ">
+      <button className="rounded-lg button w-72 h-9 border border-black bg-white text-black z-20">
         {props.text}
       </button>
     </>

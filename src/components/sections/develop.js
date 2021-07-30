@@ -8,9 +8,9 @@ const Develop = () => {
   return (
     <>
       {/* Mobile */}
-      <div className="py-5 w-screen flex-col items-center mx-auto justify-end md:max-w-md xl:transform xl:scale-125">
-        <div className="w-full mx-auto overflow-x-hidden xl:hidden">
-          <div className="space-y-4 p-4 xl:hidden ">
+      <div className="py-5 w-screen flex-col items-center mx-auto justify-end lg:hidden">
+        <div className="w-full mx-auto overflow-x-hidden ">
+          <div className="space-y-4 p-4 max-w-lg mx-auto">
             <div className="relative">
               <DevelopMobileTop />
               <h2>Develop.</h2>
@@ -25,28 +25,33 @@ const Develop = () => {
               <ButtonMedium text="View Lighthouse report" />
             </div>
           </div>
-          <DevelopMobileBottom />
+          <StaticImage src="../../images/develop-mobile.png" />
         </div>
       </div>
       {/* Desktop */}
-      <div className="hidden xl:h-screen xl:flex xl:items-center justify-around w-full mx-auto max-w-7xl ">
-        <div className="space-y-4 p-4  mr-auto">
-          <h2>
-            Web <br />
-            Development.
-          </h2>
-          <h4 className="max-w-3xl 2xl:max-w-xl">
-            We build fast, secure, and powerful websites to create world-class
-            web experiences using modern technologies. All our websites are
-            adaptable to any device, and accesibile for everyone. No matter what
-            you need.
-          </h4>
-          <div className="pt-2">
-            <ButtonMedium text="View Lighthouse report" />
+      <div className="hidden lg:h-screen lg:flex lg:items-center justify-around w-full mx-auto max-w-7xl lg:max-w-full">
+        <div className=" w-full max-w-7xl">
+          <div className="max-w-2xl space-y-4 p-4  mr-auto">
+            <h2>
+              Web <br />
+              Development.
+            </h2>
+            <h4 className="max-w-3xl 2xl:max-w-xl">
+              We build fast, secure, and powerful websites to create world-class
+              web experiences using modern technologies. All our websites are
+              adaptable to any device, and accesibile for everyone. No matter
+              what you need.
+            </h4>
+            <div className="pt-2">
+              <ButtonMedium text="View Lighthouse report" />
+            </div>
           </div>
         </div>
         <StaticImage
+          height={611}
           src="../../images/develop-background.png"
+          alt="develop background"
+          placeholder="tracedSvg"
           className="w-full h-screen absolute pl-8"
         />
       </div>

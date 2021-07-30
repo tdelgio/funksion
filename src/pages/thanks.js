@@ -1,9 +1,11 @@
 import * as React from "react"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const ThanksPage = () => (
   <Layout>
+    <SEO title="Thanks" />
     <div className="w-full h-screen flex items-center justify-center">
       <div className=" flex items-center justify-center font-work-bold md:transform md:scale-150">
         <div className="flex flex-col ">
@@ -38,7 +40,7 @@ const ThanksPage = () => (
         </div>
         <p className="font bold text-4xl pl-2 ">
           /thank you!
-          <p className="font-work-reg text-2xl pl-2">
+          <p className="text-2xl pl-2">
             {" "}
             your form has been
             <br />

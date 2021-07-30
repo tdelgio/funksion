@@ -1,38 +1,21 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 
 import { ButtonOutline } from "../buttons"
+import { ReadyPattern } from "../patterns"
 
 const Ready = () => (
-  <div className="bg-ready-pattern w-screen">
+  <div className="relative w-full h-78 rounded-sm">
     {/* Mobile */}
-    <div className="lg:hidden ">
-      <StaticImage
-        width={375}
-        height={204}
-        src="../../images/ready-mobile.png"
-        alt="background pattern"
-        placeholder="tracedSVG"
-        className="w-full mt-44"
-      />
-    </div>
 
     {/* Desktop */}
-    <div className="hidden lg:block">
-      <StaticImage
-        width={1280}
-        height={291}
-        src="../../images/ready-background.png"
-        alt="background pattern"
-        placeholder="tracedSVG"
-        className=" w-full mt-28"
-      />
+    <div className="h-full mx-0 max-w-screen lg:block">
+      <ReadyPattern />
     </div>
 
-    <div className="w-full text-center mx-auto transform -translate-y-36 sm:-translate-y-44">
-      <h2 className="mb-4 sm:mb-8 text-center">
-        <span className="sm:whitespace-nowrap py-2">Ready for your next </span>
-        <br className="lg:hidden" />
+    <div className="absolute top-24 md:top-28 text-center w-full">
+      <h2 className="mb-4 sm:mb-4 text-center text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
+        <span className="sm:whitespace-nowrap ">Ready for your next </span>
+        <br className="md:hidden" />
         website?
       </h2>
       <ButtonOutline text="Let's do it" />

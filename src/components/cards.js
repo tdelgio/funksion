@@ -46,7 +46,7 @@ export const CardLD = props => {
           colors of the sunset, in the sounds of the ocean or the texture of a
           leave. Nature is my main muse.
         </p>
-        <div className="w-full px-6 lg:px-10">
+        <div className="w-full px-1 sm:px-6 lg:px-10">
           <ButtonIcon text="Say Hi" />
         </div>
       </div>

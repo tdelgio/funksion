@@ -6,14 +6,14 @@ const Hello = () => {
   return (
     <>
       {/* Mobile */}
-      <div className="py-10  flex-col items-center justify-end max-w-md mx-auto ">
-        <div className="w-full mx-auto overflow-x-hidden xl:hidden ">
-          <div className="space-y-4 p-4 xl:hidden ">
-            <div className="">
+      <div className="py-10 flex-col items-center justify-end max-w-md mx-auto lg:hidden">
+        <div className="relative w-full mx-auto overflow-x-hidden  z-20">
+          <div className="space-y-4 p-4 lg:hidden z-20 pb-16 sm:pb-24">
+            <div className="z-20">
               <p className="pb-2 bg-clip-text text-transparent bg-gradient-to-r from-brand to-black">
                 Everything you need.
               </p>
-              <h2>
+              <h2 className="text">
                 We make a <br />
                 digital
                 <br /> experience.
@@ -24,22 +24,22 @@ const Hello = () => {
                 lasting impression on your customers.
               </p>
             </div>
-            <div className="z-10">
+            <div className="z-40 mr-auto">
               <ButtonMedium text="I want my website" />
             </div>
           </div>
-          <div className="relative bottom-72 left-48 opacity-30 -mb-72">
+          <div className=" z-0 absolute top-16 left-48  ">
             <HelloPattern />
           </div>
         </div>
       </div>
       {/* Desktop */}
-      <div className="hidden xl:flex xl:items-center justify-around w-full mx-auto max-w-7xl ">
-        <div className="space-y-4 p-4 ">
+      <div className="hidden lg:flex lg:items-center justify-between w-full mx-auto max-w-7xl">
+        <div className="space-y-4 p-4">
           <p className="bg-clip-text text-transparent bg-gradient-to-r from-brand via-black to-black">
             Everything you need.
           </p>
-          <h2>
+          <h2 className="text-">
             We make a digital
             <br />
             experience.

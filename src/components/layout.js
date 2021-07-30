@@ -9,6 +9,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 
 import Navbar from "./navbar"
+import Footer from "./footer"
+import "../styles/global.css"
 
 const Layout = ({ children }) => {
   return (
@@ -16,9 +18,7 @@ const Layout = ({ children }) => {
       <div className="my-0 p-0">
         <Navbar />
         <main>{children}</main>
-        <footer className="hidden block text-center lg:text-md">
-          © {new Date().getFullYear()}, Built with {"\u2728"}
-        </footer>
+        <Footer />
       </div>
     </>
   )

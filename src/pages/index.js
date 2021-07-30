@@ -9,6 +9,7 @@ import Ready from "../components/sections/ready"
 import Work from "../components/sections/work"
 import Design from "../components/sections/design"
 import Develop from "../components/sections/develop"
+import Contact from "../components/sections/contact"
 
 const IndexPage = () => (
   <Layout>
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <Work />
     <Design />
     <Develop />
+    <Contact />
   </Layout>
 )
 

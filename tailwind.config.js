@@ -3,9 +3,7 @@ module.exports = {
   darkMode: "media", // or 'media' or 'class'
   theme: {
     fontFamily: {
-      "work-reg": "WorkSansReg",
-      "work-semi": "WorkSansSemi",
-      "work-bold": "WorkSansBold",
+      body: ["Work Sans"],
     },
     extend: {
       screens: {

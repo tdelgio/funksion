@@ -48,13 +48,13 @@ const ItemThree = () => {
 
 const Work = () => {
   return (
-    <div className="text-center flex flex-col items-center justify-center lg:min-h-screen 2xl:transform 2xl:scale-125">
+    <div className="py-10 text-center flex flex-col items-center justify-center  mx-auto xl:max-w-7xl">
       <h2>
         How we <br className="lg:hidden" /> work.
       </h2>
-      <hr className="hidden xl:block w-1/2 border-b-2 border-t-0 border-dotted py-4 border-gray-500 z-0 transform translate-y-24 xl:scale-110 2xl:scale-100" />
+      <span className="hidden lg:block w-1/2 border-b-2 border-t-0 border-dotted py-4  z-0 transform translate-y-24  lg:scale-125 lg:translate-x-4 xl:-translate-x-2 xl:scale-125" />
 
-      <div className="container-lg my-8 xl:flex lg:py-6 lg:flex-rowb order z-10">
+      <div className="container-lg mt-8 lg:flex lg:pt-6 lg:flex-row z-10">
         <ItemOne />
         <ItemTwo />
         <ItemThree />
