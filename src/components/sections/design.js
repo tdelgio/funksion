@@ -6,7 +6,7 @@ import { DesignMobileTop, DesignMobileBottom } from "../patterns"
 
 const Design = () => {
   return (
-    <>
+    <div id="design">
       {/* Mobile */}
       <div className="py-10 w-screen flex-col items-center mx-auto justify-end  lg:hidden ">
         <div className="w-full mx-auto overflow-x-hidden">
@@ -23,7 +23,9 @@ const Design = () => {
                 consistent user experience.
               </p>
               <div className="z-10 py-4">
-                <ButtonMedium text="Check out our design system" />
+                <Link to="/design">
+                  <ButtonMedium text="Check out our design system" />
+                </Link>
               </div>
             </div>
           </div>
@@ -51,7 +53,7 @@ const Design = () => {
           className="w-full max-w-screen h-screen absolute pl-8"
         />
       </div>
-    </>
+    </div>
   )
 }
 

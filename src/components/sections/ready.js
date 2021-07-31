@@ -4,7 +4,7 @@ import { ButtonOutline } from "../buttons"
 import { ReadyPattern } from "../patterns"
 
 const Ready = () => (
-  <div className="relative w-full h-78 rounded-sm">
+  <div id="ready" className="relative w-full h-78 rounded-sm">
     {/* Mobile */}
 
     {/* Desktop */}
@@ -18,7 +18,7 @@ const Ready = () => (
         <br className="md:hidden" />
         website?
       </h2>
-      <ButtonOutline text="Let's do it" />
+      <ButtonOutline scrollId="#contact" text="Let's do it" />
     </div>
   </div>
 )

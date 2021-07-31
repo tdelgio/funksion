@@ -1,15 +1,20 @@
 import * as React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
+
 import { ButtonMedium, ButtonLink } from "../buttons"
 import { HelloPattern } from "../patterns"
 
 const Hello = () => {
   return (
-    <>
+    <div id="hello">
       {/* Mobile */}
       <div className="py-10 flex-col items-center justify-end max-w-md mx-auto lg:hidden">
-        <div className="relative w-full mx-auto overflow-x-hidden  z-20">
-          <div className="space-y-4 p-4 lg:hidden z-20 pb-16 sm:pb-24">
-            <div className="z-20">
+        <div className="relative w-full mx-auto">
+          <div className="absolute top-16 left-48 ">
+            <HelloPattern />
+          </div>
+          <div className="z-20 space-y-4 p-4 lg:hidden pb-16 sm:pb-24 opacity-95">
+            <div className="">
               <p className="pb-2 bg-clip-text text-transparent bg-gradient-to-r from-brand to-black">
                 Everything you need.
               </p>
@@ -24,12 +29,9 @@ const Hello = () => {
                 lasting impression on your customers.
               </p>
             </div>
-            <div className="z-40 mr-auto">
-              <ButtonMedium text="I want my website" />
+            <div className=" z-auto mr-auto">
+              <ButtonMedium scrollId="#contact" text="I want my website" />
             </div>
-          </div>
-          <div className=" z-0 absolute top-16 left-48  ">
-            <HelloPattern />
           </div>
         </div>
       </div>
@@ -55,7 +57,7 @@ const Hello = () => {
         </div>
         <HelloPattern className="pl-8" />
       </div>
-    </>
+    </div>
   )
 }
 

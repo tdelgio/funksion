@@ -1,12 +1,12 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import { ButtonMedium, ButtonLink } from "../buttons"
+import { ButtonMediumLink } from "../buttons"
 import { DevelopMobileTop, DevelopMobileBottom } from "../patterns"
 
 const Develop = () => {
   return (
-    <>
+    <div id="develop">
       {/* Mobile */}
       <div className="py-5 w-screen flex-col items-center mx-auto justify-end lg:hidden">
         <div className="w-full mx-auto overflow-x-hidden ">
@@ -22,7 +22,10 @@ const Develop = () => {
               </p>
             </div>
             <div className="z-10 pb-8">
-              <ButtonMedium text="View Lighthouse report" />
+              <ButtonMediumLink
+                link="https://build-ea8cf8b5-60b3-4efd-b683-efd645be90eb.gtsb.io/reports/lighthouse/index.html"
+                text="View Lighthouse report"
+              />
             </div>
           </div>
           <StaticImage src="../../images/develop-mobile.png" />
@@ -43,7 +46,10 @@ const Develop = () => {
               what you need.
             </h4>
             <div className="pt-2">
-              <ButtonMedium text="View Lighthouse report" />
+              <ButtonMediumLink
+                link="https://build-ea8cf8b5-60b3-4efd-b683-efd645be90eb.gtsb.io/reports/lighthouse/index.html"
+                text="View Lighthouse report"
+              />
             </div>
           </div>
         </div>
@@ -55,7 +61,7 @@ const Develop = () => {
           className="w-full h-screen absolute pl-8"
         />
       </div>
-    </>
+    </div>
   )
 }
 

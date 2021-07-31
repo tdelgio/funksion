@@ -7,7 +7,10 @@ import { HeroPattern } from "../patterns"
 const Contact = () => {
   return (
     <>
-      <div className="relative mx-auto w-screen px-2 sm:px-4 max-w-md lg:max-w-full flex flex-col items-center space-y-4 lg:flex-row lg:justify-between">
+      <div
+        id="contact"
+        className="relative mx-auto w-screen px-2 sm:px-4 max-w-md lg:max-w-full flex flex-col items-center space-y-4 lg:flex-row lg:justify-between lg:min-h-screen"
+      >
         <div className="absolute top-0 left-1/2 lg:-left-12  transform translate-x-12 lg:translate-y-16 scale-150">
           <HeroPattern />
         </div>
@@ -36,6 +39,7 @@ const Contact = () => {
                 First Name:
               </label>
               <input
+                id="name"
                 type="text"
                 name="first-name"
                 className="input "
@@ -46,7 +50,13 @@ const Contact = () => {
               <label id="last-name" className="label" for="last-name">
                 Last Name:
               </label>
-              <input type="text" name="last-name" className="input" required />
+              <input
+                id="last-name"
+                type="text"
+                name="last-name"
+                className="input"
+                required
+              />
             </div>
           </div>
 
@@ -55,13 +65,25 @@ const Contact = () => {
               <label className="label" for="email">
                 Email:
               </label>
-              <input type="email" name="email" className="input " required />
+              <input
+                id="email"
+                type="email"
+                name="email"
+                className="input "
+                required
+              />
             </div>
             <div className="flex flex-col lg:w-1/2 lg:pl-4">
               <label className="label" for="phone">
                 Phone:
               </label>
-              <input type="number" name="phone" className="input" required />
+              <input
+                id="phone"
+                type="number"
+                name="phone"
+                className="input"
+                required
+              />
             </div>
           </div>
 
@@ -73,12 +95,24 @@ const Contact = () => {
           <label className="label" for="subject">
             Subject:
           </label>
-          <input type="text" name="subjet" className="input" required />
+          <input
+            id="subject"
+            type="text"
+            name="subjet"
+            className="input"
+            required
+          />
 
           <label className="label" for="message">
             Message:
           </label>
-          <textarea rows="4" cols="50" name="message" className="input" />
+          <textarea
+            id="message"
+            rows="4"
+            cols="50"
+            name="message"
+            className="input"
+          />
           <div className="mt-4 lg:ml-auto">
             <ButtonMedium text="Submit" />
           </div>

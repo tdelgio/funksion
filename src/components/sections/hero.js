@@ -7,7 +7,10 @@ import { ButtonCTAOrange, ButtonCTAWhite, ButtonLink } from "../buttons"
 
 const Hero = props => {
   return (
-    <div className=" flex items-center justify-center min-h-screen w-full">
+    <div
+      id="home"
+      className=" flex items-center justify-center min-h-screen w-full"
+    >
       {/* Mobile */}
 
       <div className="relative w-full lg:hidden text-center space-y-4 md:space-y-8 sm:transform">
@@ -24,8 +27,8 @@ const Hero = props => {
         </div>
 
         <div className="flex flex-col items-center space-y-2">
-          <ButtonCTAOrange text="Get in touch" />
-          <ButtonCTAWhite text="Find out more" />
+          <ButtonCTAOrange scrollId="#contact" text="Get in touch" />
+          <ButtonCTAWhite scrollId="#hello" text="Find out more" />
         </div>
       </div>
 
@@ -45,8 +48,8 @@ const Hero = props => {
               websites.
             </p>
             <div className="flex items-center space-x-4 max-w-xs">
-              <ButtonCTAWhite text="Get in touch" />
-              <ButtonCTAOrange text="Find out more" />
+              <ButtonCTAWhite scrollId="#contact" text="Get in touch" />
+              <ButtonCTAOrange scrollId="#hello" text="Find out more" />
             </div>
           </div>
         </div>

@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 
+import scrollTo from "gatsby-plugin-smoothscroll"
+
 import { Dropdown, DropdownWork } from "./dropdown"
 
 export const ButtonCompact = props => {
@@ -14,11 +16,24 @@ export const ButtonCompact = props => {
 export const ButtonMedium = props => {
   return (
     <button
+      onClick={() => scrollTo(props.scrollId)}
       type={props.type}
       className="z-20 button w-full sm:w-auto text-whitespace-nowrap h-8 bg-brand text-white px-4 sm:px-8 "
     >
       {props.text}
     </button>
+  )
+}
+export const ButtonMediumLink = props => {
+  return (
+    <a href={props.link}>
+      <button
+        type={props.type}
+        className="z-20 button w-full sm:w-auto text-whitespace-nowrap h-8 bg-brand text-white px-4 sm:px-8 "
+      >
+        {props.text}
+      </button>
+    </a>
   )
 }
 
@@ -38,6 +53,7 @@ export const ButtonLarge = props => {
 export const ButtonOutline = props => {
   return (
     <button
+      onClick={() => scrollTo(props.scrollId)}
       type={props.type}
       className="button w-32 h-8 bg-white text-black border border-black"
     >
@@ -130,7 +146,7 @@ export const ButtonDropdownNav = props => {
 export const ButtonDropdownIcon = props => {
   const [display, setDisplay] = useState("hidden")
   return (
-    <div className="absolute top-3 flex flex-col pl-3 lg:hidden">
+    <div className="fixed top-3 flex flex-col pl-3 lg:hidden z-50">
       <button
         aria-label="dropdown"
         type={props.type}
@@ -162,9 +178,12 @@ export const ButtonDropdownIcon = props => {
   )
 }
 
-export const ButtonIcon = props => {
+export const ButtonIconChat = props => {
   return (
-    <button className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8 bg-brand text-white border">
+    <a
+      href={props.link}
+      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8 bg-brand text-white border"
+    >
       {props.text}
       <svg
         className="ml-3"
@@ -194,7 +213,31 @@ export const ButtonIcon = props => {
           fill="white"
         />
       </svg>
-    </button>
+    </a>
+  )
+}
+
+export const ButtonIconCode = props => {
+  return (
+    <a
+      href={props.link}
+      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8 bg-brand text-white border"
+    >
+      {props.text}
+      <svg
+        width="24"
+        height="22"
+        viewBox="0 0 24 22"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        clasName="ml-3"
+      >
+        <path
+          d="M15.4756 1.75519C15.5046 1.66103 15.5147 1.56209 15.5054 1.46402C15.4961 1.36595 15.4676 1.27066 15.4215 1.18361C15.3754 1.09655 15.3126 1.01943 15.2367 0.956645C15.1608 0.893861 15.0733 0.846642 14.9791 0.817685C14.8849 0.788729 14.786 0.778602 14.6879 0.787882C14.5899 0.797162 14.4946 0.825669 14.4075 0.871773C14.3205 0.917877 14.2433 0.980677 14.1806 1.05659C14.1178 1.1325 14.0706 1.22003 14.0416 1.31419L8.0416 20.8142C7.98312 21.0043 8.00258 21.2099 8.09569 21.3858C8.1888 21.5616 8.34794 21.6932 8.5381 21.7517C8.72826 21.8102 8.93387 21.7907 9.10968 21.6976C9.2855 21.6045 9.41712 21.4453 9.4756 21.2552L15.4756 1.75519ZM7.0396 5.50368C7.10945 5.57335 7.16486 5.65612 7.20267 5.74723C7.24048 5.83835 7.25994 5.93603 7.25994 6.03469C7.25994 6.13334 7.24048 6.23102 7.20267 6.32214C7.16486 6.41325 7.10945 6.49602 7.0396 6.56569L2.3191 11.2847L7.0396 16.0037C7.18043 16.1445 7.25955 16.3355 7.25955 16.5347C7.25955 16.7338 7.18043 16.9249 7.0396 17.0657C6.89877 17.2065 6.70777 17.2856 6.5086 17.2856C6.30944 17.2856 6.11843 17.2065 5.9776 17.0657L0.727604 11.8157C0.657759 11.746 0.602345 11.6633 0.564535 11.5721C0.526725 11.481 0.507263 11.3833 0.507263 11.2847C0.507263 11.186 0.526725 11.0884 0.564535 10.9972C0.602345 10.9061 0.657759 10.8234 0.727604 10.7537L5.9776 5.50368C6.04727 5.43384 6.13004 5.37843 6.22115 5.34062C6.31227 5.30281 6.40995 5.28334 6.5086 5.28334C6.60725 5.28334 6.70494 5.30281 6.79605 5.34062C6.88717 5.37843 6.96993 5.43384 7.0396 5.50368ZM16.4776 5.50368C16.4078 5.57335 16.3523 5.65612 16.3145 5.74723C16.2767 5.83835 16.2573 5.93603 16.2573 6.03469C16.2573 6.13334 16.2767 6.23102 16.3145 6.32214C16.3523 6.41325 16.4078 6.49602 16.4776 6.56569L21.1981 11.2847L16.4776 16.0037C16.4079 16.0734 16.3526 16.1562 16.3148 16.2473C16.2771 16.3384 16.2577 16.4361 16.2577 16.5347C16.2577 16.6333 16.2771 16.731 16.3148 16.8221C16.3526 16.9132 16.4079 16.996 16.4776 17.0657C16.5473 17.1354 16.6301 17.1907 16.7212 17.2285C16.8123 17.2662 16.91 17.2856 17.0086 17.2856C17.1072 17.2856 17.2049 17.2662 17.296 17.2285C17.3871 17.1907 17.4699 17.1354 17.5396 17.0657L22.7896 11.8157C22.8594 11.746 22.9149 11.6633 22.9527 11.5721C22.9905 11.481 23.0099 11.3833 23.0099 11.2847C23.0099 11.186 22.9905 11.0884 22.9527 10.9972C22.9149 10.9061 22.8594 10.8234 22.7896 10.7537L17.5396 5.50368C17.4699 5.43384 17.3872 5.37843 17.2961 5.34062C17.2049 5.30281 17.1073 5.28334 17.0086 5.28334C16.91 5.28334 16.8123 5.30281 16.7212 5.34062C16.63 5.37843 16.5473 5.43384 16.4776 5.50368Z"
+          fill="white"
+        />
+      </svg>
+    </a>
   )
 }
 
@@ -302,7 +345,10 @@ export const ToggleOn = () => {
 export const ButtonCTAWhite = props => {
   return (
     <>
-      <button className="rounded-lg button w-72 h-9 border border-black bg-white text-black z-20">
+      <button
+        onClick={() => scrollTo(props.scrollId)}
+        className="rounded-lg button w-72 h-9 border border-black bg-white text-black z-20"
+      >
         {props.text}
       </button>
     </>
@@ -312,7 +358,10 @@ export const ButtonCTAWhite = props => {
 export const ButtonCTAOrange = props => {
   return (
     <>
-      <button className="button w-72 h-9  bg-brand text-white">
+      <button
+        onClick={() => scrollTo(props.scrollId)}
+        className="button w-72 h-9  bg-brand text-white"
+      >
         {props.text}
       </button>
     </>

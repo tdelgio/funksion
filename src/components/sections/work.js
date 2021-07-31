@@ -48,7 +48,10 @@ const ItemThree = () => {
 
 const Work = () => {
   return (
-    <div className="py-10 text-center flex flex-col items-center justify-center  mx-auto xl:max-w-7xl">
+    <div
+      id="work"
+      className="py-10 text-center flex flex-col items-center justify-center  mx-auto xl:max-w-7xl"
+    >
       <h2>
         How we <br className="lg:hidden" /> work.
       </h2>
