@@ -368,67 +368,14 @@ export const ButtonCTAOrange = props => {
   )
 }
 
-export const ButtonLink = props => {
+export const ButtonMediumPopUp = props => {
   return (
-    <button>
-      <div className="w-full text-center">
-        <svg
-          width="auto"
-          height="36"
-          viewBox="0 0 174 36"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-full"
-        >
-          <g filter="url(#filter0_d)">
-            <rect x="1" y="1" width="170" height="32" rx="6" fill="#E09143" />
-            <rect
-              x="1.5"
-              y="1.5"
-              width="169"
-              height="31"
-              rx="5.5"
-              stroke="#E09143"
-            />
-          </g>
-          <defs>
-            <filter
-              id="filter0_d"
-              x="0"
-              y="0"
-              width="174"
-              height="36"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix
-                in="SourceAlpha"
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              />
-              <feOffset dx="1" dy="1" />
-              <feGaussianBlur stdDeviation="1" />
-              <feColorMatrix
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"
-              />
-              <feBlend
-                mode="normal"
-                in2="BackgroundImageFix"
-                result="effect1_dropShadow"
-              />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="effect1_dropShadow"
-                result="shape"
-              />
-            </filter>
-          </defs>
-        </svg>
-        <p className="button -mt-7 my-3 text-white">{props.text}</p>
-      </div>
-    </button>
+    <Link
+      to={props.to}
+      className="z-20 button py-2 w-full sm:w-auto text-whitespace-nowrap h-8
+      bg-brand text-white px-4 sm:px-8 "
+    >
+      {props.text}
+    </Link>
   )
 }

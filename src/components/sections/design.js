@@ -1,7 +1,8 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
-import { ButtonMedium, ButtonLink } from "../buttons"
+import { ButtonMedium, ButtonMediumPopUp } from "../buttons"
 import { DesignMobileTop, DesignMobileBottom } from "../patterns"
 
 const Design = () => {
@@ -23,9 +24,10 @@ const Design = () => {
                 consistent user experience.
               </p>
               <div className="z-10 py-4">
-                <Link to="/design">
-                  <ButtonMedium text="Check out our design system" />
-                </Link>
+                <ButtonMediumPopUp
+                  to="/design"
+                  text="Check out our design system"
+                />
               </div>
             </div>
           </div>
@@ -33,8 +35,8 @@ const Design = () => {
         </div>
       </div>
       {/* Desktop */}
-      <div className="hidden lg:h-screen lg:flex lg:items-center justify-around w-full mx-auto max-w-7xl lg:max-w-full">
-        <div className=" w-full max-w-7xl">
+      <div className="relative hidden lg:h-screen lg:flex lg:items-center justify-around w-full mx-auto max-w-7xl lg:max-w-full">
+        <div className=" w-full max-w-7xl z-20">
           <div className="max-w-2xl space-y-4 p-4  mr-auto">
             <h2>Design System.</h2>
             <h4 className="max-w-3xl 2xl:max-w-4xl">
@@ -42,15 +44,18 @@ const Design = () => {
               and motion is essential to creating a brand aligned and consistent
               user experience.
             </h4>
-            <div className="pt-2">
-              <ButtonMedium text="Check out our design system" />
+            <div className="z-20 pt-2">
+              <ButtonMediumPopUp
+                to="/design"
+                text="Check out our design system"
+              />
             </div>
           </div>
         </div>
 
         <StaticImage
           src="../../images/design-background.png"
-          className="w-full max-w-screen h-screen absolute pl-8"
+          className="z-0 w-full max-w-screen h-screen absolute pl-8"
         />
       </div>
     </div>

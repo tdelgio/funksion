@@ -33,7 +33,7 @@ const Develop = () => {
       </div>
       {/* Desktop */}
       <div className="hidden lg:h-screen lg:flex lg:items-center justify-around w-full mx-auto max-w-7xl lg:max-w-full">
-        <div className=" w-full max-w-7xl">
+        <div className=" w-full max-w-7xl z-20">
           <div className="max-w-2xl space-y-4 p-4  mr-auto">
             <h2>
               Web <br />
@@ -58,7 +58,7 @@ const Develop = () => {
           src="../../images/develop-background.png"
           alt="develop background"
           placeholder="tracedSvg"
-          className="w-full h-screen absolute pl-8"
+          className="z-0 w-full h-screen absolute pl-8"
         />
       </div>
     </div>

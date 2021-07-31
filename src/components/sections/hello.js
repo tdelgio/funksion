@@ -52,7 +52,7 @@ const Hello = () => {
             impression on your customers.
           </h4>
           <div className="pt-2">
-            <ButtonMedium text="I want my website" />
+            <ButtonMedium scrollId="#contact" text="I want my website" />
           </div>
         </div>
         <HelloPattern className="pl-8" />
