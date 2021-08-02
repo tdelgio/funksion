@@ -5,7 +5,10 @@ import { CardTD, CardLD } from "../cards"
 const About = () => {
   return (
     <>
-      <div id="about" className="py-10 px-6 mx-auto sm:max-w-md lg:max-w-7xl ">
+      <div
+        id="about"
+        className="py-10 px-6 mx-auto sm:max-w-md lg:max-w-7xl lg:shadow-lg lg:rounded-lg  lg:pt-24"
+      >
         <div className="h-full text-center space-y-6">
           {/* Mobile */}
           <h2>About us.</h2>

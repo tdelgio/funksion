@@ -2,7 +2,11 @@ import React from "react"
 
 const SelectCountries = props => {
   return (
-    <select id="country" name="country" className={props.className}>
+    <select
+      id="country"
+      name="country"
+      className="z-20 w-full border border-gray-300 rounded-lg bg-white p-3 lg:p-3"
+    >
       <option value="Afghanistan">Afghanistan</option>
       <option value="Åland Islands">Åland Islands</option>
       <option value="Albania">Albania</option>

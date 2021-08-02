@@ -15,7 +15,7 @@ import "../styles/global.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="my-0 p-0">
+      <div className="my-0 p-0 max-w-screen">
         <Navbar />
         <main className="space-y-16 lg:space-y-32">{children}</main>
         <Footer />

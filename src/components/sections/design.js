@@ -7,9 +7,9 @@ import { DesignMobileTop, DesignMobileBottom } from "../patterns"
 
 const Design = () => {
   return (
-    <div id="design">
+    <div id="design" className="max-w-screen max-h-screen lg:pt-8">
       {/* Mobile */}
-      <div className="py-10 w-screen flex-col items-center mx-auto justify-end  lg:hidden ">
+      <div className="py-10 max-w-screen flex-col items-center mx-auto justify-end  lg:hidden ">
         <div className="w-full mx-auto overflow-x-hidden">
           <div className="space-y-4 p-4 mx-auto max-w-lg ">
             <DesignMobileTop />
@@ -35,9 +35,9 @@ const Design = () => {
         </div>
       </div>
       {/* Desktop */}
-      <div className="relative hidden lg:h-screen lg:flex lg:items-center justify-around w-full mx-auto max-w-7xl lg:max-w-full">
-        <div className=" w-full max-w-7xl z-20">
-          <div className="max-w-2xl space-y-4 p-4  mr-auto">
+      <div className="hidden lg:relative h-full lg:min-h-screen lg:flex lg:items-center justify-around w-full max-w-screen mx-auto ">
+        <div className=" w-full max-w-7xl z-20 mx-auto ">
+          <div className="max-w-2xl space-y-4 p-4 mr-auto ">
             <h2>Design System.</h2>
             <h4 className="max-w-3xl 2xl:max-w-4xl">
               Defining the purpose and style of color, shape, type, icons space
@@ -52,11 +52,17 @@ const Design = () => {
             </div>
           </div>
         </div>
-
-        <StaticImage
-          src="../../images/design-background.png"
-          className="z-0 w-full max-w-screen h-screen absolute pl-8"
-        />
+        <div className="z-0 w-full max-w-screen absolute top-0 right-0 left-0">
+          <StaticImage
+            width={2564}
+            height={1363}
+            layout="constrained"
+            src="../../images/design-background.png"
+            alt="image background with patterns"
+            placeholder="tracedSvg"
+            className="min-h-screen max-h-screen shadow-lg"
+          />
+        </div>
       </div>
     </div>
   )

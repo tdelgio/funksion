@@ -38,6 +38,8 @@ module.exports = {
       },
       boxShadow: {
         card: "1px 1px 2px rgba(0, 0, 0, 0.4)",
+        brand:
+          "0 4px 6px -1px rgba(224, 145, 67, 1), 0 2px 4px -1px rgba(224, 145, 67, 0.06)",
       },
       borderWidth: {
         card: "0.5px",

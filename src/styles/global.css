@@ -47,7 +47,7 @@
   .hover {
     @apply bg-brand text-white border hover:border-brand;
   }
-  .active {
+  .active:after {
     @apply bg-brand text-white border hover:border-brand rounded-md;
   }
   .label {

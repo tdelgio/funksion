@@ -50,7 +50,7 @@ const Work = () => {
   return (
     <div
       id="work"
-      className="py-10 text-center flex flex-col items-center justify-center  mx-auto xl:max-w-7xl"
+      className="py-10 text-center flex flex-col items-center justify-center  mx-auto xl:max-w-7xl lg:shadow-lg rounded-lg lg:pt-24"
     >
       <h2>
         How we <br className="lg:hidden" /> work.

@@ -7,10 +7,11 @@ export const CardTD = props => {
     <>
       <div className="flex flex-col items-center justify-around px-2 mt-8 lg:m-8 py-8 w-full max-w-lg rounded-lg shadow-card border-card border-gray-50 space-y-2">
         <StaticImage
-          height={64}
-          width={64}
+          height={100}
+          width={100}
           src="../images/avatar-td.png"
           className="rounded-full"
+          placeholder="tracedSVG"
         />
         <p>Tomás</p>
         <p className="lg:hidden strong text-brand">Web Developer</p>
@@ -36,10 +37,11 @@ export const CardLD = props => {
     <>
       <div className="flex flex-col items-center justify-around px-2 mt-8 lg:m-8 py-8 w-full max-w-lg rounded-lg shadow-card border-card border-gray-50 space-y-2">
         <StaticImage
-          height={64}
-          width={64}
+          height={100}
+          width={100}
           src="../images/avatar-lu.png"
           className="rounded-full"
+          placeholder="tracedSVG"
         />
         <p>Ludmila</p>
         <p className="lg:hidden strong text-brand">Designer</p>

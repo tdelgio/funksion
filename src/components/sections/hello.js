@@ -6,11 +6,11 @@ import { HelloPattern } from "../patterns"
 
 const Hello = () => {
   return (
-    <div id="hello">
+    <div id="hello" className="mx-auto lg:pt-24">
       {/* Mobile */}
-      <div className="py-10 flex-col items-center justify-end max-w-md mx-auto lg:hidden">
-        <div className="relative w-full mx-auto">
-          <div className="absolute top-16 left-48 ">
+      <div className="py-10 mx-auto lg:hidden">
+        <div className="relative mx-auto max-w-md overflow-x-hidden">
+          <div className="absolute top-16 left-48">
             <HelloPattern />
           </div>
           <div className="z-20 space-y-4 p-4 lg:hidden pb-16 sm:pb-24 opacity-95">

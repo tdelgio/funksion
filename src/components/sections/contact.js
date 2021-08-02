@@ -9,9 +9,9 @@ const Contact = () => {
     <>
       <div
         id="contact"
-        className="relative mx-auto w-screen px-2 sm:px-4 max-w-md lg:max-w-full flex flex-col items-center space-y-4 lg:flex-row lg:justify-between lg:min-h-screen"
+        className="pt-8 relative mx-auto w-screen px-2 sm:px-4 max-w-md lg:max-w-full flex flex-col items-center space-y-4 lg:flex-row lg:justify-between lg:min-h-screen overflow-x-hidden max-w-screen lg:shadow-md"
       >
-        <div className="absolute top-0 left-1/2 lg:-left-12  transform translate-x-12 lg:translate-y-16 scale-150">
+        <div className="absolute top-16 lg:-left-12  transform translate-x-12 lg:translate-y-16 scale-150">
           <HeroPattern />
         </div>
         <div className="flex flex-col items-center z-20">
@@ -31,7 +31,7 @@ const Contact = () => {
         <form
           // action="https://getform.io/f/6152e63f-968f-4ea9-9d53-dfa86409f281"
           // method="POST"
-          className="w-full max-w-md lg:max-w-2xl h-full flex flex-col justify-center mx-auto"
+          className="w-full max-w-md lg:max-w-2xl h-full flex flex-col justify-center mx-auto lg:shadow-lg lg:p-8 lg:rounded-lg"
         >
           <div className="flex flex-col lg:flex-row">
             <div className="flex flex-col lg:w-1/2">
@@ -47,11 +47,11 @@ const Contact = () => {
               />
             </div>
             <div className="flex flex-col lg:w-1/2 lg:pl-4">
-              <label id="last-name" className="label" for="last-name">
+              <label id="lastname" className="label" for="lastname">
                 Last Name:
               </label>
               <input
-                id="last-name"
+                id="lastname"
                 type="text"
                 name="last-name"
                 className="input"

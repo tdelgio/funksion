@@ -4,7 +4,7 @@ import { ButtonOutline } from "../buttons"
 import { ReadyPattern } from "../patterns"
 
 const Ready = () => (
-  <div id="ready" className="relative w-full h-78 rounded-sm">
+  <div id="ready" className="relative w-full h-78 rounded-sm lg:shadow-lg">
     {/* Mobile */}
 
     {/* Desktop */}

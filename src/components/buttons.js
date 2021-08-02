@@ -18,7 +18,7 @@ export const ButtonMedium = props => {
     <button
       onClick={() => scrollTo(props.scrollId)}
       type={props.type}
-      className="z-20 button w-full sm:w-auto text-whitespace-nowrap h-8 bg-brand text-white px-4 sm:px-8 "
+      className="z-20 button rounded w-full sm:w-auto text-whitespace-nowrap h-8 bg-brand text-white px-4 sm:px-8 "
     >
       {props.text}
     </button>
@@ -26,8 +26,9 @@ export const ButtonMedium = props => {
 }
 export const ButtonMediumLink = props => {
   return (
-    <a href={props.link}>
+    <a aria-label="link button" href={props.link}>
       <button
+        aria-label="link button"
         type={props.type}
         className="z-20 button w-full sm:w-auto text-whitespace-nowrap h-8 bg-brand text-white px-4 sm:px-8 "
       >
@@ -42,7 +43,7 @@ export const ButtonLarge = props => {
     <Link to={props.to}>
       <button
         type={props.type}
-        className="button h-10 bg-brand text-white px-8 z-50"
+        className="button h-10 bg-brand text-white px-8 z-40"
       >
         {props.text}
       </button>
@@ -111,33 +112,45 @@ export const ButtonDropdown = props => {
 export const ButtonDropdownNav = props => {
   const [display, setDisplay] = useState("hidden")
   return (
-    <div className="flex flex-col w-52">
-      <button
-        className="link flex justify-around items-center bg-white text-black "
-        onClick={() =>
-          display === "hidden" ? setDisplay("block") : setDisplay("hidden")
-        }
-      >
-        {props.text}
-        <svg
-          className="ml-1"
-          width="25"
-          height="24"
-          viewBox="0 0 25 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+    <div className="flex flex-col items-center">
+      <div className="relative flex items-center justify-start ">
+        <button
+          className="link flex justify-around items-center bg-white text-black "
+          onClick={() => scrollTo("#work") && setDisplay("hidden")}
         >
-          <path
-            d="M19.6293 9L12.1293 16.5L4.62927 9"
-            stroke="#E09143"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </button>
+          {props.text}
+        </button>
+        <div
+          onClick={() =>
+            display === "hidden" ? setDisplay("block") : setDisplay("hidden")
+          }
+        >
+          <svg
+            className="z-50 ml-2 cursor-pointer"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.6293 9L12.1293 16.5L4.62927 9"
+              stroke="#E09143"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
       <div className={display}>
-        <DropdownWork />
+        <div
+          onClick={() => setDisplay("hidden")}
+          className="backdrop-filter backdrop-blur-sm absolute left-0 w-screen h-screen"
+        />
+        <div className="absolute -ml-24 pl-2 pt-2">
+          <DropdownWork setDisplay={setDisplay} />
+        </div>
       </div>
     </div>
   )
@@ -146,11 +159,11 @@ export const ButtonDropdownNav = props => {
 export const ButtonDropdownIcon = props => {
   const [display, setDisplay] = useState("hidden")
   return (
-    <div className="fixed top-3 flex flex-col pl-3 lg:hidden z-50">
+    <div className="fixed top-3 flex flex-col pl-3 lg:hidden z-40">
       <button
         aria-label="dropdown"
         type={props.type}
-        className="button flex justify-around items-center w-10 h-8 bg-white text-black border border-black z-50"
+        className="button flex justify-around items-center w-10 h-8 bg-white text-black border border-black z-40"
         onClick={() =>
           display === "hidden" ? setDisplay("block") : setDisplay("hidden")
         }

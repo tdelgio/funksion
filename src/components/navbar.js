@@ -8,8 +8,8 @@ const Navbar = () => {
   return (
     <>
       <ButtonDropdownIcon />
-      <div className="hidden absolute lg:flex lg:items-center lg:justify-center w-full z-20">
-        <ul className="flex items-center justify-around py-18 py-6 w-1/2 ">
+      <navbar className="hidden fixed top-0 z-50 lg:flex lg:items-center lg:justify-center w-full  bg-white mb-1 shadow-md">
+        <ul className="flex items-center justify-around my-18 py-4 w-1/2 bg-white">
           <button className="strong" onClick={() => scrollTo("#hello")}>
             Hello
           </button>
@@ -24,7 +24,7 @@ const Navbar = () => {
             Contact us
           </button>
         </ul>
-      </div>
+      </navbar>
     </>
   )
 }
