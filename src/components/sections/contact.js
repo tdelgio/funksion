@@ -51,7 +51,7 @@ const Contact = () => {
               />
             </div>
             <div className="flex flex-col lg:w-1/2 lg:pl-4">
-              <label id="lastname" className="label" for="lastname">
+              <label className="label" for="lastname">
                 Last Name:
               </label>
               <input
