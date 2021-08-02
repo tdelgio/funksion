@@ -7,7 +7,7 @@ import { Dropdown, DropdownWork } from "./dropdown"
 
 export const ButtonCompact = props => {
   return (
-    <button type={props.type} className="button w-32 h-7 bg-brand text-white">
+    <button type={props.type} className="button w-32 h-7 bg-black text-white">
       {props.text}
     </button>
   )
@@ -18,7 +18,7 @@ export const ButtonMedium = props => {
     <button
       onClick={() => scrollTo(props.scrollId)}
       type={props.type}
-      className="z-20 button rounded w-full sm:w-auto text-whitespace-nowrap h-8 bg-brand text-white px-4 sm:px-8 "
+      className="z-20 button rounded w-full sm:w-auto text-whitespace-nowrap h-8 bg-black text-white px-4 sm:px-8 "
     >
       {props.text}
     </button>
@@ -30,7 +30,7 @@ export const ButtonMediumLink = props => {
       <button
         aria-label="link button"
         type={props.type}
-        className="z-20 button w-full sm:w-auto text-whitespace-nowrap h-8 bg-brand text-white px-4 sm:px-8 "
+        className="z-20 button w-full sm:w-auto text-whitespace-nowrap h-8 bg-black text-white px-4 sm:px-8 "
       >
         {props.text}
       </button>
@@ -43,7 +43,7 @@ export const ButtonLarge = props => {
     <Link to={props.to}>
       <button
         type={props.type}
-        className="button h-10 bg-brand text-white px-8 z-40"
+        className="button h-10 bg-black text-white px-8 z-40"
       >
         {props.text}
       </button>
@@ -196,7 +196,7 @@ export const ButtonIconChat = props => {
   return (
     <a
       href={props.link}
-      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8 bg-brand text-white border"
+      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8 text-black border border-black"
     >
       {props.text}
       <svg
@@ -209,22 +209,22 @@ export const ButtonIconChat = props => {
       >
         <path
           d="M12.5455 20.8474H4.63922C4.4486 20.8474 4.26578 20.7717 4.13099 20.6369C3.9962 20.5021 3.92047 20.3193 3.92047 20.1287V12.2224C3.92047 11.0897 4.14356 9.96819 4.57701 8.92176C5.01046 7.87533 5.64577 6.92451 6.44667 6.12361C7.24757 5.32271 8.19839 4.6874 9.24482 4.25395C10.2912 3.8205 11.4128 3.59741 12.5455 3.59741H12.5455C13.6781 3.59741 14.7997 3.8205 15.8461 4.25395C16.8925 4.6874 17.8434 5.32271 18.6443 6.12362C19.4452 6.92452 20.0805 7.87533 20.5139 8.92177C20.9474 9.9682 21.1705 11.0898 21.1705 12.2224V12.2224C21.1705 14.5099 20.2618 16.7037 18.6443 18.3212C17.0268 19.9387 14.833 20.8474 12.5455 20.8474Z"
-          stroke="white"
+          stroke="black"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M12.5455 13.7231C13.1668 13.7231 13.6705 13.2195 13.6705 12.5981C13.6705 11.9768 13.1668 11.4731 12.5455 11.4731C11.9242 11.4731 11.4205 11.9768 11.4205 12.5981C11.4205 13.2195 11.9242 13.7231 12.5455 13.7231Z"
-          fill="white"
+          fill="black"
         />
         <path
           d="M8.04547 13.7231C8.66679 13.7231 9.17047 13.2195 9.17047 12.5981C9.17047 11.9768 8.66679 11.4731 8.04547 11.4731C7.42415 11.4731 6.92047 11.9768 6.92047 12.5981C6.92047 13.2195 7.42415 13.7231 8.04547 13.7231Z"
-          fill="white"
+          fill="black"
         />
         <path
           d="M17.0455 13.7231C17.6668 13.7231 18.1705 13.2195 18.1705 12.5981C18.1705 11.9768 17.6668 11.4731 17.0455 11.4731C16.4242 11.4731 15.9205 11.9768 15.9205 12.5981C15.9205 13.2195 16.4242 13.7231 17.0455 13.7231Z"
-          fill="white"
+          fill="black"
         />
       </svg>
     </a>
@@ -235,20 +235,20 @@ export const ButtonIconCode = props => {
   return (
     <a
       href={props.link}
-      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8 bg-brand text-white border"
+      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8  text-black border border-black"
     >
       {props.text}
       <svg
         width="24"
         height="22"
         viewBox="0 0 24 22"
-        fill="none"
+        fill="black"
         xmlns="http://www.w3.org/2000/svg"
         className="ml-3"
       >
         <path
           d="M15.4756 1.75519C15.5046 1.66103 15.5147 1.56209 15.5054 1.46402C15.4961 1.36595 15.4676 1.27066 15.4215 1.18361C15.3754 1.09655 15.3126 1.01943 15.2367 0.956645C15.1608 0.893861 15.0733 0.846642 14.9791 0.817685C14.8849 0.788729 14.786 0.778602 14.6879 0.787882C14.5899 0.797162 14.4946 0.825669 14.4075 0.871773C14.3205 0.917877 14.2433 0.980677 14.1806 1.05659C14.1178 1.1325 14.0706 1.22003 14.0416 1.31419L8.0416 20.8142C7.98312 21.0043 8.00258 21.2099 8.09569 21.3858C8.1888 21.5616 8.34794 21.6932 8.5381 21.7517C8.72826 21.8102 8.93387 21.7907 9.10968 21.6976C9.2855 21.6045 9.41712 21.4453 9.4756 21.2552L15.4756 1.75519ZM7.0396 5.50368C7.10945 5.57335 7.16486 5.65612 7.20267 5.74723C7.24048 5.83835 7.25994 5.93603 7.25994 6.03469C7.25994 6.13334 7.24048 6.23102 7.20267 6.32214C7.16486 6.41325 7.10945 6.49602 7.0396 6.56569L2.3191 11.2847L7.0396 16.0037C7.18043 16.1445 7.25955 16.3355 7.25955 16.5347C7.25955 16.7338 7.18043 16.9249 7.0396 17.0657C6.89877 17.2065 6.70777 17.2856 6.5086 17.2856C6.30944 17.2856 6.11843 17.2065 5.9776 17.0657L0.727604 11.8157C0.657759 11.746 0.602345 11.6633 0.564535 11.5721C0.526725 11.481 0.507263 11.3833 0.507263 11.2847C0.507263 11.186 0.526725 11.0884 0.564535 10.9972C0.602345 10.9061 0.657759 10.8234 0.727604 10.7537L5.9776 5.50368C6.04727 5.43384 6.13004 5.37843 6.22115 5.34062C6.31227 5.30281 6.40995 5.28334 6.5086 5.28334C6.60725 5.28334 6.70494 5.30281 6.79605 5.34062C6.88717 5.37843 6.96993 5.43384 7.0396 5.50368ZM16.4776 5.50368C16.4078 5.57335 16.3523 5.65612 16.3145 5.74723C16.2767 5.83835 16.2573 5.93603 16.2573 6.03469C16.2573 6.13334 16.2767 6.23102 16.3145 6.32214C16.3523 6.41325 16.4078 6.49602 16.4776 6.56569L21.1981 11.2847L16.4776 16.0037C16.4079 16.0734 16.3526 16.1562 16.3148 16.2473C16.2771 16.3384 16.2577 16.4361 16.2577 16.5347C16.2577 16.6333 16.2771 16.731 16.3148 16.8221C16.3526 16.9132 16.4079 16.996 16.4776 17.0657C16.5473 17.1354 16.6301 17.1907 16.7212 17.2285C16.8123 17.2662 16.91 17.2856 17.0086 17.2856C17.1072 17.2856 17.2049 17.2662 17.296 17.2285C17.3871 17.1907 17.4699 17.1354 17.5396 17.0657L22.7896 11.8157C22.8594 11.746 22.9149 11.6633 22.9527 11.5721C22.9905 11.481 23.0099 11.3833 23.0099 11.2847C23.0099 11.186 22.9905 11.0884 22.9527 10.9972C22.9149 10.9061 22.8594 10.8234 22.7896 10.7537L17.5396 5.50368C17.4699 5.43384 17.3872 5.37843 17.2961 5.34062C17.2049 5.30281 17.1073 5.28334 17.0086 5.28334C16.91 5.28334 16.8123 5.30281 16.7212 5.34062C16.63 5.37843 16.5473 5.43384 16.4776 5.50368Z"
-          fill="white"
+          fill="black"
         />
       </svg>
     </a>
@@ -260,7 +260,7 @@ export const ButtonIconSend = props => {
     <button
       aria-label="button icon send"
       tyoe={props.type}
-      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-4 lg:ml-auto px-3 h-8 bg-brand text-white border"
+      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-4 lg:ml-auto px-3 h-8 text-black border border-black"
     >
       {props.text}
       <svg
@@ -273,11 +273,11 @@ export const ButtonIconSend = props => {
       >
         <path
           d="M6 6C4.80653 6 3.66193 6.47411 2.81802 7.31802C1.97411 8.16193 1.5 9.30653 1.5 10.5V19.5H10.5V10.5C10.5 9.30653 10.0259 8.16193 9.18198 7.31802C8.33807 6.47411 7.19347 6 6 6ZM6 4.5H18C19.5913 4.5 21.1174 5.13214 22.2426 6.25736C23.3679 7.38258 24 8.9087 24 10.5V19.5C24 19.8978 23.842 20.2794 23.5607 20.5607C23.2794 20.842 22.8978 21 22.5 21H1.5C1.10218 21 0.720644 20.842 0.43934 20.5607C0.158035 20.2794 0 19.8978 0 19.5V10.5C0 8.9087 0.632141 7.38258 1.75736 6.25736C2.88258 5.13214 4.4087 4.5 6 4.5ZM9.969 6C10.6081 6.56246 11.1199 7.25482 11.4701 8.03082C11.8204 8.80682 12.001 9.64862 12 10.5V19.5H22.5V10.5C22.5 9.30653 22.0259 8.16193 21.182 7.31802C20.3381 6.47411 19.1935 6 18 6H9.969Z"
-          fill="white"
+          fill="black"
         />
         <path
           d="M17.6895 12.75H13.5V11.25H21C21.1989 11.25 21.3897 11.329 21.5303 11.4697C21.671 11.6103 21.75 11.8011 21.75 12V13.5C21.75 13.6989 21.671 13.8897 21.5303 14.0303C21.3897 14.171 21.1989 14.25 21 14.25H19.5C19.4014 14.2502 19.3038 14.2309 19.2127 14.1933C19.1216 14.1558 19.0388 14.1006 18.969 14.031L17.6895 12.75ZM7.5 10.5C7.5 11.328 6.828 10.5 6 10.5C5.172 10.5 4.5 11.328 4.5 10.5C4.5 10.1022 4.65804 9.72064 4.93934 9.43934C5.22064 9.15804 5.60218 9 6 9C6.39782 9 6.77936 9.15804 7.06066 9.43934C7.34196 9.72064 7.5 10.1022 7.5 10.5Z"
-          fill="white"
+          fill="black"
         />
       </svg>
     </button>
@@ -288,7 +288,7 @@ export const ButtonIconOnly = props => {
   return (
     <button
       type={props.type}
-      className="button flex items-center justify-center w-12 h-8 bg-brand text-white border"
+      className="button flex items-center justify-center w-12 h-8 bg-black text-white border"
     >
       <svg
         width="25"
@@ -359,7 +359,7 @@ export const ButtonIconOnly = props => {
 export const ToggleOn = () => {
   return (
     <>
-      <div className="flex items-center w-11 h-6 bg-brand rounded-full p-0.5">
+      <div className="flex items-center w-11 h-6 bg-black rounded-full p-0.5">
         <div className="flex items-center justify-center w-5 h-5 bg-white rounded-full">
           <svg
             width="14"
@@ -402,7 +402,7 @@ export const ButtonCTAOrange = props => {
   return (
     <button
       onClick={() => scrollTo(props.scrollId)}
-      className="button w-72 h-9 border border-transparent  bg-brand text-white"
+      className="button w-72 h-9 border border-transparent  bg-black text-white"
     >
       {props.text}
     </button>
@@ -414,7 +414,7 @@ export const ButtonMediumPopUp = props => {
     <Link
       to={props.to}
       className="z-20 button py-2 w-full sm:w-auto text-whitespace-nowrap h-8
-      bg-brand text-white px-4 sm:px-8 "
+      bg-black text-white px-4 sm:px-8 "
     >
       {props.text}
     </Link>
