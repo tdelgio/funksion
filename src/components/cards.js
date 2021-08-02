@@ -12,6 +12,7 @@ export const CardTD = props => {
           src="../images/avatar-td.png"
           className="rounded-full"
           placeholder="tracedSVG"
+          alt="avatar"
         />
         <p>Tomás</p>
         <p className="lg:hidden strong text-brand">Web Developer</p>
@@ -42,6 +43,7 @@ export const CardLD = props => {
           src="../images/avatar-lu.png"
           className="rounded-full"
           placeholder="tracedSVG"
+          alt="avatar"
         />
         <p>Ludmila</p>
         <p className="lg:hidden strong text-brand">Designer</p>

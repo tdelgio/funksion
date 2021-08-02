@@ -46,14 +46,13 @@ module.exports = {
       },
       backgroundImage: {
         "hero-bg": "url('/src/images/hero-pattern.svg')",
+        "ready-pattern": "url('/src/images/ready-background.png')",
+        "button-brand": "url('/src/images/button-background.png')",
       },
       gradientColorStops: {
         brand: "#E09143",
         primary: "#797E5E",
         secondary: "#254B5B",
-      },
-      backgroundImage: {
-        "ready-pattern": "url('/src/images/ready-background.png')",
       },
     },
   },

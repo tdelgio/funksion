@@ -1,6 +1,6 @@
 import React from "react"
 
-import { ButtonMedium } from "../buttons"
+import { ButtonIconSend } from "../buttons"
 import SelectCountries from "../select"
 import { HeroPattern } from "../patterns"
 
@@ -117,8 +117,11 @@ const Contact = () => {
             name="message"
             className="input"
           />
-          <div className="mt-4 lg:ml-auto">
-            <ButtonMedium text="Submit" />
+          <div className="mt-4 lg:ml-auto lg:hidden">
+            <ButtonIconSend type="submit" text="Submit" />
+          </div>
+          <div className=" hidden lg:block mt-4 lg:ml-auto">
+            <ButtonIconSend type="submit" text="Send" />
           </div>
         </form>
       </div>
