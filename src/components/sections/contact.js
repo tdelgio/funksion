@@ -29,12 +29,16 @@ const Contact = () => {
           </div>
         </div>
         <form
-          // action="https://getform.io/f/6152e63f-968f-4ea9-9d53-dfa86409f281"
-          // method="POST"
+          method="post"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+          name="contact"
           className="w-full max-w-md lg:max-w-2xl h-full flex flex-col justify-center mx-auto lg:shadow-lg lg:p-8 lg:rounded-lg"
         >
           <div className="flex flex-col lg:flex-row">
             <div className="flex flex-col lg:w-1/2">
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
               <label for="name" className="label block" for="name">
                 First Name:
               </label>
