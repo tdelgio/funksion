@@ -7,12 +7,10 @@ export const DesignSystemMobile = () => {
     <>
       <div className="lg:hidden h-full mx-auto backdrop-filter backdrop-blur-sm pt-1 z-10">
         <StaticImage
-          width={375}
-          height={1538}
           src="../../images/design-system-mobile.png"
           alt="image design system"
           placeholder="tracedSVG"
-          className=" mb-8"
+          className="w-full mb-8"
         />
       </div>
     </>
