@@ -18,7 +18,7 @@ export const ButtonMedium = props => {
     <button
       onClick={() => scrollTo(props.scrollId)}
       type={props.type}
-      className="z-20 button rounded w-full sm:w-auto text-whitespace-nowrap h-8 bg-black text-white px-4 sm:px-8 "
+      className="z-20 button rounded w-full sm:w-auto text-whitespace-nowrap h-8 bg-black text-white px-4 sm:px-8 hover:shadow-brand"
     >
       {props.text}
     </button>
@@ -30,7 +30,7 @@ export const ButtonMediumLink = props => {
       <button
         aria-label="link button"
         type={props.type}
-        className="z-20 button w-full sm:w-auto text-whitespace-nowrap h-8 bg-black text-white px-4 sm:px-8 "
+        className="z-20 button w-full sm:w-auto text-whitespace-nowrap h-8 bg-black text-white px-4 sm:px-8 hover:shadow-brand"
       >
         {props.text}
       </button>
@@ -56,7 +56,7 @@ export const ButtonOutline = props => {
     <button
       onClick={() => scrollTo(props.scrollId)}
       type={props.type}
-      className="button w-32 h-8 bg-white text-black border border-black"
+      className="button w-32 h-8 bg-white text-black border border-black hover:shadow-brand"
     >
       {props.text}
     </button>
@@ -196,7 +196,7 @@ export const ButtonIconChat = props => {
   return (
     <a
       href={props.link}
-      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8 text-black border border-black"
+      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8 text-black border border-black hover:shadow-brand"
     >
       {props.text}
       <svg
@@ -235,7 +235,7 @@ export const ButtonIconCode = props => {
   return (
     <a
       href={props.link}
-      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8  text-black border border-black"
+      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8  text-black border border-black hover:shadow-brand"
     >
       {props.text}
       <svg
@@ -260,7 +260,7 @@ export const ButtonIconSend = props => {
     <button
       aria-label="button icon send"
       tyoe={props.type}
-      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-4 lg:ml-auto px-3 h-8 text-black border border-black"
+      className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-4 lg:ml-auto px-3 h-8 text-black border border-black hover:shadow-brand"
     >
       {props.text}
       <svg
@@ -390,7 +390,7 @@ export const ButtonCTAWhite = props => {
     <>
       <button
         onClick={() => scrollTo(props.scrollId)}
-        className="rounded-lg button w-72 h-9 border border-black bg-white text-black z-20"
+        className="rounded-lg button w-72 h-9 border border-black bg-white text-black z-20 hover:shadow-brand"
       >
         {props.text}
       </button>
@@ -402,7 +402,7 @@ export const ButtonCTAOrange = props => {
   return (
     <button
       onClick={() => scrollTo(props.scrollId)}
-      className="button w-72 h-9 border border-transparent  bg-black text-white"
+      className="button w-72 h-9 border border-transparent  bg-black text-white hover:shadow-brand"
     >
       {props.text}
     </button>
@@ -414,7 +414,7 @@ export const ButtonMediumPopUp = props => {
     <Link
       to={props.to}
       className="z-20 button py-2 w-full sm:w-auto text-whitespace-nowrap h-8
-      bg-black text-white px-4 sm:px-8 "
+      bg-black text-white px-4 sm:px-8 hover:shadow-brand"
     >
       {props.text}
     </Link>

@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `We create visual content`,
     description: `Kick off your next project with fastest tecnologies!`,
+    url: "https://www.funksion.site",
     author: `@tdelgio`,
   },
   plugins: [
