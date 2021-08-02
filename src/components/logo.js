@@ -184,6 +184,7 @@ export const Logo = () => {
 
 export const LogoFooter = () => (
   <button
+    aria-label="button to home"
     onClick={() => {
       scrollTo("#home")
     }}
