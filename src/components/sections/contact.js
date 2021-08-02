@@ -45,7 +45,7 @@ const Contact = () => {
               <input
                 id="name"
                 type="text"
-                name="first-name"
+                name="firstname"
                 className="input "
                 required
               />
@@ -57,7 +57,7 @@ const Contact = () => {
               <input
                 id="lastname"
                 type="text"
-                name="last-name"
+                name="lastname"
                 className="input"
                 required
               />

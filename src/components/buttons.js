@@ -77,7 +77,7 @@ export const ButtonDisabled = props => {
 export const ButtonDropdown = props => {
   const [display, setDisplay] = useState("hidden")
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col" aria-label="button">
       <button
         type={props.type}
         className="button flex justify-around items-center w-32 h-8 bg-white text-black border border-black"
@@ -115,6 +115,7 @@ export const ButtonDropdownNav = props => {
     <div className="flex flex-col items-center">
       <div className="relative flex items-center justify-start ">
         <button
+          aria-label="button"
           className="link flex justify-around items-center bg-white text-black "
           onClick={() => scrollTo("#work") && setDisplay("hidden")}
         >
@@ -257,6 +258,7 @@ export const ButtonIconCode = props => {
 export const ButtonIconSend = props => {
   return (
     <button
+      aria-label="button icon send"
       tyoe={props.type}
       className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-4 lg:ml-auto px-3 h-8 bg-brand text-white border"
     >
@@ -398,14 +400,12 @@ export const ButtonCTAWhite = props => {
 
 export const ButtonCTAOrange = props => {
   return (
-    <div className="">
-      <button
-        onClick={() => scrollTo(props.scrollId)}
-        className="button w-72 h-9  bg-hero-bg text-white"
-      >
-        {props.text}
-      </button>
-    </div>
+    <button
+      onClick={() => scrollTo(props.scrollId)}
+      className="button w-72 h-9 border border-transparent  bg-brand text-white"
+    >
+      {props.text}
+    </button>
   )
 }
 
