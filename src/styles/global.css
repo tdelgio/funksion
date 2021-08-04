@@ -19,9 +19,6 @@
   a {
     text-decoration: none;
   }
-  a:active {
-    @apply bg-brand text-white border hover:border-brand;
-  }
 }
 @tailwind components;
 @tailwind utilities;
@@ -55,5 +52,8 @@
   }
   .input {
     @apply z-20 w-full border border-gray-300 rounded-lg bg-white p-2 lg:p-3 focus:outline-none focus:ring-0  focus:border-brand;
+  }
+  .navLink {
+    @apply font-semibold text-base focus:outline-none focus:ring-0 focus:border-b-2  focus:border-brand border-b  border-white;
   }
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 
 import scrollTo from "gatsby-plugin-smoothscroll"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import { Dropdown, DropdownWork } from "./dropdown"
 
@@ -110,14 +111,14 @@ export const ButtonDropdownNav = props => {
   const [display, setDisplay] = useState("hidden")
   return (
     <div className="flex flex-col items-center">
-      <div className="relative flex items-center justify-start ">
-        <button
-          aria-label="button"
-          className="strong link flex justify-around items-center bg-white text-black "
-          onClick={() => scrollTo("#work") && setDisplay("hidden")}
+      <div className="relative flex items-center justify-start">
+        <AnchorLink
+          to={props.to}
+          className="strong  link flex justify-around items-center bg-white text-black "
+          onClick={() => setDisplay("hidden")}
         >
           {props.text}
-        </button>
+        </AnchorLink>
         <button
           className="strong ml-2"
           onClick={() =>
