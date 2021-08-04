@@ -2,15 +2,16 @@ import React from "react"
 import { Link } from "gatsby"
 
 import scrollTo from "gatsby-plugin-smoothscroll"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const ButtonStyled = props => {
   return (
-    <button
-      onClick={() => scrollTo(props.scrollId)}
-      className="active:bg-brand w-full active strong pl-2 py-2 text-black rounded lg:text-left lg:pl-4 hover:border-brand hover:bg-brand hover:text-white hover:shadow-md"
+    <a
+      href={props.scrollId}
+      className=" w-full strong pl-2 py-2 text-black rounded lg:text-left lg:pl-4 hover:bg-brand focus:bg-brand focus:text-white hover:text-white hover:shadow-md focus:outline-none focus:ring-0  "
     >
       {props.text}
-    </button>
+    </a>
   )
 }
 const LinkStyled = props => {

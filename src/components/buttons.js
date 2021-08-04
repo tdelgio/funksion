@@ -26,14 +26,11 @@ export const ButtonMedium = props => {
 }
 export const ButtonMediumLink = props => {
   return (
-    <a aria-label="link button" href={props.link}>
-      <button
-        aria-label="link button"
-        type={props.type}
-        className="z-20 button w-full sm:w-auto text-whitespace-nowrap h-8 bg-black text-white px-4 sm:px-8 hover:shadow-brand"
-      >
-        {props.text}
-      </button>
+    <a
+      href={props.link}
+      className="z-20 button w-full sm:w-auto text-whitespace-nowrap py-2 h-8 bg-black text-white px-4 sm:px-8 hover:shadow-brand"
+    >
+      {props.text}
     </a>
   )
 }
@@ -116,18 +113,19 @@ export const ButtonDropdownNav = props => {
       <div className="relative flex items-center justify-start ">
         <button
           aria-label="button"
-          className="link flex justify-around items-center bg-white text-black "
+          className="strong link flex justify-around items-center bg-white text-black "
           onClick={() => scrollTo("#work") && setDisplay("hidden")}
         >
           {props.text}
         </button>
-        <div
+        <button
+          className="strong ml-2"
           onClick={() =>
             display === "hidden" ? setDisplay("block") : setDisplay("hidden")
           }
         >
           <svg
-            className="z-50 ml-2 cursor-pointer"
+            className=" z-50 cursor-pointer"
             width="25"
             height="24"
             viewBox="0 0 25 24"
@@ -142,7 +140,7 @@ export const ButtonDropdownNav = props => {
               stroke-linejoin="round"
             />
           </svg>
-        </div>
+        </button>
       </div>
       <div className={display}>
         <div

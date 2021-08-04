@@ -6,16 +6,12 @@ import { HeroPattern } from "../patterns"
 
 const Contact = () => {
   return (
-    <>
-      <div
-        id="contact"
-        className="pt-8 relative mx-auto w-screen px-2 sm:px-4 max-w-md lg:max-w-full flex flex-col items-center space-y-4 lg:flex-row lg:justify-between lg:min-h-screen overflow-x-hidden max-w-screen lg:shadow-md"
-      >
-        <div className="absolute top-16 lg:-left-12  transform translate-x-12 lg:translate-y-16 scale-150">
-          <HeroPattern />
-        </div>
+    <div id="contact" className="relative w-screen overflow-x-hidden">
+      <div className="absolute top-0 right-0 lg:left-0  transform translate-x-52 lg:-translate-x-40 xl:translate-x-0 xl:scale-125">
+        <HeroPattern />
+      </div>
+      <div className="pt-16 mx-auto w-screen px-2 sm:px-4 max-w-md lg:max-w-full flex flex-col items-center space-y-4 lg:flex-row lg:justify-between lg:min-h-screen overflow-x-hidden max-w-screen lg:shadow-md">
         <div className="flex flex-col items-center z-20">
-          <div className="flex items-center justify-end -mt-8 transform translate-y-3 lg:-translate-x-52 "></div>
           <div>
             <h2 className="">Contact us.</h2>
             <h4 className="hidden lg:block md:mt-2">
@@ -40,7 +36,7 @@ const Contact = () => {
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact" />
               <label for="name" className="label block" for="name">
-                First Name:
+                <span className="text-orange-autumn-dk">*</span>Name:{" "}
               </label>
               <input
                 id="name"
@@ -59,7 +55,6 @@ const Contact = () => {
                 type="text"
                 name="lastname"
                 className="input"
-                required
               />
             </div>
           </div>
@@ -67,7 +62,7 @@ const Contact = () => {
           <div className="flex flex-col lg:flex-row">
             <div className="flex flex-col lg:w-1/2">
               <label className="label" for="email">
-                Email:
+                <span className="text-orange-autumn-dk">*</span>Email:
               </label>
               <input
                 id="email"
@@ -81,13 +76,7 @@ const Contact = () => {
               <label className="label" for="phone">
                 Phone:
               </label>
-              <input
-                id="phone"
-                type="number"
-                name="phone"
-                className="input"
-                required
-              />
+              <input id="phone" type="number" name="phone" className="input" />
             </div>
           </div>
 
@@ -97,7 +86,7 @@ const Contact = () => {
           <SelectCountries className="input" />
 
           <label className="label" for="subject">
-            Subject:
+            <span className="text-orange-autumn-dk">*</span>Subject:
           </label>
           <input
             id="subject"
@@ -108,7 +97,7 @@ const Contact = () => {
           />
 
           <label className="label" for="message">
-            Message:
+            <span className="text-orange-autumn-dk">*</span>Message:
           </label>
           <textarea
             id="message"
@@ -116,6 +105,7 @@ const Contact = () => {
             cols="50"
             name="message"
             className="input"
+            required
           />
           <div className="mt-4 lg:ml-auto lg:hidden">
             <ButtonIconSend type="submit" text="Submit" />
@@ -125,7 +115,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-    </>
+    </div>
   )
 }
 

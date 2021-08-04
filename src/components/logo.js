@@ -184,6 +184,7 @@ export const Logo = () => {
 
 export const LogoFooter = () => (
   <button
+    className="strong ml-2"
     aria-label="button to home"
     onClick={() => {
       scrollTo("#home")
@@ -195,7 +196,7 @@ export const LogoFooter = () => (
       viewBox="0 0 66 13"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="ml-2 mr-1"
+      className=" "
     >
       <path
         d="M3.58872 6.17263V12.8842H0.089241V0.0957031H8.20062V2.88416H3.58872V3.38416H8.20062V6.17263H3.58872Z"

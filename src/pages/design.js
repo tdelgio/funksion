@@ -18,7 +18,7 @@ const DesignPage = () => (
     <DesignSystemMobile />
     <DesignSystemDesktop />
 
-    <Link className="border border-transparent rounded-md" to="/">
+    <Link className="border button" to="/">
       <ButtonMedium text="Back to website" />
     </Link>
   </div>

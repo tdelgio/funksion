@@ -60,6 +60,7 @@ module.exports = {
     extend: {
       backgroundColor: ["hover", "active"],
       borderWidth: ["hover", "focus"],
+      outline: ["hover", "active"],
     },
   },
   plugins: [],

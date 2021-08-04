@@ -46,7 +46,7 @@ export const CardTD = props => {
         <p className="max-w-md pt-2 px-3 sm:px-6">
           Coding is one of my passions, I’m always improving and learning new
           skills. The sea and the mountains are my favourites playgrounds. Let's
-          build some cool things!
+          have fun creating!
         </p>
         <div className="w-full px-1 sm:px-6 lg:px-10">
           <ButtonIconCode

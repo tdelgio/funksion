@@ -2,7 +2,7 @@
 @tailwind base;
 @layer base {
   body {
-    @apply font-body font-normal text-base leading-6 dark:text-white dark:bg-information overflow-x-hidden focus:ring-2 focus:ring-brand;
+    @apply font-body font-normal text-base leading-6 dark:text-white dark:bg-information overflow-x-hidden;
   }
   h1 {
     @apply font-bold text-3xl sm:text-4xl lg:text-6xl xl:text-7xl xl:tracking-normal;
@@ -30,13 +30,13 @@
     @apply font-normal text-lg sm:text-xl xl:text-2xl tracking-normal;
   }
   .strong {
-    @apply font-semibold text-base;
+    @apply font-semibold text-base focus:outline-none focus:ring-0 focus:border-b-2  focus:border-brand;
   }
   .small {
     @apply text-sm;
   }
   .button {
-    @apply z-20 font-semibold text-center text-sm tracking-wider shadow-md rounded-md;
+    @apply z-20 font-semibold text-center text-sm tracking-wider shadow-md rounded-md focus:outline-none focus:ring-0 focus:border-2 focus:border-brand;
   }
   .small-button {
     @apply font-semibold text-xs tracking-tight;
@@ -54,6 +54,6 @@
     @apply mt-5;
   }
   .input {
-    @apply z-20 w-full border border-gray-300 rounded-lg bg-white p-2 lg:p-3;
+    @apply z-20 w-full border border-gray-300 rounded-lg bg-white p-2 lg:p-3 focus:outline-none focus:ring-0  focus:border-brand;
   }
 }

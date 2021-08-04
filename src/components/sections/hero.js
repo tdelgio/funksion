@@ -9,11 +9,14 @@ const Hero = props => {
   return (
     <div
       id="home"
-      className=" flex items-center justify-center min-h-screen w-full"
+      className="relative flex items-center justify-center min-h-screen w-full overflow-x-hidden"
     >
+      <div className="absolute bottom-0 right-0 opacity-60 xl:opacity-100 transform -translate-y-10 scale-125 xl:-translate-y-16 translate-x-56">
+        <HeroPattern />
+      </div>
       {/* Mobile */}
 
-      <div className="relative w-full lg:hidden text-center space-y-4 md:space-y-8 sm:transform">
+      <div className="py-16 w-full lg:hidden text-center space-y-4 md:space-y-8 sm:transform">
         <LogoMobile />
         <div className="">
           <h1>
@@ -33,10 +36,7 @@ const Hero = props => {
       </div>
 
       {/* Desktop */}
-      <div className="relative hidden lg:block w-full max-w-screen-2xl	">
-        <div className="absolute top-40 right-0 left-2/3 transform lg:translate-x-32 2xl:translate-x-48">
-          <HeroPattern />
-        </div>
+      <div className="relative hidden lg:block w-full max-w-screen-2xl py-40">
         <div className=" flex items-center justify-around">
           <Logo />
           <div className="flex flex-col space-y-6">
