@@ -23,7 +23,7 @@ const Develop = () => {
             </div>
             <div className="z-10 pb-8">
               <ButtonMediumLink
-                link="https://build-ea8cf8b5-60b3-4efd-b683-efd645be90eb.gtsb.io/reports/lighthouse/index.html"
+                link="https://build-281beb5a-ea8e-4275-8e0e-b2a331a42440.gtsb.io/reports/lighthouse/index.html"
                 text="View Lighthouse report"
               />
             </div>
