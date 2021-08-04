@@ -3,8 +3,8 @@ import { StaticImage } from "gatsby-plugin-image"
 
 export const HeroPattern = () => (
   <StaticImage
-    width="466"
-    height="443"
+    width={466}
+    height={443}
     src="../images/pattern.png"
     alt="pattern"
     placeholder="tracedSVG"
