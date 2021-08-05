@@ -27,7 +27,7 @@ const Navbar = () => {
             Contact us
           </AnchorLink>
         </ul>
-        <a href="/#contact" className="absolute right-6 animate-bounce">
+        <a href="/#contact" className="hidden absolute right-6 animate-bounce">
           <IconMailboxBrand />
         </a>
       </navbar>
