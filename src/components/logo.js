@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { Link } from "gatsby"
 
 export const LogoMobile = () => {
   return (
@@ -192,7 +192,7 @@ export const Logo = () => {
 }
 
 export const LogoFooter = () => (
-  <AnchorLink className="strong ml-2" aria-label="button to home" to="/#">
+  <Link className="strong ml-2" aria-label="button to home" to="/">
     <svg
       width="66"
       height="13"
@@ -234,5 +234,5 @@ export const LogoFooter = () => (
         fill="#E0903A"
       />
     </svg>
-  </AnchorLink>
+  </Link>
 )
