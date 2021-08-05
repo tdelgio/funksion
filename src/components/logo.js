@@ -192,7 +192,7 @@ export const Logo = () => {
 }
 
 export const LogoFooter = () => (
-  <AnchorLink className="strong ml-2" aria-label="button to home" to="/">
+  <AnchorLink className="strong ml-2" aria-label="button to home" to="/#">
     <svg
       width="66"
       height="13"
