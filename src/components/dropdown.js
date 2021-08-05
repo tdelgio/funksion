@@ -8,20 +8,10 @@ const ButtonStyled = props => {
   return (
     <AnchorLink
       to={props.scrollId}
-      className="navLink border border-white w-full strong pl-2 py-2 text-black rounded lg:text-left lg:pl-4 hover:bg-brand focus:bg-brand focus:text-white hover:text-white hover:border-brand hover:shadow-md focus:outline-none focus:ring-0  "
+      className="dark:border-white  navLink border border-white w-full strong pl-2 py-2 text-black rounded lg:text-left lg:pl-4 hover:bg-brand focus:bg-brand focus:text-white hover:text-white hover:border-brand hover:shadow-md focus:outline-none focus:ring-0 "
     >
       {props.text}
     </AnchorLink>
-  )
-}
-const LinkStyled = props => {
-  return (
-    <Link
-      onClick={() => scrollTo(props.scrollId)}
-      className=" w-full active strong pl-2 py-2 border border-transparent text-black rounded hover:border-brand hover:bg-brand hover:text-white"
-    >
-      {props.text}
-    </Link>
   )
 }
 

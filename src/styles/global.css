@@ -2,7 +2,7 @@
 @tailwind base;
 @layer base {
   body {
-    @apply font-body font-normal text-base leading-6 dark:text-white dark:bg-information overflow-x-hidden;
+    @apply font-body font-normal text-base leading-6 dark:text-white dark:bg-secondary overflow-x-hidden;
   }
   h1 {
     @apply font-bold text-3xl sm:text-4xl lg:text-6xl xl:text-7xl xl:tracking-normal;
@@ -54,6 +54,6 @@
     @apply z-20 w-full border border-gray-300 rounded-lg bg-white p-2 lg:p-3 focus:outline-none focus:ring-0  focus:border-brand;
   }
   .navLink {
-    @apply font-semibold text-base focus:outline-none focus:ring-0 focus:border-b-2  focus:border-brand border-b  border-white;
+    @apply font-semibold text-base focus:outline-none focus:ring-0 focus:border-b-2  focus:border-brand;
   }
 }

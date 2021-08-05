@@ -11,11 +11,11 @@ const Navbar = () => {
   return (
     <div>
       <ButtonDropdownIcon />
-      <navbar className="hidden mx-auto fixed top-0 z-50 lg:flex lg:items-center lg:justify-center w-full  bg-white mb-1 shadow-md">
+      <navbar className="hidden mx-auto fixed top-0 z-50 lg:flex lg:items-center lg:justify-center w-full  bg-white dark:bg-secondary mb-1 shadow-md">
         <Link to="/" className="absolute left-4 shadow-sm">
           <LogoNavbar />
         </Link>
-        <ul className="flex items-center justify-around my-18 py-4 w-1/2 bg-white">
+        <ul className="flex items-center justify-around my-18 py-4 w-1/2 ">
           <AnchorLink to="/#hello" className="navLink ">
             Hello
           </AnchorLink>

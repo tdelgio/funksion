@@ -30,8 +30,8 @@ const Hero = props => {
         </div>
 
         <div className="flex flex-col items-center space-y-2">
-          <ButtonCTAOrange scrollId="#contact" text="Get in touch" />
           <ButtonCTAWhite scrollId="#hello" text="Find out more" />
+          <ButtonCTAOrange scrollId="#contact" text="Get in touch" />
         </div>
       </div>
 

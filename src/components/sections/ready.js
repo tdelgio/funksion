@@ -12,7 +12,7 @@ const Ready = () => (
       <ReadyPattern />
     </div>
 
-    <div className="absolute top-20 md:top-28 text-center w-full">
+    <div className="absolute top-20 md:top-28 text-center w-full dark:text-black">
       <h2 className="mt-2 mb-4 sm:mb-4 text-center text-3xl sm:text-4xl md:text-5xl lg:mt-0 xl:text-6xl">
         <span className="sm:whitespace-nowrap ">Ready for your next </span>
         <br className="md:hidden" />
