@@ -5964,6 +5964,14 @@
     "lodash" "^4.17.21"
     "webpack-assets-manifest" "^5.0.6"
 
+"gatsby-plugin-google-tagmanager@^3.11.0":
+  "integrity" "sha512-nZClCY5CbyB7RL8CBE+Q3OLsMykv8xyc8UwHBgQ6q/C2MQNMlmmtr+Phy9vNPkL1JXjAtD8ly+83fVMkT8wVEA=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-3.11.0.tgz"
+  "version" "3.11.0"
+  dependencies:
+    "@babel/runtime" "^7.14.6"
+    "web-vitals" "^1.1.2"
+
 "gatsby-plugin-image@^1.1.1":
   "integrity" "sha512-0gbp3XqQFOAUnyN1GJOho1Eng+rQEMy1aPhRlb1s2xdWW3zx2Uqt9N7ZRsBMo1PIxBSFeqBKzU9GDux2RVyUCA=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-image/-/gatsby-plugin-image-1.10.1.tgz"
@@ -13187,6 +13195,11 @@
   "version" "1.7.3"
   dependencies:
     "minimalistic-assert" "^1.0.0"
+
+"web-vitals@^1.1.2":
+  "integrity" "sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig=="
+  "resolved" "https://registry.npmjs.org/web-vitals/-/web-vitals-1.1.2.tgz"
+  "version" "1.1.2"
 
 "webpack-assets-manifest@^5.0.6":
   "integrity" "sha512-CW94ylPHurZTmxnYajSFA8763Cv/QFIKNgBwqBLaIOnBjH1EbDUAf8Eq1/i+o8qaKyKXJ3aX7r4/jtpXD88ldg=="
