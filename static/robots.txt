@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /404
+Sitemap: https://funksion.site/sitemap/sitemap-index.xml
+Host: https://funksion.site

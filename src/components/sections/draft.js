@@ -10,7 +10,6 @@ import {
   ButtonDisabled,
   ButtonDropdown,
   ButtonDropdownIcon,
-  ButtonIcon,
   ButtonIconOnly,
   ButtonDropdownNav,
   ToggleOn,
@@ -34,7 +33,6 @@ const Draft = () => {
         <ButtonCompact text="Button Compact" />
         <ButtonMedium text="Button Medium" />
         <ButtonLarge text="Button Large" />
-        <ButtonIcon text="Button Icon" />
       </div>
       <div className="flex flex-col md:flex-row space-y-2  md:space-x-4 md:space-y-0 md:my-2">
         <ButtonDisabled text="Button Disabled" />
