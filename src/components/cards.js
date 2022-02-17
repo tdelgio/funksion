@@ -107,7 +107,7 @@ export const CardLD = props => {
         </p>
         <div className="w-full px-1 sm:px-6 lg:px-10">
           <ButtonIconChat
-            href="https://www.behance.net/marialtoledo"
+            link="https://www.behance.net/marialtoledo"
             text="Say Hi"
           />
         </div>

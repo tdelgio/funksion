@@ -195,6 +195,7 @@ export const ButtonIconChat = props => {
   return (
     <a
       href={props.link}
+      target="_blank"
       className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8 text-black border border-black hover:shadow-brand dark:bg-white"
     >
       {props.text}
