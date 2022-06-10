@@ -2,7 +2,7 @@
 @tailwind base;
 @layer base {
   body {
-    @apply font-body font-normal text-base leading-6 dark:text-white dark:bg-secondary overflow-x-hidden;
+    @apply font-body font-normal text-base leading-6 overflow-x-hidden;
   }
   h1 {
     @apply font-bold text-3xl sm:text-4xl lg:text-6xl xl:text-7xl xl:tracking-normal;

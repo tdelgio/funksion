@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div>
       <ButtonDropdownIcon />
-      <navbar className="hidden mx-auto fixed top-0 z-50 lg:flex lg:items-center lg:justify-center w-full  bg-white dark:bg-secondary mb-1 shadow-md">
+      <navbar className="hidden mx-auto fixed top-0 z-50 lg:flex lg:items-center lg:justify-center w-full  bg-white  mb-1 shadow-md">
         <Link to="/" className="absolute left-4 shadow-sm">
           <LogoNavbar />
         </Link>
