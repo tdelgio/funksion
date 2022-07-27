@@ -191,14 +191,14 @@ export const ButtonDropdownIcon = props => {
   )
 }
 
-export const ButtonIconChat = props => {
+export const ButtonIconChat = ({ link, text }) => {
   return (
     <a
-      href={props.link}
+      href={link}
       target="_blank"
       className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8 text-black border border-black hover:shadow-brand "
     >
-      {props.text}
+      {text}
       <svg
         className="ml-3"
         width="25"
@@ -231,13 +231,13 @@ export const ButtonIconChat = props => {
   )
 }
 
-export const ButtonIconCode = props => {
+export const ButtonIconCode = ({ link, text }) => {
   return (
     <a
-      href={props.link}
+      href={link}
       className="mt-2 button flex justify-center items-center w-full lg:w-auto lg:px-2 lg:ml-auto px-3 h-8  text-black border border-black  hover:shadow-brand "
     >
-      {props.text}
+      {text}
       <svg
         width="24"
         height="22"
