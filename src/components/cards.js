@@ -50,7 +50,7 @@ export const CardTD = props => {
         </p>
         <div className="w-full px-1 sm:px-6 lg:px-10">
           <ButtonIconCode
-            link="http://tdelgio.gatsbyjs.io"
+            link="http://tdelgio.me"
             text="Check out my portfolio"
           />
         </div>
