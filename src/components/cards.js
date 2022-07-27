@@ -106,10 +106,7 @@ export const CardLD = props => {
           leave. Nature is my main muse.
         </p>
         <div className="w-full px-1 sm:px-6 lg:px-10">
-          <ButtonIconChat
-            link="https://www.behance.net/marialtoledo"
-            text="Say Hi"
-          />
+          <ButtonIconChat link="https://marialudmila.design/" text="Say Hi" />
         </div>
       </div>
     </>
