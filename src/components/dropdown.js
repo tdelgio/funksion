@@ -25,7 +25,6 @@ export const Dropdown = () => {
         <ButtonStyled scrollId="/#work" text="How do we work" />
         <ButtonStyled scrollId="/#design" text="Design System" />
         <ButtonStyled scrollId="/#develop" text="Development" />
-        <ButtonStyled scrollId="/#develop" text="Development" />
         <ButtonStyled scrollId="/#contact" text="Contact us" />
       </div>
     </div>
