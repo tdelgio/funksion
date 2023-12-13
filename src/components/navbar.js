@@ -23,6 +23,9 @@ const Navbar = () => {
             Our Team
           </AnchorLink>
           <ButtonDropdownNav to="/#work" text="How do we work" />
+          <AnchorLink to="/#pricing" className="navLink -ml-6">
+            Pricing
+          </AnchorLink>
           <AnchorLink to="/#contact" className="navLink">
             Contact us
           </AnchorLink>

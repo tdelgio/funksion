@@ -10,6 +10,7 @@ import Work from "../components/sections/work"
 import Design from "../components/sections/design"
 import Develop from "../components/sections/develop"
 import Contact from "../components/sections/contact"
+import Pricing from "../components/sections/pricing"
 
 const IndexPage = () => (
   <Layout>
@@ -21,6 +22,7 @@ const IndexPage = () => (
     <Work />
     <Design />
     <Develop />
+    <Pricing />
     <Contact />
   </Layout>
 )

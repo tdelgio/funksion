@@ -20,9 +20,11 @@ export const Dropdown = () => {
     <div className="absolute h-screen w-screen backdrop-filter backdrop-blur-sm pt-1 z-10">
       <div className="link w-60 flex flex-col space-y-2 text-black text-center bg-white rounded-lg p-2 border border-black">
         <ButtonStyled scrollId="/#hello" text="Hello" />
+        <ButtonStyled scrollId="/#pricing" text="Pricing" />
         <ButtonStyled scrollId="/#about" text="Our Team" />
         <ButtonStyled scrollId="/#work" text="How do we work" />
         <ButtonStyled scrollId="/#design" text="Design System" />
+        <ButtonStyled scrollId="/#develop" text="Development" />
         <ButtonStyled scrollId="/#develop" text="Development" />
         <ButtonStyled scrollId="/#contact" text="Contact us" />
       </div>

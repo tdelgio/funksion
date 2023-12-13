@@ -59,6 +59,74 @@ export const CardTD = props => {
   )
 }
 
+export const CardDevelopment = props => {
+  return (
+    <>
+      <div className="flex flex-col items-center justify-around px-2 mt-8 lg:m-8 py-8 w-full max-w-lg rounded-lg shadow-card border-card border-gray-50 space-y-2">
+        <div className=" text-brand">
+          <h4 className="font-bold">🌐 Skilled Developers</h4>
+        </div>
+        <p className="max-w-md pt-2 px-3 sm:px-6">
+          Our developers are coding wizards, crafting responsive and
+          high-performance websites. They embrace the latest technologies to
+          bring functionality and innovation to your digital space.
+        </p>
+      </div>
+    </>
+  )
+}
+
+export const CardTechnology = props => {
+  return (
+    <>
+      <div className="flex flex-col items-center justify-around px-2 mt-8 lg:m-8 py-8 w-full max-w-lg rounded-lg shadow-card border-card border-gray-50 space-y-2">
+        <div className=" text-brand">
+          <h4 className="font-bold">🚀 Collaborative Teamwork</h4>
+        </div>
+        <p className="max-w-md pt-2 px-3 sm:px-6">
+          Together, our developers and designers collaborate seamlessly. It's
+          not just about individual skills; it's about a harmonious blend of
+          creativity and technical prowess to deliver websites that exceed
+          expectations.
+        </p>
+      </div>
+    </>
+  )
+}
+
+export const CardDesign = props => {
+  return (
+    <>
+      <div className="flex flex-col items-center justify-around px-2 mt-8 lg:m-8 py-8 w-full max-w-lg rounded-lg shadow-card border-card border-gray-50 space-y-2">
+        <div className=" text-brand">
+          <h4 className="font-bold">🎨 Creative Designers</h4>
+        </div>
+        <p className="max-w-md pt-2 px-3 sm:px-6">
+          Our talented designers bring creativity to life. From concept to
+          visual storytelling, they ensure your brand is represented with
+          elegance and uniqueness in every pixel.
+        </p>
+      </div>
+    </>
+  )
+}
+
+export const Card = props => {
+  return (
+    <>
+      <div className="flex flex-col items-center justify-around px-2 mt-8 lg:m-8 py-8 w-full max-w-lg rounded-lg shadow-card border-card border-gray-50 space-y-2">
+        <div className=" text-brand">
+          <h4 className="font-bold">🌐 Web Development</h4>
+        </div>
+        <p className="max-w-md pt-2 px-3 sm:px-6">
+          From sleek landing pages to robust e-commerce platforms, we've got the
+          technical prowess to make it happen.
+        </p>
+      </div>
+    </>
+  )
+}
+
 export const CardLD = props => {
   return (
     <>

@@ -1,6 +1,13 @@
 import React from "react"
 
-import { CardTD, CardLD } from "../cards"
+import {
+  CardTD,
+  CardLD,
+  CardAbout,
+  CardDevelopment,
+  CardTechnology,
+  CardDesign,
+} from "../cards"
 
 const About = () => {
   return (
@@ -13,20 +20,23 @@ const About = () => {
           {/* Mobile */}
           <h2>About us.</h2>
           <p className="lg:hidden px-5">
-            We are a small team that combines visual design, branding, content
-            creation and web development skills, to provide a user-friendly and
-            vissualy appealing result.
+            Welcome to our creative hub, where we seamlessly blend visual
+            design, branding expertise, content creation, and web development
+            skills to deliver a comprehensive and visually striking digital
+            experience
           </p>
           {/* Desktop */}
           <h4 className="hidden lg:block px-5 w-full">
-            We are a small team that combines visual design, branding, content
-            creation and web development skills, to provide a user-friendly and
-            vissualy appealing result.
+            Welcome to our creative hub, where we seamlessly blend visual
+            design, branding expertise, content creation, and web development
+            skills to deliver a comprehensive and visually striking digital
+            experience
           </h4>
         </div>
-        <div className="mx-auto flex flex-col items-center justify-center w-full lg:flex-row lg:items-center">
-          <CardTD />
-          <CardLD />
+        <div className="mx-auto flex flex-col items-center justify-center w-full lg:flex-row lg:items-start">
+          <CardDevelopment />
+          <CardDesign />
+          <CardTechnology />
         </div>
       </div>
     </>

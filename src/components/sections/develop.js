@@ -55,8 +55,8 @@ const Develop = () => {
             </h4>
             <div className="pt-2">
               <ButtonMediumLink
-                link="https://build-c5bbe0b2-be79-4cde-a4df-4ba5cc193d6d.gtsb.io/reports/lighthouse/index.html"
-                text="View Lighthouse report"
+                link="https://github.com/tdelgio?tab=repositories"
+                text="View our last projects"
               />
             </div>
           </div>
