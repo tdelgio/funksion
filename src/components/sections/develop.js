@@ -56,7 +56,7 @@ const Develop = () => {
             <div className="pt-2">
               <ButtonMediumLink
                 link="https://github.com/tdelgio?tab=repositories"
-                text="View our last projects"
+                text="Github Repositories"
               />
             </div>
           </div>
