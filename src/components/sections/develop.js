@@ -55,7 +55,7 @@ const Develop = () => {
             </h4>
             <div className="pt-2">
               <ButtonMediumLink
-                link="https://tomasdg.site/portfolio"
+                link="https://tdelgio.site/portfolio"
                 text="Check out our latest projects"
               />
             </div>
